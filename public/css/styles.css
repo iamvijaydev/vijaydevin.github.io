@@ -242,15 +242,15 @@
 #main-content h1 {
 	color: rgba(0, 0, 0, 0.35); 
 	letter-spacing: 10px; 
-	font-size: 50px; 
+	font-size: 2.5rem; 
 	margin: 35px 0 0px;
 }
 
 #main-content p {
 	color: rgba(0, 0, 0, 0.4);
-	font-size: 27px;
+	font-size: 1.3rem;
 	word-spacing: 3px;
-	margin: 0;
+	margin: 0 0 10px 0;
 }
 
 #main-content .elsewhere {
@@ -261,13 +261,13 @@
 	text-decoration: none;
 	display: inline-block;
 	cursor: pointer;
-	font-size: 1.5rem;
-	color: rgba(0, 0, 0, 0.35);
-	margin: 0 8px;
+	font-size: 1.3rem;
+	color: rgba(32, 32, 32, 0.2);
+	margin: 0 10px;
 }
 
-#home-banner .elsewhere a:hover {
-	color: #202020;
+#main-content .elsewhere a:hover {
+	color: rgba(32, 32, 32, 0.4);
 }
 
 /* overrides */
