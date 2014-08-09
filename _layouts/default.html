@@ -5,6 +5,10 @@
 
   <body class="layout-reverse">
 
+    {% if page.title == "Home" %}
+      <p>HEY THERE!!</p>
+    {% endif %}
+
     {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
