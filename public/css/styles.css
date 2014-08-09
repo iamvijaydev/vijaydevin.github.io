@@ -200,3 +200,9 @@
 	word-spacing: 3px;
 	margin: 0;
 }
+
+
+/* overrides */
+.sidebar-toggle {
+	background: transparent;
+}
