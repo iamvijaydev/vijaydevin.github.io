@@ -64,7 +64,7 @@
 	height:100%; 
 	display:table-cell; 
 	text-align:center; 
-	vertical-align:middle;
+	vertical-align: bottom;
 	-webkit-transition: background 0.2s linear;
 }
 	
@@ -258,7 +258,7 @@
 }
 
 #main-content .jump-down {
-	padding: 45px 0 5px;
+	padding: 35px 0 10px;
 }
 
 #main-content .elsewhere a {
