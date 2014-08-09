@@ -1,0 +1,202 @@
+/* svg container base styles */
+.emu-table {
+	width:100%; 
+	height:100%;
+	min-height: 100vh;
+	display:table; 
+	background: url(/public/img/pat.png) 0 0 #fff;
+}
+
+.emu-table > section {
+	width:100%; 
+	height:100%; 
+	display:table-cell; 
+	text-align:center; 
+	vertical-align:middle;
+	-webkit-transition: background 0.2s linear;
+}
+	
+
+
+/* svg components base style */
+.triangle {
+	stroke: #fff;
+	stroke-width: 2;
+	stroke-linejoin: round;
+	stroke-opacity: 0.5;
+	fill-opacity: 0.3;
+	-webkit-transition: fill 0.1s linear;
+}
+
+.upper-v {
+	fill-opacity: 1;
+}
+
+.lower-v {
+	fill-opacity: 1;
+}
+
+
+/* svg animation delays */
+.delay-1 { -webkit-transition-delay: 0.05s; }
+.delay-2 { -webkit-transition-delay: 0.10s; }
+.delay-3 { -webkit-transition-delay: 0.15s; }
+.delay-4 { -webkit-transition-delay: 0.20s; }
+.delay-5 { -webkit-transition-delay: 0.25s; }
+.delay-6 { -webkit-transition-delay: 0.22s; }
+.delay-7 { -webkit-transition-delay: 0.24s; }
+.delay-8 { -webkit-transition-delay: 0.26s; }
+.delay-9 { -webkit-transition-delay: 0.28s; }
+.delay-10 { -webkit-transition-delay: 0.30s; }
+.delay-11 { -webkit-transition-delay: 0.32s; }
+.delay-12 { -webkit-transition-delay: 0.34s; }
+.delay-13 { -webkit-transition-delay: 0.36s; }
+.delay-14 { -webkit-transition-delay: 0.38s; }
+.delay-15 { -webkit-transition-delay: 0.40s; }
+.delay-16 { -webkit-transition-delay: 0.42s; }
+.delay-17 { -webkit-transition-delay: 0.44s; }
+.delay-18 { -webkit-transition-delay: 0.46s; }
+.delay-19 { -webkit-transition-delay: 0.48s; }
+.delay-20 { -webkit-transition-delay: 0.50s; }
+.delay-21 { -webkit-transition-delay: 0.52s; }
+.delay-22 { -webkit-transition-delay: 0.54s; }
+.delay-23 { -webkit-transition-delay: 0.56s; }
+.delay-24 { -webkit-transition-delay: 0.58s; }
+.delay-25 { -webkit-transition-delay: 0.60s; }
+
+
+/* color set: turquoise-orange */
+.turquoise-orange {
+	background: rgba(243, 156, 18, 0.2);
+}
+
+.turquoise-orange .triangle {
+	fill: #1ABC9C;
+}
+
+.turquoise-orange .lower-v {
+	fill: #16A085;
+}
+
+/* color set: sunflower-turquoise */
+.sunflower-turquoise {
+	background: rgba(22, 160, 133, 0.1);
+}
+
+.sunflower-turquoise .triangle {
+	fill: #F1C40F;
+}
+
+.sunflower-turquoise .lower-v {
+	fill: #F39C12;
+}
+
+
+/* color set: emerald-pumpkin */
+.emerald-pumpkin {
+	background: rgba(211, 84, 0, 0.15);
+}
+
+.emerald-pumpkin .triangle {
+	fill: #2ECC71;
+}
+
+.emerald-pumpkin .lower-v {
+	fill: #27AE60;
+}
+
+/* color set: carrot-emrald */
+.carrot-emrald {
+	background: rgba(46, 204, 113, 0.1);
+}
+
+.carrot-emrald .triangle {
+	fill: #E67E22;
+}
+
+.carrot-emrald .lower-v {
+	fill: #D35400;
+}
+
+
+/* color set: peter-river pomegranate */
+.peterriver-pomegranate {
+	background: rgba(211, 84, 0, 0.15);
+}
+
+.peterriver-pomegranate .triangle {
+	fill: #3498DB;
+}
+
+.peterriver-pomegranate .lower-v {
+	fill: #2980B9;
+}
+
+/* color set: alizarin-peter-river */
+.alizarin-peterriver {
+	background: rgba(52, 152, 219, 0.1);
+}
+
+.alizarin-peterriver .triangle {
+	fill: #E74C3C;
+}
+
+.alizarin-peterriver .lower-v {
+	fill: #C0392B;
+}
+
+
+
+/* color set: wetasphalt-wisteria */
+.wetasphalt-wisteria {
+	background: rgba(142, 68, 173, 0.1);
+}
+
+.wetasphalt-wisteria .triangle {
+	fill: #34495E;
+}
+
+.wetasphalt-wisteria .lower-v {
+	fill: #2C3E50;
+}
+
+/* color set: amethyst-midnightblue */
+.amethyst-midnightblue {
+	background: rgba(44, 62, 80, 0.1);
+}
+
+.amethyst-midnightblue .triangle {
+	fill: #9B59B6;
+}
+
+.amethyst-midnightblue .lower-v {
+	fill: #8E44AD;
+}
+
+
+/* specific styling for main logo */
+#main-content svg {
+	overflow: visible;
+	width: 140px; 
+	height: 162px;
+}
+
+#main-content h1,
+#main-content p {
+	font-family: 'Lato'; 
+	font-weight: 300; 
+}
+
+#main-content h1 {
+	color: rgba(0, 0, 0, 0.35); 
+	letter-spacing: 10px; 
+	font-size: 50px; 
+	margin: 35px 0 0px;
+}
+
+#main-content p {
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 27px;
+	word-spacing: 3px;
+	margin: 0;
+}
