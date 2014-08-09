@@ -1,0 +1,199 @@
+---
+---
+
+/* svg container base styles */
+.emu-table
+	width: 100% 
+	height: 100%
+	min-height: 100vh
+	display: table
+	position: relative
+	background: url(/public/img/pat.png) 0 0 #fff
+	
+	> section
+		width: 100% 
+		height: 100% 
+		display: table-cell 
+		text-align:center 
+		vertical-align: middle
+		-webkit-transition: background 0.2s linear
+
+
+/* svg components base style */
+.triangle
+	stroke: #fff
+	stroke-width: 2
+	stroke-linejoin: round
+	stroke-opacity: 0.5
+	fill-opacity: 0.3
+	-webkit-transition: fill 0.1s linear
+
+.upper-v,
+.lower-v
+	fill-opacity: 1
+
+
+/* svg animation delays */
+=transitionDelay($delay)
+  -webkit-transition-delay: $delay
+  -moz-transition-delay: $delay
+  -ms-transition-delay: $delay
+  transition-delay: $delay
+
+.delay-1
+	+transitionDelay(0.05s)
+.delay-2
+	+transitionDelay(0.10s)
+.delay-3
+	+transitionDelay(0.15s)
+.delay-4
+	+transitionDelay(0.20s)
+.delay-5
+	+transitionDelay(0.25s)
+.delay-6
+	+transitionDelay(0.22s)
+.delay-7
+	+transitionDelay(0.24s)
+.delay-8
+	+transitionDelay(0.26s)
+.delay-9
+	+transitionDelay(0.28s)
+.delay-10
+	+transitionDelay(0.30s)
+.delay-11
+	+transitionDelay(0.32s)
+.delay-12
+	+transitionDelay(0.34s)
+.delay-13
+	+transitionDelay(0.36s)
+.delay-14
+	+transitionDelay(0.38s)
+.delay-15
+	+transitionDelay(0.40s)
+.delay-16
+	+transitionDelay(0.42s)
+.delay-17
+	+transitionDelay(0.44s)
+.delay-18
+	+transitionDelay(0.46s)
+.delay-19
+	+transitionDelay(0.48s)
+.delay-20
+	+transitionDelay(0.50s)
+.delay-21
+	+transitionDelay(0.52s)
+.delay-22
+	+transitionDelay(0.54s)
+.delay-23
+	+transitionDelay(0.56s)
+.delay-24
+	+transitionDelay(0.58s)
+.delay-25
+	+transitionDelay(0.60s)
+
+
+/* color set: turquoise-orange */
+.turquoise-orange
+	background: rgba(243, 156, 18, 0.2)
+	.triangle
+		fill: #1ABC9C
+	.lower-v
+		fill: #16A085
+
+/* color set: sunflower-turquoise */
+.sunflower-turquoise
+	background: rgba(22, 160, 133, 0.1)
+	.triangle
+		fill: #F1C40F
+	.lower-v
+		fill: #F39C12
+
+/* color set: emerald-pumpkin */
+.emerald-pumpkin
+	background: rgba(211, 84, 0, 0.15)
+	.triangle
+		fill: #2ECC71
+	.lower-v 
+		fill: #27AE60
+
+/* color set: carrot-emrald */
+.carrot-emrald
+	background: rgba(46, 204, 113, 0.1)
+	.triangle
+		fill: #E67E22
+	.lower-v
+		fill: #D35400
+
+/* color set: peter-river pomegranate */
+.peterriver-pomegranate
+	background: rgba(211, 84, 0, 0.15)
+	.triangle
+		fill: #3498DB
+	.lower-v
+		fill: #2980B9
+
+/* color set: alizarin-peter-river */
+.alizarin-peterriver
+	background: rgba(52, 152, 219, 0.1)
+	.triangle
+		fill: #E74C3C
+	.lower-v
+		fill: #C0392B
+
+/* color set: wetasphalt-wisteria */
+.wetasphalt-wisteria
+	background: rgba(142, 68, 173, 0.1)
+	.triangle
+		fill: #34495E
+	.lower-v
+		fill: #2C3E50
+
+/* color set: amethyst-midnightblue */
+.amethyst-midnightblue
+	background: rgba(44, 62, 80, 0.1)
+	.triangle
+		fill: #9B59B6
+	.lower-v
+		fill: #8E44AD
+
+
+/* specific styling for main logo */
+#main-content
+	svg
+		overflow: visible
+		width: 140px 
+		height: 162px
+	h1, p
+		font-family: 'Lato'
+		font-weight: 300
+	h1
+		color: rgba(0, 0, 0, 0.35)
+		letter-spacing: 10px
+		font-size: 2.5rem
+		margin: 35px 0 0px
+	p
+		color: rgba(0, 0, 0, 0.4)
+		font-size: 1.3rem
+		word-spacing: 3px
+		margin: 0 0 10px 0
+	.elsewhere
+		-webkit-user-select: none
+		a
+			text-decoration: none
+			display: inline-block
+			cursor: pointer
+			font-size: 1.3rem
+			color: rgba(32, 32, 32, 0.2)
+			margin: 0 8px
+			&:hover
+				color: rgba(32, 32, 32, 0.4)
+	.jump-down
+		padding: 35px 0 10px
+		position: absolute
+		left: 0
+		right: 0
+		bottom: 0
+
+/* overrides */
+.sidebar-toggle
+	background: transparent
