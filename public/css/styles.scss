@@ -136,6 +136,9 @@
 	.lower-v {
 		fill: #16A085;
 	}
+	.name {
+		color: rgba(243, 156, 18, 0.4) !important;
+	}
 }
 
 /* color set: sunflower-turquoise */
@@ -146,6 +149,9 @@
 	}
 	.lower-v {
 		fill: #F39C12;
+	}
+	.name {
+		color: rgba(22, 160, 133, 0.4) !important;
 	}
 }
 
@@ -159,6 +165,9 @@
 	.lower-v {
 		fill: #27AE60;
 	}
+	.name {
+		color: rgba(211, 84, 0, 0.4) !important;
+	}
 }
 
 /* color set: carrot-emrald */
@@ -169,6 +178,9 @@
 	}
 	.lower-v {
 		fill: #D35400;
+	}
+	.name {
+		color: rgba(46, 204, 113, 0.4) !important;
 	}
 }
 
@@ -182,6 +194,9 @@
 	.lower-v {
 		fill: #2980B9;
 	}
+	.name {
+		color: rgba(211, 84, 0, 0.4) !important;
+	}
 }
 
 /* color set: alizarin-peter-river */
@@ -192,6 +207,9 @@
 	}
 	.lower-v {
 		fill: #C0392B;
+	}
+	.name {
+		color: rgba(52, 152, 219, 0.4) !important;
 	}
 }
 
@@ -206,6 +224,9 @@
 	.lower-v {
 		fill: #2C3E50;
 	}
+	.name {
+		color: rgba(142, 68, 173, 0.4) !important;
+	}
 }
 
 /* color set: amethyst-midnightblue */
@@ -217,8 +238,8 @@
 	.lower-v {
 		fill: #8E44AD;
 	}
-	&#main-content .name {
-		color: rgba(44, 62, 80, 0.4);
+	.name {
+		color: rgba(44, 62, 80, 0.4) !important;
 	}
 }
 
