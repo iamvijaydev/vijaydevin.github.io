@@ -40,3 +40,23 @@
     <p>UI & front-end developer</p>
   </section>
 </main>
+
+<script>
+  var index = 0;
+
+  var themes = ['turquoise-orange', 'sunflower-turquoise', 'emerald-pumpkin', 'carrot-emrald', 'peterriver-pomegranate', 'alizarin-peterriver', 'wetasphalt-wisteria', 'amethyst-midnightblue'];
+
+  var $mainContent = document.getElementById( 'main-content' );
+
+  var reapply = function() {
+      if ( index > 7 ) {
+      index = 0;
+    };
+
+    $mainContent.setAttribute( 'class', themes[index] );
+
+    index++;
+  };
+
+  setInterval( reapply, 3000 );
+</script>
