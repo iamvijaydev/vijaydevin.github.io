@@ -92,32 +92,39 @@
 }
 
 
+@mixin transDelay($delay) {
+	-webkit-transition-delay: $delay;
+	-moz-transition-delay: $delay;
+	-ms-transition-delay: $delay;
+	transition-delay: $delay;
+}
+
 /* svg animation delays */
-.delay-1 { -webkit-transition-delay: 0.05s; }
-.delay-2 { -webkit-transition-delay: 0.10s; }
-.delay-3 { -webkit-transition-delay: 0.15s; }
-.delay-4 { -webkit-transition-delay: 0.20s; }
-.delay-5 { -webkit-transition-delay: 0.25s; }
-.delay-6 { -webkit-transition-delay: 0.22s; }
-.delay-7 { -webkit-transition-delay: 0.24s; }
-.delay-8 { -webkit-transition-delay: 0.26s; }
-.delay-9 { -webkit-transition-delay: 0.28s; }
-.delay-10 { -webkit-transition-delay: 0.30s; }
-.delay-11 { -webkit-transition-delay: 0.32s; }
-.delay-12 { -webkit-transition-delay: 0.34s; }
-.delay-13 { -webkit-transition-delay: 0.36s; }
-.delay-14 { -webkit-transition-delay: 0.38s; }
-.delay-15 { -webkit-transition-delay: 0.40s; }
-.delay-16 { -webkit-transition-delay: 0.42s; }
-.delay-17 { -webkit-transition-delay: 0.44s; }
-.delay-18 { -webkit-transition-delay: 0.46s; }
-.delay-19 { -webkit-transition-delay: 0.48s; }
-.delay-20 { -webkit-transition-delay: 0.50s; }
-.delay-21 { -webkit-transition-delay: 0.52s; }
-.delay-22 { -webkit-transition-delay: 0.54s; }
-.delay-23 { -webkit-transition-delay: 0.56s; }
-.delay-24 { -webkit-transition-delay: 0.58s; }
-.delay-25 { -webkit-transition-delay: 0.60s; }
+.delay-1 { @include transDelay(0.05s); }
+.delay-2 { @include transDelay(0.10s); }
+.delay-3 { @include transDelay(0.15s); }
+.delay-4 { @include transDelay(0.20s); }
+.delay-5 { @include transDelay(0.25s); }
+.delay-6 { @include transDelay(0.22s); }
+.delay-7 { @include transDelay(0.24s); }
+.delay-8 { @include transDelay(0.26s); }
+.delay-9 { @include transDelay(0.28s); }
+.delay-10 { @include transDelay(0.30s); }
+.delay-11 { @include transDelay(0.32s); }
+.delay-12 { @include transDelay(0.34s); }
+.delay-13 { @include transDelay(0.36s); }
+.delay-14 { @include transDelay(0.38s); }
+.delay-15 { @include transDelay(0.40s); }
+.delay-16 { @include transDelay(0.42s); }
+.delay-17 { @include transDelay(0.44s); }
+.delay-18 { @include transDelay(0.46s); }
+.delay-19 { @include transDelay(0.48s); }
+.delay-20 { @include transDelay(0.50s); }
+.delay-21 { @include transDelay(0.52s); }
+.delay-22 { @include transDelay(0.54s); }
+.delay-23 { @include transDelay(0.56s); }
+.delay-24 { @include transDelay(0.58s); }
+.delay-25 { @include transDelay(0.60s); }
 
 
 /* color set: turquoise-orange */
