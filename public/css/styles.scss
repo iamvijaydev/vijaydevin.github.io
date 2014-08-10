@@ -277,30 +277,43 @@
 
 /* about me */
 .about-me {
-	padding: 0 2rem;
+	text-align: center;
+	padding: 2rem 0;
 	.title {
-		text-align: center;
 		font-size: 1em;
 		font-weight: 100;
 		color: rgba(0,0,0,0.5);
 	}
 	.part {
-		margin: 2rem 0;
-	}
-	.part:not(.reverse) {
-		img {
-			float: left;
+		padding: 2rem 0;
+		h4 {
+			font-size: 1.2rem;
 		}
-		.aside {
-			margin-left: 400px;
+		small {
+			display: block;
 		}
 	}
-	.reverse {
-		img {
-			float: right;
+	
+}
+@media (min-width: 56em) {
+	.about-me {
+		.part:not(.reverse) {
+			text-align: left;
+			img {
+				float: left;
+			}
+			.aside {
+				margin-left: 400px;
+			}
 		}
-		.aside {
-			margin-right: 400px;
+		.reverse {
+			text-align: right;
+			img {
+				float: right;
+			}
+			.aside {
+				margin-right: 400px;
+			}
 		}
 	}
 }
