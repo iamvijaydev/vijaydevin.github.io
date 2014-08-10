@@ -58,7 +58,7 @@
   var themes = ['turquoise-orange', 'sunflower-turquoise', 'emerald-pumpkin', 'carrot-emrald', 'peterriver-pomegranate', 'alizarin-peterriver', 'wetasphalt-wisteria', 'amethyst-midnightblue'];
 
   var $mainContent = document.getElementById( 'main-content' );
-  var $masthead = document.getElementById( 'masthead' );
+  var $logo = document.getElementById( 'logo' );
 
   var reapply = function() {
       if ( index > 7 ) {
@@ -66,7 +66,7 @@
     };
 
     $mainContent.setAttribute( 'class', themes[index] );
-    $masthead.setAttribute( 'class', themes[index] );
+    $logo.setAttribute( 'class', themes[index] );
 
     index++;
   };
