@@ -273,3 +273,34 @@
 .sidebar-toggle {
 	background: transparent;
 }
+
+
+/* about me */
+.about {
+	padding: 0 2rem;
+	.title {
+		text-align: center;
+		font-size: 1em;
+		font-weight: 100;
+		color: rgba(0,0,0,0.5);
+	}
+	.part {
+		margin: 2rem 0;
+	}
+	.part:not(.reverse) {
+		img {
+			float: left;
+		}
+		.aside {
+			margin-left: 400px;
+		}
+	}
+	.reverse {
+		img {
+			float: right;
+		}
+		.aside {
+			margin-right: 400px;
+		}
+	}
+}
