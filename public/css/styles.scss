@@ -286,13 +286,16 @@
 	}
 	.part {
 		padding: 3rem 0;
+		img {
+			display: inline-block;
+		}
 		h4 {
 			font-size: 1.2rem;
 			margin-top: 0;
 		}
 		small {
 			display: block;
-			color: rgba(0,0,0,0.4);
+			color: rgba(0, 0, 0, 0.5);
 		}
 	}
 	
