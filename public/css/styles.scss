@@ -78,8 +78,9 @@
 	stroke: #fff;
 	stroke-width: 2;
 	stroke-linejoin: round;
-	stroke-opacity: 0.5;
-	fill-opacity: 0.3;
+	stroke-opacity: 0.7;
+	fill: #fff;
+	fill-opacity: 0.1;
 	-webkit-transition: fill 0.1s linear;
 }
 
@@ -129,7 +130,7 @@
 
 /* color set: turquoise-orange */
 .turquoise-orange {
-	background-color: rgba(243, 156, 18, 0.2);
+	background-color: rgba(243, 156, 18, 1);
 	.triangle {
 		fill: #1ABC9C;
 	}
@@ -140,8 +141,8 @@
 
 /* color set: sunflower-turquoise */
 .sunflower-turquoise {
-	background-color: rgba(22, 160, 133, 0.1);
-	.triangle {
+	background-color: rgba(22, 160, 133, 1);
+	.upper-v {
 		fill: #F1C40F;
 	}
 	.lower-v {
@@ -152,8 +153,8 @@
 
 /* color set: emerald-pumpkin */
 .emerald-pumpkin {
-	background-color: rgba(211, 84, 0, 0.15);
-	.triangle {
+	background-color: rgba(211, 84, 0, 1);
+	.upper-v {
 		fill: #2ECC71;
 	}
 	.lower-v {
@@ -163,8 +164,8 @@
 
 /* color set: carrot-emrald */
 .carrot-emrald {
-	background-color: rgba(46, 204, 113, 0.1);
-	.triangle {
+	background-color: rgba(46, 204, 113, 1);
+	.upper-v {
 		fill: #E67E22;
 	}
 	.lower-v {
@@ -175,8 +176,8 @@
 
 /* color set: peter-river pomegranate */
 .peterriver-pomegranate {
-	background-color: rgba(211, 84, 0, 0.15);
-	.triangle {
+	background-color: rgba(211, 84, 0, 1);
+	.upper-v {
 		fill: #3498DB;
 	}
 	.lower-v {
@@ -186,8 +187,8 @@
 
 /* color set: alizarin-peter-river */
 .alizarin-peterriver {
-	background-color: rgba(52, 152, 219, 0.1);
-	.triangle {
+	background-color: rgba(52, 152, 219, 1);
+	.upper-v {
 		fill: #E74C3C;
 	}
 	.lower-v {
@@ -199,8 +200,8 @@
 
 /* color set: wetasphalt-wisteria */
 .wetasphalt-wisteria {
-	background-color: rgba(142, 68, 173, 0.1);
-	.triangle {
+	background-color: rgba(142, 68, 173, 1);
+	.upper-v {
 		fill: #34495E;
 	}
 	.lower-v {
@@ -210,8 +211,8 @@
 
 /* color set: amethyst-midnightblue */
 .amethyst-midnightblue {
-	background-color: rgba(44, 62, 80, 0.1);
-	.triangle {
+	background-color: rgba(44, 62, 80, 1);
+	.upper-v {
 		fill: #9B59B6;
 	}
 	.lower-v {
