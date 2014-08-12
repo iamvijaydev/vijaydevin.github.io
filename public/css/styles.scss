@@ -78,18 +78,15 @@
 	stroke: #fff;
 	stroke-width: 2;
 	stroke-linejoin: round;
-	stroke-opacity: 0.7;
+	stroke-opacity: 1;
 	fill: #fff;
-	fill-opacity: 0.1;
-	-webkit-transition: fill 0.1s linear;
-}
-
-.upper-v {
 	fill-opacity: 1;
+	//-webkit-transition: fill 0.1s linear;
 }
 
+.upper-v,
 .lower-v {
-	fill-opacity: 1;
+	fill: #fff !important;
 }
 
 
@@ -133,20 +130,16 @@
 	background-color: rgba(243, 156, 18, 1);
 	.triangle {
 		fill: #1ABC9C;
-	}
-	.lower-v {
-		fill: #16A085;
+		stroke: #1ABC9C;
 	}
 }
 
 /* color set: sunflower-turquoise */
 .sunflower-turquoise {
 	background-color: rgba(22, 160, 133, 1);
-	.upper-v {
+	.triangle {
 		fill: #F1C40F;
-	}
-	.lower-v {
-		fill: #F39C12;
+		stroke: #F1C40F;
 	}
 }
 
@@ -154,11 +147,9 @@
 /* color set: emerald-pumpkin */
 .emerald-pumpkin {
 	background-color: rgba(211, 84, 0, 1);
-	.upper-v {
+	.triangle {
 		fill: #2ECC71;
-	}
-	.lower-v {
-		fill: #27AE60;
+		stroke: #2ECC71;
 	}
 }
 
@@ -167,9 +158,7 @@
 	background-color: rgba(46, 204, 113, 1);
 	.upper-v {
 		fill: #E67E22;
-	}
-	.lower-v {
-		fill: #D35400;
+		stroke: #E67E22;
 	}
 }
 
@@ -177,22 +166,18 @@
 /* color set: peter-river pomegranate */
 .peterriver-pomegranate {
 	background-color: rgba(211, 84, 0, 1);
-	.upper-v {
+	.triangle {
 		fill: #3498DB;
-	}
-	.lower-v {
-		fill: #2980B9;
+		stroke: #3498DB;
 	}
 }
 
 /* color set: alizarin-peter-river */
 .alizarin-peterriver {
 	background-color: rgba(52, 152, 219, 1);
-	.upper-v {
+	.triangle {
 		fill: #E74C3C;
-	}
-	.lower-v {
-		fill: #C0392B;
+		stroke: #E74C3C;
 	}
 }
 
@@ -201,22 +186,19 @@
 /* color set: wetasphalt-wisteria */
 .wetasphalt-wisteria {
 	background-color: rgba(142, 68, 173, 1);
-	.upper-v {
+	.triangle {
 		fill: #34495E;
+		stroke: #34495E;
 	}
-	.lower-v {
-		fill: #2C3E50;
-	}
+
 }
 
 /* color set: amethyst-midnightblue */
 .amethyst-midnightblue {
 	background-color: rgba(44, 62, 80, 1);
-	.upper-v {
+	.triangle {
 		fill: #9B59B6;
-	}
-	.lower-v {
-		fill: #8E44AD;
+		stroke: #9B59B6;
 	}
 }
 
