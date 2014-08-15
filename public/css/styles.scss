@@ -127,88 +127,55 @@
 
 /* color set: turquoise-orange */
 .turquoise-orange {
-	background-color: rgba(243, 156, 18, 1);
-	.triangle {
-		fill: #1ABC9C;
-		stroke: #1ABC9C;
-	}
+	background-color: rgba(243, 156, 18, 0.2);
 }
 
 /* color set: sunflower-turquoise */
 .sunflower-turquoise {
-	background-color: rgba(22, 160, 133, 1);
-	.triangle {
-		fill: #F1C40F;
-		stroke: #F1C40F;
-	}
+	background-color: rgba(22, 160, 133, 0.2);
 }
 
 
 /* color set: emerald-pumpkin */
 .emerald-pumpkin {
-	background-color: rgba(211, 84, 0, 1);
-	.triangle {
-		fill: #2ECC71;
-		stroke: #2ECC71;
-	}
+	background-color: rgba(211, 84, 0, 0.2);
 }
 
 /* color set: carrot-emrald */
 .carrot-emrald {
-	background-color: rgba(46, 204, 113, 1);
-	.triangle {
-		fill: #E67E22;
-		stroke: #E67E22;
-	}
+	background-color: rgba(46, 204, 113, 0.2);
 }
 
 
 /* color set: peter-river pomegranate */
 .peterriver-pomegranate {
-	background-color: rgba(211, 84, 0, 1);
-	.triangle {
-		fill: #3498DB;
-		stroke: #3498DB;
-	}
+	background-color: rgba(211, 84, 0, 0.2);
 }
 
 /* color set: alizarin-peter-river */
 .alizarin-peterriver {
-	background-color: rgba(52, 152, 219, 1);
-	.triangle {
-		fill: #E74C3C;
-		stroke: #E74C3C;
-	}
+	background-color: rgba(52, 152, 219, 0.2);
 }
 
 
 
 /* color set: wetasphalt-wisteria */
 .wetasphalt-wisteria {
-	background-color: rgba(142, 68, 173, 1);
-	.triangle {
-		fill: #34495E;
-		stroke: #34495E;
-	}
-
+	background-color: rgba(142, 68, 173, 0.2);
 }
 
 /* color set: amethyst-midnightblue */
 .amethyst-midnightblue {
-	background-color: rgba(44, 62, 80, 1);
-	.triangle {
-		fill: #9B59B6;
-		stroke: #9B59B6;
-	}
+	background-color: rgba(44, 62, 80, 0.2);
 }
 
 
 /* specific styling for main logo */
 #main-content {
-	svg {
-		overflow: visible;
-		width: 140px; 
-		height: 162px;
+	img {
+		display: inline-block;
+		margin: 0;
+		border-radius: 0;
 	}
 	h1,
 	p {
