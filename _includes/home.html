@@ -74,6 +74,13 @@
               <span>Logo for myself, with golden ratio</span>
               <small>Posted on Dribbble</small>
             </li>
+            <li>
+              <a href="https://dribbble.com/shots/600245-Cloud-footer">
+                <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/600245/cloud2.png" alt="">
+              </a>
+              <span>Cloud - footer</span>
+              <small>Posted on Dribbble</small>
+            </li>
           </ul>
         </div>
       </div>
@@ -81,7 +88,12 @@
   </div>
 </section>
 <script type="text/javascript">
-  var myScroll = new iScroll('wrapper');
+  var myScroll;
+  function loaded() {
+    myScroll = new iScroll('wrapper');
+  }
+  document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+  document.addEventListener('DOMContentLoaded', loaded, false);
 </script>
 
 <section>
