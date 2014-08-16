@@ -89,9 +89,11 @@
 </section>
 <script type="text/javascript">
   var myScroll;
-  function loaded() {
-    myScroll = new iScroll('wrapper');
+
+  function loaded () {
+    myScroll = new IScroll('#wrapper', { scrollbars: true, scrollX: true, scrollY: false, mouseWheel: true, snap: 'li' });
   }
+
   document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
   document.addEventListener('DOMContentLoaded', loaded, false);
 </script>
