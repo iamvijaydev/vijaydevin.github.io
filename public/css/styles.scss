@@ -321,6 +321,10 @@
 		background: linear-gradient(135deg,  rgba(46,204,113,0.2) 0%,rgba(230,126,34,0.2) 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332ecc71', endColorstr='#33e67e22',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	}
+	.title span {
+		border: 1px solid #fff;
+		color: #fff;
+	}
 	.part {
 		overflow: hidden;
 		width: 100%;
