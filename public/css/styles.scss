@@ -234,18 +234,27 @@
 }
 
 
-/* about me */
-.about-me {
+.home-content {
 	text-align: center;
 	padding: 2rem 0;
 	.title {
-		font-size: 1em;
-		font-weight: 100;
 		color: rgba(0,0,0,0.2);
 		margin: 1rem 0 0;
+		span {
+			border: 1px solid rgba(0,0,0,0.2);
+			padding: 4px 4px 6px;
+			border-radius: 18px;
+			font-size: 18px;
+		}
 	}
 	.part {
 		padding: 3rem 0;
+	}
+}
+
+/* about me */
+.about-me {
+	.part {
 		img {
 			display: inline-block;
 		}
@@ -279,6 +288,30 @@
 			}
 			.aside {
 				margin-right: 400px;
+			}
+		}
+	}
+}
+
+
+.contact {
+	background: #4ec99b;
+	.part h4 {
+		font-size: 1.2rem;
+		margin: 0;
+		color: #fff;
+	}
+	.elsewhere {
+		-webkit-user-select: none;
+		a {
+			text-decoration: none;
+			display: inline-block;
+			cursor: pointer;
+			font-size: 2rem;
+			color: rgba(255,255,255,0.5);
+			margin: 0 8px;
+			&:hover {
+				color: rgba(255,255,255,1);
 			}
 		}
 	}
