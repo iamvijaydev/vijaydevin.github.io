@@ -295,15 +295,31 @@
 
 
 .works {
+	position: relative;
+	overflow: hidden;
 	background: url(/public/img/pat.png) 0 0 #fff;
+	.bg-img {
+		background: url(/public/img/banner.png);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		opacity: 0.3;
+		-webkit-filter: blur(3px);
+		-moz-filter: blur(3px);
+		filter: blur(3px);
+	}
 	.grad {
-		background: -moz-linear-gradient(-45deg, rgba(155,89,182,0.2) 0%, rgba(52,73,94,0.2) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(155,89,182,0.2)), color-stop(100%,rgba(52,73,94,0.2))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(-45deg, rgba(155,89,182,0.2) 0%,rgba(52,73,94,0.2) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(-45deg, rgba(155,89,182,0.2) 0%,rgba(52,73,94,0.2) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(-45deg, rgba(155,89,182,0.2) 0%,rgba(52,73,94,0.2) 100%); /* IE10+ */
-		background: linear-gradient(135deg, rgba(155,89,182,0.2) 0%,rgba(52,73,94,0.2) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#339b59b6', endColorstr='#3334495e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		position: relative;
+		z-index: 3;
+		background: -moz-linear-gradient(-45deg,  rgba(46,204,113,0.2) 0%, rgba(230,126,34,0.2) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(46,204,113,0.2)), color-stop(100%,rgba(230,126,34,0.2))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(-45deg,  rgba(46,204,113,0.2) 0%,rgba(230,126,34,0.2) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(-45deg,  rgba(46,204,113,0.2) 0%,rgba(230,126,34,0.2) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(-45deg,  rgba(46,204,113,0.2) 0%,rgba(230,126,34,0.2) 100%); /* IE10+ */
+		background: linear-gradient(135deg,  rgba(46,204,113,0.2) 0%,rgba(230,126,34,0.2) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332ecc71', endColorstr='#33e67e22',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	}
 	.part {
 		overflow: hidden;
@@ -392,10 +408,10 @@
 			display: inline-block;
 			cursor: pointer;
 			font-size: 2rem;
-			color: rgba(32, 32, 32, 0.2);
+			color: #1ABC9C;
 			margin: 0 8px;
 			&:hover {
-				color: rgba(32, 32, 32, 0.4);
+				color: #F39C12;
 			}
 		}
 	}
