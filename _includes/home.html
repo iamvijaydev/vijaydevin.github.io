@@ -91,7 +91,7 @@
   var myScroll;
 
   function loaded () {
-    myScroll = new IScroll('#wrapper', { scrollbars: true, scrollX: true, scrollY: false, mouseWheel: true, snap: 'li' });
+    myScroll = new IScroll('#wrapper', { scrollbars: 'custom', scrollX: true, scrollY: false, mouseWheel: true });
   }
 
   document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);

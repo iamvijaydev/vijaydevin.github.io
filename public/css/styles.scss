@@ -305,6 +305,9 @@
 	.part {
 		overflow: hidden;
 		width: 100%;
+		padding-bottom: 1rem;
+		margin-bottom: 2rem;
+		position: relative;
 		#scroller {
 			width: 2040px;
 			height: 100%;
@@ -355,7 +358,24 @@
 		}
 	}
 }
-
+.iScrollHorizontalScrollbar {
+	position: absolute;
+	z-index: 9999;
+	height: 5px;
+	left: 2px;
+	right: 2px;
+	bottom: 2px;
+	overflow: hidden;
+}
+.iScrollIndicator {
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	height: 5px;
+	border-radius: 3px;
+	&:hover {
+		background: rgba(0,0,0,0.7);
+	}
+}
 
 .contact {
 	.part h4 {
