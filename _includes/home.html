@@ -47,41 +47,43 @@
 </section>
 
 <section class="works">
-  <div class="container content">
-    <div class="home-content">
-      <h3 class="title"><span class="icon-works"></span></h3>
-      <div class="part" id="wrapper">
-        <div id="scroller">
-          <ul>
-            <li>
-              <a href="https://dribbble.com/shots/1682790-Watermark-logo">
-                <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/1682790/clean_blur_hd_background_by_speetix-d5zpor8_03_1x.png" alt="">
-              </a>
-              <span>Watermark logo</span>
-              <small>Posted on Dribbble</small>
-            </li>
-            <li>
-              <a href="https://dribbble.com/shots/849745-KD-Company-v1">
-                <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/849745/kd-company-v1.png" alt="">
-              </a>
-              <span>KD Company v1</span>
-              <small>Posted on Dribbble</small>
-            </li>
-            <li>
-              <a href="https://dribbble.com/shots/641419-Logo-for-myself-with-golden-ratio">
-                <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/641419/logo.png" alt="">
-              </a>
-              <span>Logo for myself, with golden ratio</span>
-              <small>Posted on Dribbble</small>
-            </li>
-            <li>
-              <a href="https://dribbble.com/shots/600245-Cloud-footer">
-                <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/600245/cloud2.png" alt="">
-              </a>
-              <span>Cloud - footer</span>
-              <small>Posted on Dribbble</small>
-            </li>
-          </ul>
+  <div class="grad">
+    <div class="container content">
+      <div class="home-content">
+        <h3 class="title"><span class="icon-works"></span></h3>
+        <div class="part" id="wrapper">
+          <div id="scroller">
+            <ul>
+              <li>
+                <a href="https://dribbble.com/shots/1682790-Watermark-logo">
+                  <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/1682790/clean_blur_hd_background_by_speetix-d5zpor8_03_1x.png" alt="">
+                </a>
+                <span>Watermark logo</span>
+                <small>Posted on Dribbble</small>
+              </li>
+              <li>
+                <a href="https://dribbble.com/shots/849745-KD-Company-v1">
+                  <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/849745/kd-company-v1.png" alt="">
+                </a>
+                <span>KD Company v1</span>
+                <small>Posted on Dribbble</small>
+              </li>
+              <li>
+                <a href="https://dribbble.com/shots/641419-Logo-for-myself-with-golden-ratio">
+                  <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/641419/logo.png" alt="">
+                </a>
+                <span>Logo for myself, with golden ratio</span>
+                <small>Posted on Dribbble</small>
+              </li>
+              <li>
+                <a href="https://dribbble.com/shots/600245-Cloud-footer">
+                  <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/600245/cloud2.png" alt="">
+                </a>
+                <span>Cloud - footer</span>
+                <small>Posted on Dribbble</small>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -91,7 +93,7 @@
   var myScroll;
 
   function loaded () {
-    myScroll = new IScroll('#wrapper', { scrollbars: 'custom', scrollX: true, scrollY: false, mouseWheel: true });
+    myScroll = new IScroll('#wrapper', { scrollbars: 'custom', interactiveScrollbars:true, resizeScrollbars:false, scrollX: true, scrollY: false, mouseWheel: true });
   }
 
   document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
