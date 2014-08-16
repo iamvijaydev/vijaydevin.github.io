@@ -235,7 +235,6 @@
 
 
 .home-content {
-	text-align: center;
 	padding: 2rem 0;
 	.title {
 		color: rgba(0,0,0,0.2);
@@ -254,6 +253,7 @@
 
 /* about me */
 .about-me {
+	text-align: center;
 	.part {
 		img {
 			display: inline-block;
@@ -305,18 +305,21 @@
 	.part {
 		overflow: hidden;
 		width: 100%;
-		height: 200px;
+		height: 250px;
 		ul {
 			list-style: none;
-			height: 200px;
+			height: 250px;
+			margin: 0;
+			padding: 0 5px;
 		}
 		li {
 			width: 220px;
-			height: 191px;
+			height: 250px;
 			margin: 0 10px;
 			padding: 10px;
 			background: #fff;
 			border-radius: 3px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.15);
 			&:first-child {
 				margin-left: 0;
 			}
@@ -328,9 +331,16 @@
 			width: 220px;
 			height: 150px;
 		}
-		a, small {
-			font-size: 0.5rem;
+		span, small {
 			display: block;
+			line-height: 1;
+		}
+		span {
+			font-size: 1rem;
+			padding: 1rem 0 0.4rem 0;
+		}
+		small {
+			font-size: 0.7rem;
 		}
 	}
 }
