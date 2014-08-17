@@ -89,17 +89,25 @@
             </ul>
           </div>
         </div>
-        <span class="icon-left prev"></span>
-        <span class="icon-right next"></span>
+        <span id="prev" class="icon-left prev"></span>
+        <span id="next" class="icon-right next"></span>
       </div>
     </div>
   </div>
 </section>
 <script type="text/javascript">
-  var myScroll;
+  var myScroll,
+      prev,
+      next;
 
   function loaded () {
+    prev = document.getElementById( 'prev' );
+    next = document.getElementById( 'next' );
+
     myScroll = new IScroll('#wrapper', { scrollbars: 'custom', interactiveScrollbars:true, eventPassthrough: true, scrollX: true, scrollY: false, mouseWheel: true });
+
+    prev.addEventListener( 'click', myScroll.prev, false );
+    next.addEventListener( 'click', myScroll.next, false );
   }
 
   document.addEventListener('DOMContentLoaded', loaded, false);
