@@ -293,22 +293,48 @@
 	}
 }
 
-
+@-webkit-keyframes animbg {
+	0% {
+		background-position: center 0;
+	}
+	100% {
+		background-position: center 386px;
+	}
+}
+@-moz-keyframes animbg {
+	0% {
+		background-position: center 0;
+	}
+	100% {
+		background-position: center 386px;
+	}
+}
+@-keyframes animbg {
+	0% {
+		background-position: center 0;
+	}
+	100% {
+		background-position: center 386px;
+	}
+}
 .works {
 	position: relative;
 	overflow: hidden;
 	background: url(/public/img/pat.png) 0 0 #fff;
 	.bg-img {
-		background: url(/public/img/banner.png);
+		background: url(/public/img/banner.png) center 0;
 		position: absolute;
 		left: 0;
 		right: 0;
 		top: 0;
 		bottom: 0;
-		opacity: 0.3;
+		opacity: 0.7;
 		-webkit-filter: blur(3px);
 		-moz-filter: blur(3px);
 		filter: blur(3px);
+		-webkit-animation: animbg 20s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite;
+		-moz-animation: animbg 20s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite;
+		animation: animbg 20s cubic-bezier(0.445, 0.050, 0.550, 0.950) infinite;
 	}
 	.grad {
 		position: relative;
@@ -332,7 +358,7 @@
 		margin-bottom: 2rem;
 		position: relative;
 		#scroller {
-			width: 950px;
+			width: 920px;
 			height: 100%;
 			padding: 0;
 		}
@@ -346,8 +372,8 @@
 		li {
 			float: left;
 			width: 220px;
-			margin: 0 10px;
-			padding: 10px;
+			margin: 0 5px;
+			padding: 5px 5px 10px;
 			background: #fff;
 			border-radius: 3px;
 			box-shadow: 0 0 5px rgba(0,0,0,0.1);
@@ -395,7 +421,9 @@
 	background: rgba(0,0,0,0.3);
 	height: 5px;
 	border-radius: 3px;
-	&:hover {
+	&:hover,
+	&:active {
+		cursor: pointer;
 		background: rgba(0,0,0,0.5);
 	}
 }
