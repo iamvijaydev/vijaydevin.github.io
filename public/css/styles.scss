@@ -64,7 +64,6 @@ a {
 .emu-table {
 	width:100%; 
 	height:100%;
-	min-height: 100vh;
 	display:table;
 	position: relative;
 	background: url(/public/img/pat.png) 0 0 #fff;
@@ -136,14 +135,15 @@ a {
 	.masthead-title a {
 		font-family: lato;
 		text-transform: uppercase;
+		letter-spacing: 5px;
 	}
 	.masthead-title small {
 		color: rgba(0, 0, 0, 0.3);
 	}
 }
 @media (min-width: 56em) {
-	.masthead-title small {
-		letter-spacing: 5px;
+	.masthead-title a {
+		letter-spacing: 0;
 	}
 }
 
@@ -157,6 +157,15 @@ a {
 	background: -ms-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* IE10+ */
 	background: linear-gradient(135deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d1abc9c', endColorstr='#4df1c40f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	padding: 7rem 0;
+	background: -moz-linear-gradient(top, rgba(52,152,219,0.2) 0%, rgba(231,76,60,0.19) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,152,219,0.2)), color-stop(100%,rgba(231,76,60,0.19))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(52,152,219,0.2) 0%,rgba(231,76,60,0.19) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(52,152,219,0.2) 0%,rgba(231,76,60,0.19) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(52,152,219,0.2) 0%,rgba(231,76,60,0.19) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(52,152,219,0.2) 0%,rgba(231,76,60,0.19) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333498db', endColorstr='#30e74c3c',GradientType=0 ); /* IE6-9 */
 	img {
 		display: inline-block;
 		margin: 0;
@@ -188,6 +197,24 @@ a {
 		left: 0;
 		right: 0;
 		bottom: 0;
+	}
+	.cloud-above,
+	.cloud-below {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 94px;
+	}
+	.cloud-above {
+		background: url(/public/img/cloud-above.png) 0 0;
+		z-index: 3;
+		-webkit-animation: cloudFrowardAnim 170s linear infinite;
+	}
+	.cloud-below {
+		background: url(/public/img/cloud-below.png) 0 0;
+		z-index: 2;
+		-webkit-animation: cloudBackwardAnim 180s linear infinite;
 	}
 }
 
@@ -418,7 +445,7 @@ a {
 	}
 	.abt-logo {
 		font-size: 0.9rem;
-		padding: 0 7rem;
+		padding: 0;
 	}
 	.copy {
 		font-size: 0.7rem;
@@ -445,7 +472,7 @@ a {
 @media (min-width: 56em) {
 	.home-footer {
 		.abt-logo {
-			padding: 0;
+			padding: 0 7rem;
 		}
 	}
 }
