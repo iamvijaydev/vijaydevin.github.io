@@ -36,21 +36,20 @@
 	margin-left: .2em;
 }
  
-.icon-linkedin:before { content: '\e800'; } /* 'î €' */
-.icon-github:before { content: '\e801'; } /* 'î ' */
-.icon-twitter:before { content: '\e802'; } /* 'î ‚' */
-.icon-dribbble:before { content: '\e803'; } /* 'î ƒ' */
-.icon-menu:before { content: '\e804'; } /* 'î „' */
-.icon-cancel:before { content: '\e805'; } /* 'î …' */
-.icon-down:before { content: '\e806'; } /* 'î †' */
-.icon-user:before { content: '\e807'; } /* 'î ‡' */
-.icon-drbl:before { content: '\e808'; } /* 'î ˆ' */
-.icon-gthb:before { content: '\e809'; } /* 'î ‰' */
-.icon-contact:before { content: '\e80a'; } /* 'î Š' */
-.icon-works:before { content: '\e80b'; } /* 'î ‹' */
-.icon-blog:before { content: '\e80c'; } /* 'î Œ' */
-.icon-calendar:before { content: '\e80d'; } /* 'î ' */
-.icon-category:before { content: '\e80e'; } /* 'î Ž' */
+.icon-linkedin:before { content: '\e800'; } /* '' */
+.icon-github:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-dribbble:before { content: '\e803'; } /* '' */
+.icon-folder:before { content: '\e805'; } /* '' */
+.icon-down:before { content: '\e806'; } /* '' */
+.icon-user:before { content: '\e807'; } /* '' */
+.icon-contact:before { content: '\e80a'; } /* '' */
+.icon-works:before { content: '\e80b'; } /* '' */
+.icon-blog:before { content: '\e80c'; } /* '' */
+.icon-calendar:before { content: '\e80d'; } /* '' */
+.icon-category:before { content: '\e80e'; } /* '' */
+.icon-left:before { content: '\e80f'; } /* '' */
+.icon-right:before { content: '\e810'; } /* '' */
 
 a {
 	color: #3498DB;
@@ -143,7 +142,7 @@ a {
 	}
 }
 @media (min-width: 56em) {
-	.masthead-title a {
+	.masthead .masthead-title a {
 		letter-spacing: 0;
 	}
 }
@@ -203,12 +202,12 @@ a {
 	.cloud-above {
 		background: url(/public/img/cloud-above.png) 0 0;
 		z-index: 3;
-		-webkit-animation: cloudFrowardAnim 170s linear infinite;
+		-webkit-animation: cloudFrowardAnim 200s linear infinite;
 	}
 	.cloud-below {
 		background: url(/public/img/cloud-below.png) 0 0;
 		z-index: 2;
-		-webkit-animation: cloudBackwardAnim 180s linear infinite;
+		-webkit-animation: cloudBackwardAnim 200s linear infinite;
 	}
 }
 
@@ -302,6 +301,23 @@ a {
 		border: 1px solid #fff;
 		color: #fff;
 	}
+	.home-content {
+		position: relative;
+		.next, .prev {
+			position: absolute;
+			top: 7rem;
+			color: rgba(255,255,255,0.4);
+			&:hover {
+				color: rgba(255,255,255,0.7);
+			}
+		}
+		.next {
+			right: -1rem;
+		}
+		.prev {
+			left: -1rem;
+		}
+	}
 	.part {
 		overflow: hidden;
 		width: 100%;
@@ -312,6 +328,10 @@ a {
 			width: 920px;
 			height: 100%;
 			padding: 0;
+			cursor: -webkit-grab;
+			&:active {
+				cursor: -webkit-grabbing;
+			}
 		}
 		ul {
 			width: 100%;
@@ -361,17 +381,17 @@ a {
 .iScrollHorizontalScrollbar {
 	position: absolute;
 	z-index: 9999;
-	height: 5px;
-	left: 2px;
-	right: 2px;
+	height: 4px;
+	left: 5px;
+	right: 5px;
 	bottom: 2px;
 	overflow: hidden;
 }
 .iScrollIndicator {
 	position: absolute;
 	background: rgba(0,0,0,0.3);
-	height: 5px;
-	border-radius: 3px;
+	height: 4px;
+	border-radius: 2px;
 	&:hover,
 	&:active {
 		cursor: pointer;
