@@ -197,6 +197,7 @@ a {
 		left: 0;
 		right: 0;
 		bottom: 0;
+		z-index: 3;
 	}
 	.cloud-above,
 	.cloud-below {
@@ -204,11 +205,11 @@ a {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		height: 94px;
+		height: 106px;
 	}
 	.cloud-above {
 		background: url(/public/img/cloud-above.png) 0 0;
-		z-index: 3;
+		z-index: 4;
 		-webkit-animation: cloudFrowardAnim 170s linear infinite;
 	}
 	.cloud-below {
