@@ -304,18 +304,20 @@ a {
 	.home-content {
 		position: relative;
 		.next, .prev {
+			font-size: 1.3rem;
 			position: absolute;
-			top: 7rem;
-			color: rgba(255,255,255,0.4);
+			top: 13rem;
+			color: rgba(255,255,255,0.5);
+			cursor: pointer;
 			&:hover {
-				color: rgba(255,255,255,0.7);
+				color: rgba(255,255,255,0.95);
 			}
 		}
 		.next {
-			right: -1rem;
+			right: -3rem;
 		}
 		.prev {
-			left: -1rem;
+			left: -3rem;
 		}
 	}
 	.part {
