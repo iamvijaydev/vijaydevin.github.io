@@ -4,8 +4,6 @@
   {% include head.html %}
 
   <body class="layout-reverse">
-  
-    {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
          content to avoid any CSS collisions with our real content. -->
@@ -14,7 +12,7 @@
         {% include home.html %}
       {% endif %}
 
-      <div class="masthead">
+      <!-- <div class="masthead">
         <div class="grad">
           <div class="container">
             <h3 class="masthead-title">
@@ -28,9 +26,10 @@
 
       <div class="container content">
         {{ content }}
-      </div>
+      </div> -->
     </div>
     
+    {% include sidebar.html %}
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
     <script>
