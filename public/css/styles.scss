@@ -52,6 +52,14 @@
 .icon-calendar:before { content: '\e80d'; } /* 'î ' */
 .icon-category:before { content: '\e80e'; } /* 'î Ž' */
 
+a {
+	color: #3498DB;
+	text-decoration: none;
+	-webkit-transition: color 0.3s eas-in-out;
+	&:hover {
+		color: #E74C3C;
+	}
+}
 
 .emu-table {
 	width:100%; 
@@ -93,6 +101,50 @@
 	-moz-transition-delay: $delay;
 	-ms-transition-delay: $delay;
 	transition-delay: $delay;
+}
+
+/* overrides */
+.sidebar-toggle {
+	background: transparent;
+	z-index: 10;
+}
+
+.masthead {
+	padding: 0;
+	background: url(/public/img/pat.png) 0 0 white;
+	border-bottom: 1px solid #BDC3C7;
+	.grad {
+		padding: 1rem 0;
+		background: -moz-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%, rgba(241,196,15,0.3) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(26,188,156,0.3)), color-stop(100%,rgba(241,196,15,0.3))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* IE10+ */
+		background: linear-gradient(135deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d1abc9c', endColorstr='#4df1c40f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+	.logo {
+		float: left;
+		margin: 0 10px 0 0;
+		overflow: hidden;
+		img {
+			float: left;
+			height: 30px;
+			border-radius: 0;
+		}
+	}
+	.masthead-title a {
+		font-family: lato;
+		text-transform: uppercase;
+	}
+	.masthead-title small {
+		color: rgba(0, 0, 0, 0.3);
+	}
+}
+@media (min-width: 56em) {
+	.masthead-title small {
+		letter-spacing: 5px;
+	}
 }
 
 
@@ -137,12 +189,6 @@
 		right: 0;
 		bottom: 0;
 	}
-}
-
-
-/* overrides */
-.sidebar-toggle {
-	background: transparent;
 }
 
 
@@ -209,19 +255,16 @@
 .works {
 	position: relative;
 	overflow: hidden;
-	background: url(/public/img/pat.png) 0 0 #fff;
 	.bg-img {
 		background: url(/public/img/banner.png) center 0;
-		background-size: 50%;
 		position: absolute;
 		left: 0;
 		right: 0;
 		top: 0;
 		bottom: 0;
-		opacity: 0.5;
-		-webkit-filter: blur(2px);
-		-moz-filter: blur(2px);
-		filter: blur(2px);
+		-webkit-filter: blur(10px);
+		-moz-filter: blur(10px);
+		filter: blur(10px);
 	}
 	.grad {
 		position: relative;
@@ -316,6 +359,11 @@
 }
 
 .contact {
+	.home-content .title span {
+		border: 1px solid rgba(0, 0, 0, 0.25);
+		color: rgba(0, 0, 0, 0.25);
+		padding: 5px 5px 5px 3px;
+	}
 	.part h4 {
 		font-size: 1.2rem;
 		margin: 0 0 1rem;
