@@ -108,6 +108,14 @@ a {
 	z-index: 10;
 }
 
+.sidebar {
+	background: rgba(32, 32, 32, 0.95);
+	-webkit-transition: all .3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	-moz-transition: all .3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transition: all .3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+
 .masthead {
 	padding: 0;
 	background: url(/public/img/pat.png) 0 0 white;

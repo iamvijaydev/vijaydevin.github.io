@@ -9,24 +9,24 @@
          content to avoid any CSS collisions with our real content. -->
     <div class="wrap">
       {% if page.title == "Home" %}
-        {% include home.html %}
-      {% endif %}
-
-      <!-- <div class="masthead">
-        <div class="grad">
-          <div class="container">
-            <h3 class="masthead-title">
-              <a href="/" title="Home" class="logo"><img src="/public/img/logo-2x.png" alt=""></a>
-              <a href="/" title="Home">{{ site.title }}</a>
-              <small>{{ site.tagline }}</small>
-            </h3>
+        {{ content }}
+      {% else %}
+        <div class="masthead">
+          <div class="grad">
+            <div class="container">
+              <h3 class="masthead-title">
+                <a href="/" title="Home" class="logo"><img src="/public/img/logo-2x.png" alt=""></a>
+                <a href="/" title="Home">{{ site.title }}</a>
+                <small>{{ site.tagline }}</small>
+              </h3>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="container content">
-        {{ content }}
-      </div> -->
+        <div class="container content">
+          {{ content }}
+        </div>
+      {% endif %}
     </div>
     
     {% include sidebar.html %}

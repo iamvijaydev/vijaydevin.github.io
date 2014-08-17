@@ -3,36 +3,148 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<main role="main" class="emu-table">
+  <section id="main-content" class="amethyst-midnightblue">
+    <img src="/public/img/logo-2x.png" alt="Logo">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <h1 class="name">{{ site.title }}</h1>
+    <p>{{ site.tagline }}</p>
 
-    {{ post.content }}
+    <div class="elsewhere">
+      <a href="" class="icon-twitter"></a>
+      <a href="" class="icon-linkedin"></a>
+      <a href="" class="icon-dribbble"></a>
+      <a href="" class="icon-github"></a>
+    </div>
+
+    <div class="elsewhere jump-down">
+      <span class="icon-down"></span>
+    </div>
+
+    <div class="cloud-above"></div>
+    <div class="cloud-below"></div>
+  </section>
+</main>
+
+<section>
+  <div class="container content">
+    <article class="home-content about-me">
+      <header>
+        <h3 class="title"><span class="icon-user"></span></h3>
+      </header>
+      <div class="part">
+        <img src="/public/img/designer.png" alt="designer">
+        <h4 class="aside">UI Designer</h4>
+        <p class="aside">Designing ain't chemistry! Rather its a perfect combination of - Shape, Color, Font & Typography.</p>
+        <small class="aside">Notepad, pencil, coffee, Photoshop, Illustrator</small>
+      </div>
+      <div class="part reverse">
+        <img src="/public/img/frontend-develop.png" alt="front-end developer">
+        <h4 class="aside">Front-end Developer</h4>
+        <p class="aside">Building the web page. Contents to display. How & when to display? How can you play with it?</p>
+        <small class="aside">HTML5, CSS3, JS, jQuery, BackboneJS, AngularJS</small>
+      </div>
+      <div class="part">
+        <img src="/public/img/mobile-ninja.png" alt="mobile ninja">
+        <h4 class="aside">Mobile Ninja</h4>
+        <p class="aside">Making the web page responsive to any device - iOS, Android, Windows, BB what else?</p>
+        <small class="aside">Responsive. Unbreakable. Resize your browser or use your devices.</small>
+      </div>
+    </article>
   </div>
-  {% endfor %}
-</div>
+</section>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+<section class="works">
+  <div class="bg-img"></div>
+  <div class="grad">
+    <div class="container content">
+      <div class="home-content">
+        <h3 class="title"><span class="icon-works"></span></h3>
+        <div class="part" id="wrapper">
+          <div id="scroller">
+            <ul>
+              <li>
+                <a href="https://dribbble.com/shots/1682790-Watermark-logo">
+                  <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/1682790/clean_blur_hd_background_by_speetix-d5zpor8_03_1x.png" alt="">
+                </a>
+                <span>Watermark logo</span>
+                <small>Posted on Dribbble</small>
+              </li>
+              <li>
+                <a href="https://dribbble.com/shots/849745-KD-Company-v1">
+                  <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/849745/kd-company-v1.png" alt="">
+                </a>
+                <span>KD Company v1</span>
+                <small>Posted on Dribbble</small>
+              </li>
+              <li>
+                <a href="https://dribbble.com/shots/641419-Logo-for-myself-with-golden-ratio">
+                  <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/641419/logo.png" alt="">
+                </a>
+                <span>Logo for myself, with golden ratio</span>
+                <small>Posted on Dribbble</small>
+              </li>
+              <li>
+                <a href="https://dribbble.com/shots/600245-Cloud-footer">
+                  <img src="https://d13yacurqjgara.cloudfront.net/users/10900/screenshots/600245/cloud2.png" alt="">
+                </a>
+                <span>Cloud - footer</span>
+                <small>Posted on Dribbble</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span id="prev" class="icon-left prev"></span>
+        <span id="next" class="icon-right next"></span>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+  var myScroll,
+      prev,
+      next;
 
+  function loaded () {
+    prev = document.getElementById( 'prev' );
+    next = document.getElementById( 'next' );
+
+    myScroll = new IScroll('#wrapper', { scrollbars: 'custom', interactiveScrollbars:true, eventPassthrough: true, scrollX: true, scrollY: false, snap: 'li' });
+
+    prev.addEventListener( 'click', function() { myScroll.prev() }, false );
+    next.addEventListener( 'click', function() { myScroll.next() }, false );
+  }
+
+  document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+
+<section>
+  <div class="container content">
+    <div class="home-content contact">
+      <h3 class="title"><span class="icon-contact"></span></h3>
+      <div class="part">
+        <h4>We should totally hangout.</h4>
+        <div class="elsewhere">
+          <a href="" class="icon-twitter"></a>
+          <a href="" class="icon-linkedin"></a>
+          <a href="" class="icon-dribbble"></a>
+          <a href="" class="icon-github"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="home-footer">
+  <div class="grad">
+    <div class="container content">
+      <div class="home-content">
+        <div class="part">
+          <img class="logo" src="/public/img/logo-2x.png" alt="">
+          <p class="abt-logo">Vijay means victory via conquering.<br> The bright star on red & blue triangles is designed to represent the exact real life attitude: <strong>Go get it!</strong></p>
+          <p class="copy">&copy; 2014. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
