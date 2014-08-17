@@ -55,7 +55,7 @@
 a {
 	color: #3498DB;
 	text-decoration: none;
-	-webkit-transition: color 0.3s eas-in-out;
+	-webkit-transition: color 0.3s ease-in-out;
 	&:hover {
 		color: #E74C3C;
 	}
@@ -380,7 +380,7 @@ a {
 }
 
 .contact {
-	.home-content .title span {
+	.title span {
 		border: 1px solid rgba(0, 0, 0, 0.25);
 		color: rgba(0, 0, 0, 0.25);
 		padding: 5px 5px 5px 3px;
