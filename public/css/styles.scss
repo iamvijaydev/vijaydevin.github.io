@@ -424,8 +424,24 @@
 	}
 }
 
-
+@-webkit-keyframes cloudFrowardAnim {
+	0%, 100% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 1864px 0;
+	}
+}
+@-webkit-keyframes cloudBackwardAnim {
+	0%, 100% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: -1864px 0;
+	}
+}
 .home-footer {
+	position: relative;
 	background: url(/public/img/pat.png) 0 0 #fff;
 	.grad {
 		background: -moz-linear-gradient(top, rgba(52,152,219,0.2) 0%, rgba(231,76,60,0.19) 100%); /* FF3.6+ */
@@ -449,5 +465,23 @@
 	}
 	.copy {
 		font-size: 0.7rem;
+	}
+	.cloud-above,
+	.cloud-below {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 94px;
+	}
+	.cloud-above {
+		background: url(/public/img/cloud-above.png) 0 0;
+		z-index: 3;
+		-webkit-animation: cloudFrowardAnim 20s linear infinite;
+	}
+	.cloud-below {
+		background: url(/public/img/cloud-below.png) 0 0;
+		z-index: 2;
+		-webkit-animation: cloudBackwardAnim 20s linear infinite;
 	}
 }
