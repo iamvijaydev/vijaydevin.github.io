@@ -293,30 +293,7 @@
 	}
 }
 
-@-webkit-keyframes animbg {
-	0% {
-		background-position: center 0;
-	}
-	100% {
-		background-position: center -386px;
-	}
-}
-@-moz-keyframes animbg {
-	0% {
-		background-position: center 0;
-	}
-	100% {
-		background-position: center -386px;
-	}
-}
-@-keyframes animbg {
-	0% {
-		background-position: center 0;
-	}
-	100% {
-		background-position: center -386px;
-	}
-}
+
 .works {
 	position: relative;
 	overflow: hidden;
@@ -329,13 +306,10 @@
 		right: 0;
 		top: 0;
 		bottom: 0;
-		opacity: 0.7;
-		-webkit-filter: blur(3px);
-		-moz-filter: blur(3px);
-		filter: blur(3px);
-		-webkit-animation: animbg 20s linear infinite;
-		-moz-animation: animbg 20s linear infinite;
-		animation: animbg 20s linear infinite;
+		opacity: 0.5;
+		-webkit-filter: blur(2px);
+		-moz-filter: blur(2px);
+		filter: blur(2px);
 	}
 	.grad {
 		position: relative;
@@ -447,5 +421,33 @@
 				color: #F39C12;
 			}
 		}
+	}
+}
+
+
+.home-footer {
+	background: url(/public/img/pat.png) 0 0 #fff;
+	.grad {
+		background: -moz-linear-gradient(top, rgba(52,152,219,0.2) 0%, rgba(231,76,60,0.19) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,152,219,0.2)), color-stop(100%,rgba(231,76,60,0.19))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, rgba(52,152,219,0.2) 0%,rgba(231,76,60,0.19) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, rgba(52,152,219,0.2) 0%,rgba(231,76,60,0.19) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, rgba(52,152,219,0.2) 0%,rgba(231,76,60,0.19) 100%); /* IE10+ */
+		background: linear-gradient(to bottom, rgba(52,152,219,0.2) 0%,rgba(231,76,60,0.19) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333498db', endColorstr='#30e74c3c',GradientType=0 ); /* IE6-9 */
+	}
+	.logo {
+		display: inline-block;
+		margin: 0 0 2rem;
+		border-radius: 0;
+		width: 180px;
+		height: 122px
+	}
+	.abt-logo {
+		font-size: 0.9rem;
+		padding: 0 7rem;
+	}
+	.copy {
+		font-size: 0.7rem;
 	}
 }
