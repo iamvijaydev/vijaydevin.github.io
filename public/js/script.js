@@ -21,7 +21,7 @@
 			next = document.getElementById( 'next' ),
 			myScroll;
 
-		if ( prev.length && next.length ) {
+		if ( !!prev && !!next ) {
 			myScroll = new IScroll('#wrapper', {
 				scrollbars: 'custom',
 				interactiveScrollbars: true,
