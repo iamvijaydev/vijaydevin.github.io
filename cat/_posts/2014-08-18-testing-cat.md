@@ -4,8 +4,8 @@ title: Hello World!
 comments: true
 redirect_from: "/2014/06/19/hello-world/"
 permalink: /blog/cat/hello-world
-categories: [Cat]
-tags: [Coding JavaScript]
+categories: ['cat']
+tags: ['Coding' 'JavaScript']
 ---
 
 Hello from testing cat
