@@ -3,12 +3,13 @@ markdown:         redcarpet
 pygments:         true
 
 # Permalinks
-permalink:        pretty
+permalink:        '/blog/:year/:title/'
+paginate_path:    '/blog/page:num/'
 
 # Setup
 title:            'Vijay Dev'
 tagline:          'UI & front-end developer'
-description:      'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+description:      'UI Designer . Front-end Developer . Mobile Ninja'
 url:              http://vijaydev.com/
 baseurl:          '/'
 paginate:         5
