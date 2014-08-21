@@ -320,8 +320,8 @@ a {
 		.next, .prev {
 			font-size: 1.3rem;
 			position: absolute;
-			top: 13rem;
-			color: rgba(255,255,255,0.5);
+			top: 15rem;
+			color: rgba(236, 240, 241, 0.5);
 			cursor: pointer;
 			&:hover {
 				color: rgba(255,255,255,0.95);
@@ -361,7 +361,7 @@ a {
 			width: 220px;
 			margin: 0 5px;
 			padding: 5px 5px 10px;
-			background: #fff;
+			background: #ECF0F1;
 			border-radius: 3px;
 			box-shadow: 0 0 5px rgba(0,0,0,0.1);
 			&:first-child {
@@ -405,7 +405,7 @@ a {
 }
 .iScrollIndicator {
 	position: absolute;
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.2);
 	height: 4px;
 	border-radius: 2px;
 	&:hover,
