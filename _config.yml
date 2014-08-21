@@ -13,6 +13,7 @@ description:      'UI Designer . Front-end Developer . Mobile Ninja'
 url:              http://vijaydev.com/
 baseurl:          '/'
 paginate:         5
+excerpt_separator: "<!-- more -->"
 
 categories:       [HTML, CSS, JavaScript, AngularJS, Travel, Personal]
 
