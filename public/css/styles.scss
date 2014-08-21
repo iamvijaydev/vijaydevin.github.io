@@ -288,7 +288,8 @@ a {
 	position: relative;
 	overflow: hidden;
 	.bg-img {
-		background: url(/public/img/banner.png) center 0;
+		background: url(/public/img/banner.png) center no-repeat fixed;
+		background-size: cover;
 		position: absolute;
 		left: 0;
 		right: 0;
