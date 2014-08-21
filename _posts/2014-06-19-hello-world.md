@@ -3,7 +3,7 @@ layout: post
 title: Hello World!
 comments: true
 redirect_from: "/2014/06/19/hello-world/"
-permalink: /blog/hello-world
+permalink: /blog/hello-world/
 categories: [JavaScript]
 tags: [Coding JavaScript]
 ---
