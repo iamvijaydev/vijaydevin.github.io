@@ -149,7 +149,7 @@ a {
 		@extend .twilight-grad;
 	}
 	#main-content {
-		padding: 2rem 0 1.5rem;
+		padding: 1rem 0;
 		background: none;
 		.logo {
 			width: 90px;
@@ -162,7 +162,7 @@ a {
 			text-indent: 0.7rem;
 		}
 		.tagline {
-			font-size: 1.18rem;
+			font-size: 1.12rem;
 			color: rgba(0, 0, 0, 0.6);
 			line-height: 1;
 		}
@@ -173,11 +173,6 @@ a {
 	.elsewhere  {
 		position: relative;
 		z-index: 7;
-	}
-}
-@media (min-width: 56em) {
-	.masthead .masthead-title a {
-		letter-spacing: 0;
 	}
 }
 
