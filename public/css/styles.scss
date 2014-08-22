@@ -139,27 +139,12 @@ a {
 		text-align: center;
 		@extend .twilight-grad;
 	}
-	.logo {
-		float: left;
-		margin: 0 10px 0 0;
-		overflow: hidden;
-		img {
-			float: left;
-			height: 30px;
-			border-radius: 0;
-		}
-	}
-	.masthead-title a {
-		font-family: lato;
-		text-transform: uppercase;
-		letter-spacing: 5px;
-	}
-	.masthead-title small {
-		color: rgba(0, 0, 0, 0.3);
-	}
 	#main-content {
 		padding: 3rem 0;
 		background: none;
+	}
+	a, a:hover {
+		text-decoration: none;
 	}
 }
 @media (min-width: 56em) {
@@ -288,6 +273,7 @@ a {
 
 
 .works {
+	display: none;
 	position: relative;
 	overflow: hidden;
 	.bg-img {
