@@ -149,7 +149,7 @@ a {
 		@extend .twilight-grad;
 	}
 	#main-content {
-		padding: 2rem 0;
+		padding: 2rem 0 1.5rem;
 		background: none;
 		.logo {
 			width: 90px;
@@ -158,9 +158,11 @@ a {
 		.name {
 			font-size: 2rem;
 			margin: 10px 0 0;
+			line-height: 1;
+			text-indent: 0.7rem;
 		}
 		.tagline {
-			font-size: 1.3rem;
+			font-size: 1.15rem;
 			color: rgba(0, 0, 0, 0.5);
 		}
 	}
@@ -197,15 +199,15 @@ a {
 	}
 	.name {
 		color: rgba(0, 0, 0, 0.5); 
-		letter-spacing: 10px; 
+		letter-spacing: 13px; 
 		font-size: 2.5rem; 
 		text-transform: uppercase;
 		margin: 35px 0 0px;
+		text-indent: 0.8rem;
 	}
 	.tagline {
 		color: rgba(0, 0, 0, 0.4);
 		font-size: 1.3rem;
-		word-spacing: 3px;
 		margin: 0 0 10px 0;
 	}
 	.jump-down {
