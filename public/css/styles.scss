@@ -125,7 +125,6 @@ a {
 	background: url(/public/img/pat.png) 0 0 white;
 	border-bottom: 1px solid #BDC3C7;
 	.grad {
-		padding: 1rem 0;
 		background: -moz-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%, rgba(241,196,15,0.3) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(26,188,156,0.3)), color-stop(100%,rgba(241,196,15,0.3))); /* Chrome,Safari4+ */
 		background: -webkit-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* Chrome10+,Safari5.1+ */
@@ -151,6 +150,9 @@ a {
 	}
 	.masthead-title small {
 		color: rgba(0, 0, 0, 0.3);
+	}
+	#main-content {
+		padding: 3rem 0;
 	}
 }
 @media (min-width: 56em) {
@@ -284,14 +286,6 @@ a {
 }
 
 
-@-webkit-keyframes move {
-	0% {
-		background-position: center 0; 
-	}
-	100% {
-		background-position: center -608px; 
-	}
-}
 .works {
 	position: relative;
 	overflow: hidden;
@@ -306,7 +300,6 @@ a {
 		-webkit-filter: blur(10px);
 		-moz-filter: blur(10px);
 		filter: blur(10px);
-		-webkit-animation: move 30s linear infinite;
 	}
 	.grad {
 		position: relative;
