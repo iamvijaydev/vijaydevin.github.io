@@ -142,7 +142,7 @@ a {
 .masthead {
 	padding: 0;
 	background: url(/public/img/pat.png) 0 0 white;
-	border-bottom: 1px solid #BDC3C7;
+	border-bottom: 1px solid rgba(155, 89, 182, 0.7);
 	.grad {
 		position: relative;
 		text-align: center;
@@ -166,6 +166,10 @@ a {
 	}
 	a, a:hover {
 		text-decoration: none;
+	}
+	.elsewhere  {
+		position: relative;
+		z-index: 7;
 	}
 }
 @media (min-width: 56em) {
