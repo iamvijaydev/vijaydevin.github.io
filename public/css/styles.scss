@@ -102,13 +102,13 @@ a {
 	transition-delay: $delay;
 }
 .twilight-grad {
-  background: -moz-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%, rgba(241,196,15,0.3) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(26,188,156,0.3)), color-stop(100%,rgba(241,196,15,0.3))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* IE10+ */
-  background: linear-gradient(135deg, rgba(26,188,156,0.3) 0%,rgba(241,196,15,0.3) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d1abc9c', endColorstr='#4df1c40f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: -moz-linear-gradient(top, rgba(30,87,153,0.3) 0%, rgba(231,76,60,0.2) 75%, rgba(231,76,60,0.25) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,0.3)), color-stop(75%,rgba(231,76,60,0.2)), color-stop(100%,rgba(231,76,60,0.25))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(30,87,153,0.3) 0%,rgba(231,76,60,0.2) 75%,rgba(231,76,60,0.25) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(30,87,153,0.3) 0%,rgba(231,76,60,0.2) 75%,rgba(231,76,60,0.25) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(30,87,153,0.3) 0%,rgba(231,76,60,0.2) 75%,rgba(231,76,60,0.25) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(30,87,153,0.3) 0%,rgba(231,76,60,0.2) 75%,rgba(231,76,60,0.25) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#331e5799', endColorstr='#40e74c3c',GradientType=0 ); /* IE6-9 */
 }
 
 
@@ -135,9 +135,9 @@ a {
 	background: url(/public/img/pat.png) 0 0 white;
 	border-bottom: 1px solid #BDC3C7;
 	.grad {
-		@extend .twilight-grad;
 		position: relative;
 		text-align: center;
+		@extend .twilight-grad;
 	}
 	.logo {
 		float: left;
@@ -303,15 +303,16 @@ a {
 		filter: blur(10px);
 	}
 	.grad {
+		@extend .twilight-grad;
 		position: relative;
 		z-index: 3;
-		background: -moz-linear-gradient(-45deg,  rgba(46,204,113,0.5) 0%, rgba(230,126,34,0.5) 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(46,204,113,0.5)), color-stop(100%,rgba(230,126,34,0.5))); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(-45deg,  rgba(46,204,113,0.5) 0%,rgba(230,126,34,0.5) 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(-45deg,  rgba(46,204,113,0.5) 0%,rgba(230,126,34,0.5) 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(-45deg,  rgba(46,204,113,0.5) 0%,rgba(230,126,34,0.5) 100%); /* IE10+ */
-		background: linear-gradient(135deg,  rgba(46,204,113,0.5) 0%,rgba(230,126,34,0.5) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332ecc71', endColorstr='#33e67e22',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		//background: -moz-linear-gradient(-45deg,  rgba(46,204,113,0.5) 0%, rgba(230,126,34,0.5) 100%); /* FF3.6+ */
+		//background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(46,204,113,0.5)), color-stop(100%,rgba(230,126,34,0.5))); /* Chrome,Safari4+ */
+		//background: -webkit-linear-gradient(-45deg,  rgba(46,204,113,0.5) 0%,rgba(230,126,34,0.5) 100%); /* Chrome10+,Safari5.1+ */
+		//background: -o-linear-gradient(-45deg,  rgba(46,204,113,0.5) 0%,rgba(230,126,34,0.5) 100%); /* Opera 11.10+ */
+		//background: -ms-linear-gradient(-45deg,  rgba(46,204,113,0.5) 0%,rgba(230,126,34,0.5) 100%); /* IE10+ */
+		//background: linear-gradient(135deg,  rgba(46,204,113,0.5) 0%,rgba(230,126,34,0.5) 100%); /* W3C */
+		//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332ecc71', endColorstr='#33e67e22',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */*/
 	}
 	.title span {
 		border: 1px solid #fff;
