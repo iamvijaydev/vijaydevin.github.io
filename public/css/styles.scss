@@ -149,8 +149,20 @@ a {
 		@extend .twilight-grad;
 	}
 	#main-content {
-		padding: 3rem 0;
+		padding: 2rem 0;
 		background: none;
+		.logo {
+			width: 90px;
+			height: 61px;
+		}
+		.name {
+			font-size: 2rem;
+			margin: 10px 0 0;
+		}
+		.tagline {
+			font-size: 1.3rem;
+			color: rgba(0, 0, 0, 0.5);
+		}
 	}
 	a, a:hover {
 		text-decoration: none;
@@ -167,15 +179,15 @@ a {
 #main-content {
 	@extend .twilight-grad;
 	padding: 7rem 0;
-	img {
+	.logo {
 		display: inline-block;
 		margin: 0;
 		border-radius: 0;
 		width: 180px;
 		height: 122px;
 	}
-	h1,
-	p {
+	.name,
+	.tagline {
 		font-family: 'Lato'; 
 		font-weight: 300; 
 	}
@@ -186,7 +198,7 @@ a {
 		text-transform: uppercase;
 		margin: 35px 0 0px;
 	}
-	p {
+	.tagline {
 		color: rgba(0, 0, 0, 0.4);
 		font-size: 1.3rem;
 		word-spacing: 3px;
