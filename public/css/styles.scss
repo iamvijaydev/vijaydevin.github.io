@@ -401,6 +401,7 @@ a {
 			width: 920px;
 			height: 100%;
 			padding: 0;
+			-webkit-user-select: none;
 			cursor: -webkit-grab;
 			&:active {
 				cursor: -webkit-grabbing;
@@ -465,11 +466,6 @@ a {
 	background: rgba(0,0,0,0.2);
 	height: 4px;
 	border-radius: 2px;
-	&:hover,
-	&:active {
-		cursor: pointer;
-		background: rgba(0,0,0,0.5);
-	}
 }
 
 
