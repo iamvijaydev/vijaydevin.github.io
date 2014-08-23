@@ -21,32 +21,21 @@
 
 
 		// work IScroll
-		var prev  = document.getElementById( 'prev' ),
-			next  = document.getElementById( 'next' ),
-			bgImg = document.getElementById( 'bg-img' ),
+		var prev = document.getElementById( 'prev' ),
+			next = document.getElementById( 'next' ),
 			myScroll;
 
 		if ( !!prev && !!next ) {
 			myScroll = new IScroll('#wrapper', {
 				scrollbars: 'custom',
+				interactiveScrollbars: true,
 				eventPassthrough: true,
 				scrollX: true,
 				scrollY: false,
-				indicators: [{
-					el: document.getElementById( 'bg-img' ),
-					resize: false,
-					ignoreBoundaries: true,
-					speedRatioY: 0.4
-				}]
+				snap: 'li'
 			});
-
-			prev.addEventListener( TAP, function() {
-				myScroll.prev();
-			}, false );
-
-			next.addEventListener( TAP, function() {
-				myScroll.next();
-			}, false );
+			prev.addEventListener( TAP, function() { myScroll.prev(); }, false );
+			next.addEventListener( TAP, function() { myScroll.next(); }, false );
 		};
 	};
 
