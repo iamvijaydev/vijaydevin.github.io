@@ -249,6 +249,7 @@ a {
 		position: absolute;
 		left: 0;
 		top: 0;
+		backface-visibility: hidden;
 		&.flipped {
 			transform: rotateY( 180deg );
 		}
