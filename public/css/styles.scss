@@ -218,12 +218,37 @@ a {
 #main-content {
 	@extend .twilight-grad;
 	padding: 7rem 0;
+	.logo-pres {
+		width: 180px;
+		height: 122px;
+		position: relative;
+		perspective: 800px;
+		display: inline-block;
+	}
+	#logo-wrap {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		transform-style: preserve-3d;
+		&.animate {
+			transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+		}
+		&.flipped-180 {
+			transform: rotateY( -180deg );
+		}
+		&.flipped-360 {
+			transform: rotateY( -360deg );
+		}
+	}
 	.logo {
 		display: inline-block;
 		margin: 0;
 		border-radius: 0;
 		width: 180px;
 		height: 122px;
+		&.flipped {
+			transform: rotateY( 180deg );
+		}
 	}
 	.name,
 	.tagline {
