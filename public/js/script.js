@@ -46,10 +46,12 @@
 			}, false );
 
 			myScroll.on('scroll', function() {
-				if ( myScroll.directionX > 0 ) {
-					bgImg.style.backgroundPosition = myScroll.x/2 + 'px center';
-				} else if ( myScroll.directionX < 0 ) {
-					bgImg.style.backgroundPosition = -myScroll.x/2 + 'px center';
+				console.log( 'this.directionX: ' + this.directionX + ' - this.x: ' + this.x );
+
+				if ( this.directionX > 0 ) {
+					bgImg.style.backgroundPosition = this.x/2 + 'px center';
+				} else if ( this.directionX < 0 ) {
+					bgImg.style.backgroundPosition = -this.x/2 + 'px center';
 				};
 			});
 		};
