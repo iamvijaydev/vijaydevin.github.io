@@ -166,6 +166,11 @@ a {
 			color: rgba(0, 0, 0, 0.6);
 			line-height: 1;
 		}
+		.cloud-above,
+		.cloud-below {
+			height: 52px;
+			background-size: 923px 52px;
+		}
 	}
 	a, a:hover {
 		text-decoration: none;
@@ -175,11 +180,6 @@ a {
 		&:hover{
 			z-index: 7;
 		}
-	}
-	.cloud-above,
-	.cloud-below {
-		height: 52px;
-		background-size: 923px 52px;
 	}
 }
 
