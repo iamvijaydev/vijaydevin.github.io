@@ -246,6 +246,9 @@ a {
 		border-radius: 0;
 		width: 180px;
 		height: 122px;
+		position: absolute;
+		left: 0;
+		top: 0;
 		&.flipped {
 			transform: rotateY( 180deg );
 		}
