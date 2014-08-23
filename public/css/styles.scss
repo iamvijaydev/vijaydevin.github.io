@@ -140,7 +140,6 @@ a {
 
 .overlay-mask {
 	display: none;
-	opacity: 0;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -151,12 +150,9 @@ a {
 	-webkit-transition: opacity .3s ease-in-out;
 }
 
-#sidebar-checkbox:checked + .overlay-mask {
-  display: block;
-}
-
+#sidebar-checkbox:checked + .overlay-mask,
 #sidebar-checkbox:checked ~ .overlay-mask {
-  opacity: 1;
+  display: block;
 }
 
 
@@ -360,6 +356,16 @@ a {
 		position: relative;
 		z-index: 3;
 	}
+	.bg-img {
+		background: url(/public/img/banner.png) center;
+		background-size: cover;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		opacity: 0.2;
+	}
 	.title span {
 		border: 1px solid #fff;
 		color: #fff;
@@ -464,20 +470,8 @@ a {
 		background: rgba(0,0,0,0.5);
 	}
 }
-@media (min-width: 56em) {
-	.works .bg-img {
-		background: url(/public/img/banner.png) center;
-		background-size: cover;
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		-webkit-filter: blur(10px);
-		-moz-filter: blur(10px);
-		filter: blur(10px);
-	}
-}
+
+
 
 .contact {
 	.title span {
