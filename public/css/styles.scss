@@ -172,7 +172,14 @@ a {
 	}
 	.elsewhere  {
 		position: relative;
-		z-index: 7;
+		&:hover{
+			z-index: 7;
+		}
+	}
+	.cloud-above,
+	.cloud-below {
+		height: 52px;
+		background-size: 923px 52px;
 	}
 }
 
@@ -223,14 +230,30 @@ a {
 		height: 106px;
 	}
 	.cloud-above {
-		background: url(/public/img/cloud-above.png) 0 0;
+		background: url(/public/img/cloud-above.png) 0 100% repeat-x;
 		z-index: 3;
 		-webkit-animation: cloudFrowardAnim 200s linear infinite;
 	}
 	.cloud-below {
-		background: url(/public/img/cloud-below.png) 0 0;
+		background: url(/public/img/cloud-below.png) 0 100% repeat-x;
 		z-index: 2;
 		-webkit-animation: cloudBackwardAnim 200s linear infinite;
+	}
+}
+@-webkit-keyframes cloudFrowardAnim {
+	0%, 100% {
+		background-position: 0 100%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+}
+@-webkit-keyframes cloudBackwardAnim {
+	0%, 100% {
+		background-position: 0 100%;
+	}
+	50% {
+		background-position: -100% 100%;
 	}
 }
 
@@ -446,22 +469,7 @@ a {
 	}
 }
 
-@-webkit-keyframes cloudFrowardAnim {
-	0%, 100% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 1864px 0;
-	}
-}
-@-webkit-keyframes cloudBackwardAnim {
-	0%, 100% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: -1864px 0;
-	}
-}
+
 .home-footer {
 	position: relative;
 	background: url(/public/img/pat.png) 0 0 #fff;
