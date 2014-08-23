@@ -21,8 +21,10 @@
 
 
 		// work IScroll
-		var prev = document.getElementById( 'prev' ),
-			next = document.getElementById( 'next' ),
+		var prev  = document.getElementById( 'prev' ),
+			next  = document.getElementById( 'next' ),
+			bgImg = document.getElementById( 'bg-img' ),
+			bgPos = 0,
 			myScroll;
 
 		if ( !!prev && !!next ) {
@@ -34,8 +36,18 @@
 				scrollY: false,
 				snap: 'li'
 			});
-			prev.addEventListener( TAP, function() { myScroll.prev() }, false );
-			next.addEventListener( TAP, function() { myScroll.next() }, false );
+
+			prev.addEventListener( TAP, function() {
+				myScroll.prev();
+				bgPos -= 100;
+				bgImg.style.backgroundPosition: bgPos + 'px center';
+			}, false );
+
+			next.addEventListener( TAP, function() {
+				myScroll.next();
+				bgPos += 100;
+				bgImg.style.backgroundPosition: bgPos + 'px center';
+			}, false );
 		};
 	};
 

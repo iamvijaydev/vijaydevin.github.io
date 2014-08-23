@@ -365,6 +365,7 @@ a {
 		top: 0;
 		bottom: 0;
 		opacity: 0.2;
+		-webkit-transition: background 0.3s ease-in-out;
 	}
 	.title span {
 		border: 1px solid #fff;
