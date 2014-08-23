@@ -40,13 +40,13 @@
 			prev.addEventListener( TAP, function() {
 				myScroll.prev();
 				bgPos -= 100;
-				bgImg.style.backgroundPosition: bgPos + 'px center';
+				bgImg.style.backgroundPosition = bgPos + 'px center';
 			}, false );
 
 			next.addEventListener( TAP, function() {
 				myScroll.next();
 				bgPos += 100;
-				bgImg.style.backgroundPosition: bgPos + 'px center';
+				bgImg.style.backgroundPosition = bgPos + 'px center';
 			}, false );
 		};
 	};
