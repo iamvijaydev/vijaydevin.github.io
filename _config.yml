@@ -29,6 +29,3 @@ github:
 
 sass:
   sass_dir: _sass
-
-include: ['_pages']
-relative_permalinks: false

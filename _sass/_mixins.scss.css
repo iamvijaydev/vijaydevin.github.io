@@ -1,0 +1,27 @@
+@mixin transition($trans) {
+	-webkit-transition: $trans;
+	-moz-transition: $trans;
+	-ms-transition: $trans;
+	transition: $trans;
+}
+
+@mixin animation($anim) {
+	-webkit-animation: $anim;
+	-moz-animation: $anim;
+	-ms-animation: $anim;
+	animation: $anim;
+}
+
+@mixin userSelect($select) {
+	-webkit-user-select: $select;
+	-moz-user-select: $select;
+	-ms-user-select: $select;
+	user-select: $select;
+}
+
+@mixin userSelect($filter) {
+	-webkit-filter: $filter;
+	-moz-filter: $filter;
+	-ms-filter: $filter;
+	filter: $filter;
+}
