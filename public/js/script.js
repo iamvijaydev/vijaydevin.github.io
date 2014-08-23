@@ -29,33 +29,24 @@
 		if ( !!prev && !!next ) {
 			myScroll = new IScroll('#wrapper', {
 				scrollbars: 'custom',
-				interactiveScrollbars: true,
 				eventPassthrough: true,
 				scrollX: true,
 				scrollY: false,
-				snap: 'li',
-				probeType: 2
+				indicators: [{
+					el: document.getElementById( 'bg-img' ),
+					resize: false,
+					ignoreBoundaries: true,
+					speedRatioY: 0.4
+				}]
 			});
 
 			prev.addEventListener( TAP, function() {
 				myScroll.prev();
-				bgImg.style.backgroundPosition = -myScroll.x/2 + 'px center';
 			}, false );
 
 			next.addEventListener( TAP, function() {
 				myScroll.next();
-				bgImg.style.backgroundPosition = myScroll.x/2 + 'px center';
 			}, false );
-
-			myScroll.on('scroll', function() {
-				console.log( 'this.directionX: ' + this.directionX + ' - this.x: ' + this.x );
-
-				if ( this.directionX > 0 ) {
-					bgImg.style.backgroundPosition = -this.x/2 + 'px center';
-				} else if ( this.directionX < 0 ) {
-					bgImg.style.backgroundPosition = this.x/2 + 'px center';
-				};
-			});
 		};
 	};
 
