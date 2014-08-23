@@ -13,12 +13,23 @@
       {% else %}
         <div class="masthead">
           <div class="grad">
-            <div class="container">
-              <h3 class="masthead-title">
-                <a href="/" title="Home" class="logo"><img src="/public/img/logo-2x.png" alt=""></a>
-                <a href="/" title="Home">{{ site.title }}</a>
-                <small>{{ site.tagline }}</small>
-              </h3>
+            <div class="container" id="main-content">
+
+              <a href="/" title="Home">
+                <img src="/public/img/logo.png" alt="Logo" class="logo">
+                <h1 class="name">{{ site.title }}</h1>
+              </a>
+              <p class="tagline">{{ site.tagline }}</p>
+
+              <div class="elsewhere">
+                <a href="" class="icon-twitter"></a>
+                <a href="" class="icon-linkedin"></a>
+                <a href="" class="icon-dribbble"></a>
+                <a href="" class="icon-github"></a>
+              </div>
+
+              <div class="cloud-above"></div>
+              <div class="cloud-below"></div>
             </div>
           </div>
         </div>
