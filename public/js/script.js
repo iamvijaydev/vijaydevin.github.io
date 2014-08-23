@@ -24,7 +24,6 @@
 		var prev  = document.getElementById( 'prev' ),
 			next  = document.getElementById( 'next' ),
 			bgImg = document.getElementById( 'bg-img' ),
-			bgPos = 0,
 			myScroll;
 
 		if ( !!prev && !!next ) {
@@ -34,20 +33,25 @@
 				eventPassthrough: true,
 				scrollX: true,
 				scrollY: false,
-				snap: 'li'
+				snap: 'li',
+				probeType: 2
 			});
 
 			prev.addEventListener( TAP, function() {
 				myScroll.prev();
-				bgPos -= 100;
-				bgImg.style.backgroundPosition = bgPos + 'px center';
 			}, false );
 
 			next.addEventListener( TAP, function() {
 				myScroll.next();
-				bgPos += 100;
-				bgImg.style.backgroundPosition = bgPos + 'px center';
 			}, false );
+
+			myScroll.on('scroll', function() {
+				if ( myScroll.directionX > 0 ) {
+					bgImg.style.backgroundPosition = myScroll.x/2 + 'px center';
+				} else if ( myScroll.directionX < 0 ) {
+					bgImg.style.backgroundPosition = -myScroll.x/2 + 'px center';
+				};
+			});
 		};
 	};
 
