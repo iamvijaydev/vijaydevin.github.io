@@ -177,14 +177,28 @@ a {
 	}
 	.elsewhere  {
 		position: relative;
-		&:hover{
-			z-index: 7;
-		}
+		z-index: 7;
 	}
 }
 
 
 /* specific styling for main logo */
+@-webkit-keyframes cloudFrowardAnim {
+	0%, 100% {
+		background-position: 0 100%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+}
+@-webkit-keyframes cloudBackwardAnim {
+	0%, 100% {
+		background-position: 0 100%;
+	}
+	50% {
+		background-position: -100% 100%;
+	}
+}
 #main-content {
 	@extend .twilight-grad;
 	padding: 7rem 0;
@@ -226,7 +240,8 @@ a {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		height: 106px;
+		height: 52px;
+		background-size: 923px 52px;
 	}
 	.cloud-above {
 		background: url(/public/img/cloud-above.png) 0 100% repeat-x;
@@ -239,22 +254,16 @@ a {
 		-webkit-animation: cloudBackwardAnim 60s linear infinite;
 	}
 }
-@-webkit-keyframes cloudFrowardAnim {
-	0%, 100% {
-		background-position: 0 100%;
-	}
-	50% {
-		background-position: 100% 100%;
-	}
-}
-@-webkit-keyframes cloudBackwardAnim {
-	0%, 100% {
-		background-position: 0 100%;
-	}
-	50% {
-		background-position: -100% 100%;
+@media (min-width: 56em) {
+	#main-content {
+		.cloud-above,
+		.cloud-below {
+			height: 106px;
+			background-size: 1864px 106px;
+		}
 	}
 }
+
 
 
 .home-content {
