@@ -138,6 +138,27 @@ a {
 	transition: all .3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
 }
 
+.overlay-mask {
+	display: none;
+	opacity: 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 9;
+	background: rgba(32, 32, 32, 0.3);
+	-webkit-transition: opacity .3s ease-in-out;
+}
+
+#sidebar-checkbox:checked + .overlay-mask {
+  display: block;
+}
+
+#sidebar-checkbox:checked ~ .overlay-mask {
+  opacity: 1;
+}
+
 
 .masthead {
 	padding: 0;
@@ -178,6 +199,9 @@ a {
 	.elsewhere  {
 		position: relative;
 		z-index: 7;
+		a {
+			font-size: 1.1rem;
+		}
 	}
 }
 

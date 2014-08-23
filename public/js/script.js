@@ -1,11 +1,15 @@
-(function(document) {
+(function(document, window) {
+	var hastouch = 'ontouchstart' in window;
+	var TAP = hastouch ? 'touchstart' : 'click';
+
+
 	var loaded = function() {
 
 		// sidebar toggle logic
-		var toggle =   document.querySelector( '.sidebar-toggle' ),
-			sidebar =  document.querySelector( '#sidebar' ),
+		var toggle   = document.querySelector( '.sidebar-toggle' ),
+			sidebar  = document.querySelector( '#sidebar' ),
 			checkbox = document.querySelector( '#sidebar-checkbox' ),
-			handler =  function(e) {
+			handler  = function(e) {
 				var target = e.target;
 				if( !checkbox.checked || sidebar.contains(target) || (target === checkbox || target === toggle) ) {
 					return;
@@ -13,7 +17,7 @@
 				checkbox.checked = false;
 			};
 
-		document.addEventListener( 'click', handler, false );
+		document.addEventListener( TAP, handler, false );
 
 
 		// work IScroll
@@ -30,8 +34,8 @@
 				scrollY: false,
 				snap: 'li'
 			});
-			prev.addEventListener( 'click', function() { myScroll.prev() }, false );
-			next.addEventListener( 'click', function() { myScroll.next() }, false );
+			prev.addEventListener( TAP, function() { myScroll.prev() }, false );
+			next.addEventListener( TAP, function() { myScroll.next() }, false );
 		};
 	};
 
@@ -51,4 +55,4 @@
 	//     font-size: 1.2rem;
 	//     float: right;
 	// ">VIJAY DEV</span></p>
-})(document);
+})(document, window);
