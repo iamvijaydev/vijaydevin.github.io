@@ -232,12 +232,12 @@ a {
 	.cloud-above {
 		background: url(/public/img/cloud-above.png) 0 100% repeat-x;
 		z-index: 3;
-		-webkit-animation: cloudFrowardAnim 200s linear infinite;
+		-webkit-animation: cloudFrowardAnim 60s linear infinite;
 	}
 	.cloud-below {
 		background: url(/public/img/cloud-below.png) 0 100% repeat-x;
 		z-index: 2;
-		-webkit-animation: cloudBackwardAnim 200s linear infinite;
+		-webkit-animation: cloudBackwardAnim 60s linear infinite;
 	}
 }
 @-webkit-keyframes cloudFrowardAnim {
