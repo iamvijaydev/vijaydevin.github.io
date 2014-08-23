@@ -40,19 +40,4 @@
 	};
 
 	document.addEventListener( 'DOMContentLoaded', loaded, false );
-
-	// <p style="
-	//     overflow: hidden;
-	// "><img src="/public/img/logo-wm.png" alt="Logo" style="
-	//     width: 90px;
-	//     display: inline;
-	//     margin: 0;
-	//     float: left;
-	//     border-radius: 0; "><span style="
-	//     padding: 11px 0 0;
-	//     display: inline-block;
-	//     font-family: lato;
-	//     font-size: 1.2rem;
-	//     float: right;
-	// ">VIJAY DEV</span></p>
 })(document, window);
