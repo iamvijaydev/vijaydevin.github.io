@@ -164,20 +164,14 @@ a {
 	#main-content {
 		padding: 1rem 0;
 		background: none;
+		.logo-pres,
 		.logo {
 			width: 90px;
 			height: 61px;
+			float: left;
 		}
-		.name {
-			font-size: 2rem;
-			margin: 10px 0 0;
-			line-height: 1;
-			text-indent: 0.7rem;
-		}
-		.tagline {
-			font-size: 1.12rem;
-			color: rgba(0, 0, 0, 0.6);
-			line-height: 1;
+		.logo {
+			float: left;
 		}
 		.cloud-above,
 		.cloud-below {
@@ -188,12 +182,24 @@ a {
 	a, a:hover {
 		text-decoration: none;
 	}
-	.elsewhere  {
-		position: relative;
-		z-index: 7;
-		a {
-			font-size: 1.1rem;
-		}
+	.nameplate {
+		padding: 3rem 0;
+	}
+	.icon {
+		padding: 0.5rem;
+		border: 1px solid #fff
+		color: #fff;
+		font-size: 1rem;
+		border-radius: 1rem;
+	}
+	.title {
+		font-family: 'Lato'; 
+		font-weight: 700;
+		font-size: 3rem; 
+		letter-spacing: 0.6rem; 
+		text-transform: uppercase;
+		text-indent: 0.8rem;
+		color: #fff;
 	}
 }
 
@@ -226,6 +232,7 @@ a {
 		display: inline-block;
 	}
 	#logo-wrap {
+		display: block;
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -234,10 +241,10 @@ a {
 			transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275);
 		}
 		&.flipped-180 {
-			transform: rotateY( -180deg );
+			transform: rotateY( 180deg );
 		}
 		&.flipped-360 {
-			transform: rotateY( -360deg );
+			transform: rotateY( 360deg );
 		}
 	}
 	.logo {

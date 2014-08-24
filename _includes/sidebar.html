@@ -5,6 +5,7 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
+    <a style="overflow: hidden; display:block;" class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">
     <p style="
         overflow: hidden;
     "><img src="/public/img/logo-wm.png" alt="Logo" style="
@@ -18,15 +19,15 @@
         font-family: lato;
         font-size: 1.2rem;
         float: right;
-    ">VIJAY DEV</span></p>
+    ">VIJAY DEV</span></a>
   </div>
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a>
-    <a class="sidebar-nav-item{% if page.url == '/about/' %} active{% endif %}" href="/about/">About</a>
-    <a class="sidebar-nav-item{% if page.url == '/works/' %} active{% endif %}" href="/works/">Works</a>
-    <a class="sidebar-nav-item{% if page.url == '/contact/' %} active{% endif %}" href="/contact/">Contact</a>
-    <a class="sidebar-nav-item{% if page.url == '/blog/' %} active{% endif %}" href="/blog/">Blog</a>
+    <a class="sidebar-nav-item icon-user{% if page.url == '/about/' %} active{% endif %}" href="/about/">About</a>
+    <a class="sidebar-nav-item icon-works{% if page.url == '/works/' %} active{% endif %}" href="/works/">Works</a>
+    <a class="sidebar-nav-item icon-contact{% if page.url == '/contact/' %} active{% endif %}" href="/contact/">Contact</a>
+    <a class="sidebar-nav-item icon-blog{% if page.url == '/blog/' %} active{% endif %}" href="/blog/">Blog</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -41,8 +42,6 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-    
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
   <div class="sidebar-item">
