@@ -94,6 +94,44 @@ a {
 	}
 }
 
+.logo-pres {
+	width: 180px;
+	height: 122px;
+	position: relative;
+	perspective: 800px;
+	display: inline-block;
+}
+#logo-wrap {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	&.animate {
+		transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+	}
+	&.flipped-180 {
+		transform: rotateY( 180deg );
+	}
+	&.flipped-360 {
+		transform: rotateY( 360deg );
+	}
+}
+.logo {
+	display: inline-block;
+	margin: 0;
+	border-radius: 0;
+	width: 180px;
+	height: 122px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	backface-visibility: hidden;
+	&.flipped {
+		transform: rotateY( 180deg );
+	}
+}
+
 
 @mixin transDelay($delay) {
 	-webkit-transition-delay: $delay;
@@ -157,13 +195,9 @@ a {
 	background: url(/public/img/pat.png) 0 0 white;
 	border-bottom: 1px solid rgba(155, 89, 182, 0.7);
 	.grad {
+		@extend .twilight-grad;
 		position: relative;
 		text-align: center;
-		@extend .twilight-grad;
-	}
-	#main-content {
-		padding: 1rem 0;
-		background: none;
 		.logo-pres,
 		.logo {
 			width: 90px;
@@ -177,6 +211,10 @@ a {
 		.logo {
 			float: left;
 		}
+	}
+	#main-content {
+		padding: 1rem 0;
+		background: none;
 		.cloud-above,
 		.cloud-below {
 			height: 52px;
@@ -189,9 +227,6 @@ a {
 	.nameplate {
 		padding: 3rem 0;
 		margin: 0;
-		span {
-			display: block;
-		}
 	}
 	.icon {
 		padding: 0.5rem;
@@ -201,6 +236,8 @@ a {
 		border-radius: 1.5rem;
 	}
 	.title {
+		display: block;
+		padding: 1rem 0 0;
 		font-family: 'Lato'; 
 		font-weight: 700;
 		font-size: 3rem; 
@@ -232,43 +269,6 @@ a {
 #main-content {
 	@extend .twilight-grad;
 	padding: 7rem 0;
-	.logo-pres {
-		width: 180px;
-		height: 122px;
-		position: relative;
-		perspective: 800px;
-		display: inline-block;
-	}
-	#logo-wrap {
-		display: block;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		transform-style: preserve-3d;
-		&.animate {
-			transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275);
-		}
-		&.flipped-180 {
-			transform: rotateY( 180deg );
-		}
-		&.flipped-360 {
-			transform: rotateY( 360deg );
-		}
-	}
-	.logo {
-		display: inline-block;
-		margin: 0;
-		border-radius: 0;
-		width: 180px;
-		height: 122px;
-		position: absolute;
-		left: 0;
-		top: 0;
-		backface-visibility: hidden;
-		&.flipped {
-			transform: rotateY( 180deg );
-		}
-	}
 	.name,
 	.tagline {
 		font-family: 'Lato'; 
