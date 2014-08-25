@@ -13,23 +13,16 @@
       {% if page.title == "Home" %}
         {{ content }}
       {% else %}
+      
         <div class="masthead">
-          <div class="grad">
-            <div class="logo-pres">
-              <a href="/" title="Home" id="logo-wrap">
+          <div class="container">
+            <h3 class="masthead-title">
+              <a href="/" title="Home">
                 <img class="logo" src="/public/img/logo-2x.png" alt="Logo">
-                <img class="logo flipped" src="/public/img/logo-wm.png" alt="Logo">
+                <span>{{ site.title }}</span>
+                <small>{{ site.tagline }}</small>
               </a>
-            </div>
-
-            <div class="container" id="main-content">
-              <h3 class="nameplate">
-                <span class="icon icon-user"></span>
-                <span class="title">{{ page.title }}</span>
-              </h3>
-              <div class="cloud-above"></div>
-              <div class="cloud-below"></div>
-            </div>
+            </h3>
           </div>
         </div>
 

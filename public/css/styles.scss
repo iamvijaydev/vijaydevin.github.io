@@ -191,60 +191,8 @@ a {
 
 
 .masthead {
-	padding: 0;
-	background: url(/public/img/pat.png) 0 0 white;
-	border-bottom: 1px solid rgba(155, 89, 182, 0.7);
-	.grad {
-		@extend .twilight-grad;
-		position: relative;
-		text-align: center;
-		.logo-pres,
-		.logo {
-			width: 90px;
-			height: 61px;
-			float: left;
-		}
-		.logo-pres {
-			top: 1rem;
-			left: 1rem;
-		}
-		.logo {
-			float: left;
-		}
-	}
-	#main-content {
-		padding: 1rem 0;
-		background: none;
-		.cloud-above,
-		.cloud-below {
-			height: 52px;
-			background-size: 923px 52px;
-		}
-	}
 	a, a:hover {
 		text-decoration: none;
-	}
-	.nameplate {
-		padding: 3rem 0;
-		margin: 0;
-	}
-	.icon {
-		padding: 0.5rem;
-		border: 1px solid #fff;
-		color: #fff;
-		font-size: 1rem;
-		border-radius: 1.5rem;
-	}
-	.title {
-		display: block;
-		padding: 1rem 0 0;
-		font-family: 'Lato'; 
-		font-weight: 700;
-		font-size: 3rem; 
-		letter-spacing: 0.6rem; 
-		text-transform: uppercase;
-		text-indent: 0.8rem;
-		color: #fff;
 	}
 }
 
