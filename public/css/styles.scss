@@ -95,35 +95,91 @@ a {
 }
 
 .logo {
-	margin: auto;
-	border-radius: 0;
-	width: 247px;
-	height: 171px;
-}
-
-.logo-invi {
 	display: block;
 	margin: auto;
-	width: 123px;
-	height: 85px;
-	background: url(/public/img/logo-wm.png) center no-repeat;
-	background-size: contain;
-	.hover {
+	border-radius: 0;
+	width: 246px;
+	height: 170px;
+	background: url(/public/img/logo.png) center no-repeat;
+	.hov {
 		display: block;
-		width: 123px;
-		height: 85px;
+		width: 246px;
+		height: 170px;
 		opacity: 0;
-		background: url(/public/img/logo.png) center no-repeat;
-		background-size: contain;
+		background: url(/public/img/logo-wm.png) center no-repeat;
 		transition: opacity 0.3s ease-in-out;
 	}
 	&:hover{
-		background-color: transparent;
-		.hover {
+		.hov {
 			opacity: 1;
 		}
 	}
 }
+@media only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    .logo {
+    	background: url(/public/img/logo-2x.png) center no-repeat;
+    	background-size: 246px 170px;
+    	.hov {
+    		background: url(/public/img/logo-wm-2x.png) center no-repeat;
+    		background-size: 246px 170px;
+    	}
+    }
+}
+
+.logo.small {
+	width: 123px;
+	height: 85px;
+	background: url(/public/img/logo-sml.png) center no-repeat;
+	.hov {
+		width: 123px;
+		height: 85px;
+		background: url(/public/img/logo-wm-sml.png) center no-repeat;
+	}
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    .logo.small {
+    	background: url(/public/img/logo.png) center no-repeat;
+    	background-size: 123px 85px;
+    	.hov {
+    		background: url(/public/img/logo-wm.png) center no-repeat;
+    		background-size: 123px 85px;
+    	}
+    }
+}
+
+.logo.small.invr {
+	background: url(/public/img/logo-wm-sml.png) center no-repeat;
+	.hov {
+		background: url(/public/img/logo-sml.png) center no-repeat;
+	}
+	&:hover{
+		background-color: transparent;
+	}
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    .logo.small.invr {
+    	background: url(/public/img/logo-wm.png) center no-repeat;
+    	background-size: 123px 85px;
+    	.hov {
+    		background: url(/public/img/logo.png) center no-repeat;
+    		background-size: 123px 85px;
+    	}
+    }
+}
+
+
 
 
 @mixin transDelay($delay) {
@@ -185,6 +241,20 @@ a {
 .masthead {
 	a, a:hover {
 		text-decoration: none;
+	}
+	.logo.small {
+		float: left;
+	}
+	.title,
+	.tagline {
+		display: block;
+	}
+	.title {
+		font-family: 'Lato';
+		font-weight: 300;
+		font-size: 1.7rem;
+		margin-left: 123px;
+		text-transform: uppercase;
 	}
 }
 
