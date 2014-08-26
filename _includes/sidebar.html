@@ -5,21 +5,15 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <a style="overflow: hidden; display:block;" class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">
-    <p style="
-        overflow: hidden;
-    "><img src="/public/img/logo-wm.png" alt="Logo" style="
-        width: 90px;
-        display: inline;
-        margin: 0;
-        float: left;
-        border-radius: 0; "><span style="
-        padding: 11px 0 0;
-        display: inline-block;
-        font-family: lato;
-        font-size: 1.2rem;
-        float: right;
-    ">VIJAY DEV</span></a>
+    
+    <div class="logo-pres">
+      <div id="logo-wrap">
+        <a style="overflow: hidden; display:block;" class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">
+          <img class="logo" src="/public/img/logo-2x.png" alt="Logo">
+          <img class="logo flipped" src="/public/img/logo-wm-2x.png" alt="Logo">
+        </a>
+      </div>
+    </div>
   </div>
 
   <nav class="sidebar-nav">

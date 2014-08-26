@@ -107,14 +107,12 @@ a {
 	height: 100%;
 	position: absolute;
 	transform-style: preserve-3d;
+	transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275);
 	&.animate {
 		transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275);
 	}
-	&.flipped-180 {
+	&:hover {
 		transform: rotateY( 180deg );
-	}
-	&.flipped-360 {
-		transform: rotateY( 360deg );
 	}
 }
 .logo {
