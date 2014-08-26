@@ -107,6 +107,7 @@ a {
 	width: 123px;
 	height: 85px;
 	background: url(/public/img/logo-wm.png) center no-repeat;
+	background-size: contain;
 	.hover {
 		display: block;
 		width: 123px;
