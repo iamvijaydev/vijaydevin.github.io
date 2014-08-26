@@ -188,6 +188,27 @@ a {
   display: block;
 }
 
+.logo-invi {
+	display: block;
+	width: 90px;
+	height: 61px;
+	background: url(/public/img/logo-wm.png) center no-repeat contain;
+	.hover {
+		display: block;
+		width: 90px;
+		height: 61px;
+		opacity: 0;
+		background: url(/public/img/logo.png) center no-repeat contain;
+		transition: opacity 0.3s ease-in-out;
+	}
+	&:hover{
+		background-color: transparent;
+		.hover {
+			opacity: 1;
+		}
+	}
+}
+
 #sidebar {
 	.logo-pres,
 	.logo {
