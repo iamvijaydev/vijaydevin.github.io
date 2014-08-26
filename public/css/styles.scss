@@ -160,15 +160,17 @@ a {
 
 .logo-invi {
 	display: block;
+	margin: auto;
 	width: 90px;
 	height: 61px;
-	background: url(/public/img/logo-wm.png) center no-repeat contain;
+	background: url(/public/img/logo-wm.png) center no-repeat;
 	.hover {
 		display: block;
 		width: 90px;
 		height: 61px;
 		opacity: 0;
-		background: url(/public/img/logo.png) center no-repeat contain;
+		background: url(/public/img/logo.png) center no-repeat;
+		background-size: contain;
 		transition: opacity 0.3s ease-in-out;
 	}
 	&:hover{
