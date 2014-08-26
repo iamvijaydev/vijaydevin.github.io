@@ -261,6 +261,7 @@ only screen and (min-resolution: 144dpi) {
 .masthead {
 	a, a:hover {
 		text-decoration: none;
+		display: inline-block;
 	}
 	.logo.small {
 		float: left;
@@ -268,13 +269,22 @@ only screen and (min-resolution: 144dpi) {
 	.title,
 	.tagline {
 		display: block;
+		white-space: nowrap;
 	}
 	.title {
 		font-family: 'Lato';
 		font-weight: 300;
-		font-size: 1.7rem;
-		margin-left: 123px;
+		font-size: 2rem;
+		margin: 10px 0 0 146px;
 		text-transform: uppercase;
+		letter-spacing: 0.15rem;
+		line-height: 1;
+	}
+	.tagline {
+		font-size: 1.1rem;
+		font-weight: 300;
+		font-family: 'Lato';
+		margin-left: 123px;
 	}
 }
 
