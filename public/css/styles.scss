@@ -97,19 +97,31 @@ a {
 .logo {
 	display: block;
 	margin: auto;
-	border-radius: 0;
 	width: 246px;
 	height: 170px;
-	background: url(/public/img/logo.png) center no-repeat;
+	position: relative;
+	.nor,
 	.hov {
 		display: block;
-		width: 246px;
-		height: 170px;
-		opacity: 0;
-		background: url(/public/img/logo-wm.png) center no-repeat;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 		transition: opacity 0.3s ease-in-out;
 	}
+	.nor {
+		opacity: 1;
+		background: url(/public/img/logo.png) center no-repeat;
+	}
+	.hov {
+		opacity: 0;
+		background: url(/public/img/logo-wm.png) center no-repeat;
+	}
 	&:hover{
+		.nor {
+			opacity: 0;
+		}
 		.hov {
 			opacity: 1;
 		}
@@ -121,8 +133,10 @@ only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .logo {
-    	background: url(/public/img/logo-2x.png) center no-repeat;
-    	background-size: 246px 170px;
+    	.nor {
+    		background: url(/public/img/logo-2x.png) center no-repeat;
+	    	background-size: 246px 170px;
+    	}
     	.hov {
     		background: url(/public/img/logo-wm-2x.png) center no-repeat;
     		background-size: 246px 170px;
@@ -133,10 +147,10 @@ only screen and (min-resolution: 144dpi) {
 .logo.small {
 	width: 123px;
 	height: 85px;
-	background: url(/public/img/logo-sml.png) center no-repeat;
+	.nor {
+		background: url(/public/img/logo-sml.png) center no-repeat;
+	}
 	.hov {
-		width: 123px;
-		height: 85px;
 		background: url(/public/img/logo-wm-sml.png) center no-repeat;
 	}
 }
@@ -146,8 +160,10 @@ only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .logo.small {
-    	background: url(/public/img/logo.png) center no-repeat;
-    	background-size: 123px 85px;
+    	.nor {
+			background: url(/public/img/logo.png) center no-repeat;
+	    	background-size: 123px 85px;
+		}
     	.hov {
     		background: url(/public/img/logo-wm.png) center no-repeat;
     		background-size: 123px 85px;
@@ -156,7 +172,9 @@ only screen and (min-resolution: 144dpi) {
 }
 
 .logo.small.invr {
-	background: url(/public/img/logo-wm-sml.png) center no-repeat;
+	.nor {
+		background: url(/public/img/logo-wm-sml.png) center no-repeat;
+	}
 	.hov {
 		background: url(/public/img/logo-sml.png) center no-repeat;
 	}
@@ -170,8 +188,10 @@ only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .logo.small.invr {
-    	background: url(/public/img/logo-wm.png) center no-repeat;
-    	background-size: 123px 85px;
+    	.nor {
+    		background: url(/public/img/logo-wm.png) center no-repeat;
+	    	background-size: 123px 85px;
+    	}
     	.hov {
     		background: url(/public/img/logo.png) center no-repeat;
     		background-size: 123px 85px;
