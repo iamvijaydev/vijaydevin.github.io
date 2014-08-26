@@ -97,8 +97,31 @@ a {
 .logo {
 	margin: auto;
 	border-radius: 0;
-	width: 180px;
-	height: 122px;
+	width: 247px;
+	height: 171px;
+}
+
+.logo-invi {
+	display: block;
+	margin: auto;
+	width: 123px;
+	height: 85px;
+	background: url(/public/img/logo-wm.png) center no-repeat;
+	.hover {
+		display: block;
+		width: 123px;
+		height: 85px;
+		opacity: 0;
+		background: url(/public/img/logo.png) center no-repeat;
+		background-size: contain;
+		transition: opacity 0.3s ease-in-out;
+	}
+	&:hover{
+		background-color: transparent;
+		.hover {
+			opacity: 1;
+		}
+	}
 }
 
 
@@ -156,44 +179,6 @@ a {
 #sidebar-checkbox:checked + .overlay-mask,
 #sidebar-checkbox:checked ~ .overlay-mask {
   display: block;
-}
-
-.logo-invi {
-	display: block;
-	margin: auto;
-	width: 90px;
-	height: 61px;
-	background: url(/public/img/logo-wm.png) center no-repeat;
-	.hover {
-		display: block;
-		width: 90px;
-		height: 61px;
-		opacity: 0;
-		background: url(/public/img/logo.png) center no-repeat;
-		background-size: contain;
-		transition: opacity 0.3s ease-in-out;
-	}
-	&:hover{
-		background-color: transparent;
-		.hover {
-			opacity: 1;
-		}
-	}
-}
-
-#sidebar {
-	.logo-pres,
-	.logo {
-		width: 90px;
-		height: 61px;
-	}
-	.logo-pres {
-		.sidebar-nav-item.active,
-		a.sidebar-nav-item:hover,
-		a.sidebar-nav-item:focus {
-			background-color: none;
-		}
-	}
 }
 
 .masthead {
