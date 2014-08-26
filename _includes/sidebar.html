@@ -13,19 +13,19 @@
   
   {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == 'about' %} active{% endif %}" href="/about/">
+    <a class="sidebar-nav-item{% if location == 'about' %} active{% endif %}" href="/about/">
      <span class="icon-user"></span>
      About
     </a>
-    <a class="sidebar-nav-item{% if page.url == 'works' %} active{% endif %}" href="/works/">
+    <a class="sidebar-nav-item{% if location == 'works' %} active{% endif %}" href="/works/">
       <span class="icon-works"></span>
       Works
     </a>
-    <a class="sidebar-nav-item{% if page.url == 'contact' %} active{% endif %}" href="/contact/">
+    <a class="sidebar-nav-item{% if location == 'contact' %} active{% endif %}" href="/contact/">
       <span class="icon-contact"></span>
       Contact
     </a>
-    <a class="sidebar-nav-item{% if page.url == 'blog' %} active{% endif %}" href="/blog/">
+    <a class="sidebar-nav-item{% if location == 'blog' %} active{% endif %}" href="/blog/">
       <span class="icon-blog"></span>
       Blog
     </a>
