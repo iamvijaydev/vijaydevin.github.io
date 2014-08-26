@@ -258,6 +258,11 @@ only screen and (min-resolution: 144dpi) {
   display: block;
 }
 
+.sidebar a span {
+	padding-right: 0.5rem;
+}
+
+
 .masthead {
 	a, a:hover {
 		text-decoration: none;

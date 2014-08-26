@@ -12,11 +12,23 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a>
-    <a class="sidebar-nav-item icon-user{% if page.url == '/about/' %} active{% endif %}" href="/about/">About</a>
-    <a class="sidebar-nav-item icon-works{% if page.url == '/works/' %} active{% endif %}" href="/works/">Works</a>
-    <a class="sidebar-nav-item icon-contact{% if page.url == '/contact/' %} active{% endif %}" href="/contact/">Contact</a>
-    <a class="sidebar-nav-item icon-blog{% if page.url == '/blog/' %} active{% endif %}" href="/blog/">Blog</a>
+    <span>{{ page.url }}</span>
+    <a class="sidebar-nav-item{% if page.url == '/about/' %} active{% endif %}" href="/about/">
+     <span class="icon-user"></span>
+     About
+    </a>
+    <a class="sidebar-nav-item{% if page.url == '/works/' %} active{% endif %}" href="/works/">
+      <span class="icon-works"></span>
+      Works
+    </a>
+    <a class="sidebar-nav-item{% if page.url == '/contact/' %} active{% endif %}" href="/contact/">
+      <span class="icon-contact"></span>
+      Contact
+    </a>
+    <a class="sidebar-nav-item{% if page.url == '/blog/' %} active{% endif %}" href="/blog/">
+      <span class="icon-blog"></span>
+      Blog
+    </a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
