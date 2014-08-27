@@ -14,11 +14,17 @@ title: Blog
     
     <p>
       <span class="post-date">{{ post.date | date_to_string }}</span>
+      <span>
+        {% for cat in post.categories %}
+          <span>{{ cat }}</span>
+          <span>{{ forloop.rindex }}</span>
+          <span>{{ forloop.last }}</span>
+        {% endfor %}
+      </span>
       <span class="post-date">
         {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
         {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read
       </span>
-      <span class="post-date">{{ post.category }}</span>
     </p>
 
     <p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; (<a href="{{ post.url }}">Read More</a>)</p>
