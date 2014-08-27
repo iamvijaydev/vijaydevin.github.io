@@ -621,4 +621,7 @@ only screen and (min-resolution: 144dpi) {
 	footer small {
 		color: #bbb;
 	}
+	footer label:not(:last-child):after {
+		content: ",";
+	}
 }

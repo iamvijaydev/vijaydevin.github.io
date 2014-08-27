@@ -5,7 +5,7 @@ comments: true
 redirect_from: "/2014/06/19/hello-world/"
 permalink: /blog/hello-world/
 categories: [JavaScript]
-tags: [coding javascript]
+tags: ['coding', 'javascript']
 ---
 
 How's it going!
