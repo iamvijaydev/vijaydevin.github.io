@@ -8,6 +8,33 @@ layout: default
   {{ content }}
 </div>
 
+<article class="post">
+  <header>
+    <h1 class="post-title">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h1>
+    <p class="post-meta">
+      <time class="icon-calendar" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+      <span class="icon-folder post-cat">
+        {{ post.categories }}
+      </span>
+      <span class="icon-clock read-time">
+        {% capture readtime %}{{ content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
+        {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read
+      </span>
+      <a class="icon-comment" href="">2 comments</a>
+    </p>
+  </header>
+  
+  {{ content }}
+
+  <footer>
+    <small class="icon-category">
+      {{ post.tags }}
+    </small>
+  </footer>
+</article>
+
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
