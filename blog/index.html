@@ -3,40 +3,40 @@ layout: page
 title: Blog
 ---
 
-<div class="posts">
+<section class="posts">
   {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+  <article class="post">
+    <header>
+      <h1 class="post-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h1>
+      <p class="post-meta">
+        <time pubdate="{{ post.date }}">{{ post.date | date_to_string }}</time>
+        <span class="post-cat">
+          {% for cat in post.categories %}
+            <label>{{ cat }}{% if forloop.last %} {% else %}, {% endif %}</label>
+          {% endfor %}
+        </span>
+        <span class="read-time">
+          {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
+          {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read
+        </span>
+        <a href="">2 comments</a>
+      </p>
+    </header>
     
-    <p>
-      <span class="post-date">{{ post.date | date_to_string }}</span>
-      <span class="post-date">
-        {% for cat in post.categories %}
-          <label>{{ cat }}{% if forloop.rindex > 1 %}, {% endif %}</label>
-        {% endfor %}
-      </span>
-      <span class="post-date">
-        {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
-        {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read
-      </span>
-    </p>
-
     <p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; (<a href="{{ post.url }}">Read More</a>)</p>
 
-    <p>
-      {% for tag in post.tags %}
-        <span>{{ tag }}{% if forloop.rindex > 1 %}, {% endif %}</span>
-        <br>
-        <span>{{ forloop.rindex }}</span>
-      {% endfor %}
-    </p>
-  </div>
+    <footer>
+      <small>
+        {% for tag in post.tags %}
+          <label>{{ tag }}{% if forloop.last %} {% else %}, {% endif %}</label>
+        {% endfor %}
+      </small>
+    </footer>
+  </article>
   {% endfor %}
-</div>
+</section>
 
 {% if paginator.total_pages > 1 %}
   <div class="pagination">
