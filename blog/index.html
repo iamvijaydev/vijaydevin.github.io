@@ -11,26 +11,26 @@ title: Blog
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h1>
       <p class="post-meta">
-        <time pubdate="{{ post.date }}">{{ post.date | date_to_string }}</time>
-        <span class="post-cat">
+        <time class="icon-calendar" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+        <span class="icon-folder post-cat">
           {% for cat in post.categories %}
             <label>{{ cat }}{% if forloop.last %} {% else %}, {% endif %}</label>
           {% endfor %}
         </span>
-        <span class="read-time">
+        <span class="icon-clock read-time">
           {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
           {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. read
         </span>
-        <a href="">2 comments</a>
+        <a class="icon-comment" href="">2 comments</a>
       </p>
     </header>
     
     <p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; (<a href="{{ post.url }}">Read More</a>)</p>
 
     <footer>
-      <small>
+      <small class="icon-category">
         {% for tag in post.tags %}
-          <label>{{ tag }}{% if forloop.last %} {% else %}, {% endif %}</label>
+          <label>{{ tag }}{% if forloop.last %}&nbsp; {% else %}, {% endif %}</label>
         {% endfor %}
       </small>
     </footer>
