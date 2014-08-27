@@ -18,7 +18,7 @@ title: Blog
         {% for cat in post.categories %}
           <span>{{ cat }}</span>
           <span>{{ forloop.rindex }}</span>
-          <span>{{ forloop.last }}</span>
+          <span>{{ !forloop.last }}</span>
         {% endfor %}
       </span>
       <span class="post-date">
