@@ -54,11 +54,11 @@
 .icon-right:before { content: '\e810'; } /* '' */
 
 a {
-	color: #3498DB;
+	color: #1768f5;
 	text-decoration: none;
 	-webkit-transition: color 0.3s ease-in-out;
 	&:hover {
-		color: #E74C3C;
+		color: #f51b47;
 	}
 }
 
@@ -608,16 +608,27 @@ only screen and (min-resolution: 144dpi) {
 /*blooging*/
 .post {
 	.post-title {
-		margin: 0;
+		margin: 0 0 0.1rem;
 	}
 	.post-meta {
-		font-size: 0.9rem;
+		font-size: 0.85rem;
 		color: #aaa;
-		* {
+		time, span, a{
 			padding-right: 0.5rem;
 		}
 		a {
 			color: #aaa;
+			&:hover {
+				color: #f51b47;
+				.icon-comment:before {
+					text-decoration: none;
+				}
+			}
+		}
+		[class^="icon-"]:before,
+		[class*=" icon-"]:before {
+			margin-left: 0;
+			width: auto;
 		}
 	}
 	footer small {
