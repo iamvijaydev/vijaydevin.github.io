@@ -48,7 +48,7 @@
 .icon-blog:before { content: '\e80c'; } /* '' */
 .icon-calendar:before { content: '\e80d'; } /* '' */
 .icon-category:before { content: '\e80e'; } /* '' */
-.icon-left:before { content: '\e80f'; } /* '' */
+.icon-left:before { content: '\e80f'; } /* '' */	
 .icon-right:before { content: '\e810'; } /* '' */
 
 a {
@@ -598,5 +598,27 @@ only screen and (min-resolution: 144dpi) {
 		.abt-logo {
 			padding: 0 7rem;
 		}
+	}
+}
+
+
+
+/*blooging*/
+.post {
+	.post-title {
+		margin: 0;
+	}
+	.post-meta {
+		font-size: 0.9rem;
+		color: #aaa;
+		* {
+			padding-right: 0.5rem;
+		}
+		a {
+			color: #aaa;
+		}
+	}
+	footer small {
+		color: #bbb;
 	}
 }
