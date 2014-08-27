@@ -30,6 +30,8 @@ title: Blog
     <p>
       {% for tag in post.tags %}
         <span>{{ tag }}{% if forloop.rindex > 1 %}, {% endif %}</span>
+        <br>
+        <span>{{ forloop.rindex }}</span>
       {% endfor %}
     </p>
   </div>
