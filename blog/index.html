@@ -22,6 +22,12 @@ title: Blog
     </p>
 
     <p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; (<a href="{{ post.url }}">Read More</a>)</p>
+
+    <p>
+      {% for tag in post.tags %}
+        <span>{{ tag }}</span>
+      {% endfor %}
+    </p>
   </div>
   {% endfor %}
 </div>
