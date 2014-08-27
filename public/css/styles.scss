@@ -264,32 +264,23 @@ only screen and (min-resolution: 144dpi) {
 
 
 .masthead {
+	padding: 0.5rem 0;
+	margin: 0;
+	border: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.masthead-title {
+	height: 85px;
+	overflow: hidden;
+	text-align: center;
 	a, a:hover {
 		text-decoration: none;
 		display: inline-block;
-	}
-	.logo.small {
-		float: left;
-	}
-	.title,
-	.tagline {
-		display: block;
-		white-space: nowrap;
-	}
-	.title {
-		font-family: 'Lato';
-		font-weight: 300;
-		font-size: 2rem;
-		margin: 10px 0 0 146px;
-		text-transform: uppercase;
-		letter-spacing: 0.15rem;
-		line-height: 1;
-	}
-	.tagline {
-		font-size: 1.1rem;
-		font-weight: 300;
-		font-family: 'Lato';
-		margin-left: 123px;
 	}
 }
 
