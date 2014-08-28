@@ -151,11 +151,11 @@ only screen and (min-resolution: 144dpi) {
 	width: 123px;
 	height: 85px;
 	.nor {
-		background: url(/public/img/logo-sidebar.png) center no-repeat;
+		background: url(/public/img/logo-sidebar-invr.png) center no-repeat;
 		background-size: contain;
 	}
 	.hov {
-		background: url(/public/img/logo-sidebar-invr.png) center no-repeat;
+		background: url(/public/img/logo-sidebar.png) center no-repeat;
 		background-size: contain;
 	}
 	&:hover{
@@ -169,11 +169,11 @@ only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
     .logo.sidebar {
     	.nor {
-			background: url(/public/img/logo.png) center no-repeat;
+			background: url(/public/img/logo-invr.png) center no-repeat;
 			background-size: contain;
 		}
 		.hov {
-			background: url(/public/img/logo-invr.png) center no-repeat;
+			background: url(/public/img/logo.png) center no-repeat;
 			background-size: contain;
 		}
     }
