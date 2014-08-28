@@ -113,6 +113,7 @@ a {
 		transition: opacity 0.3s ease-in-out;
 	}
 	.nor {
+		border-radius: 0;
 		opacity: 1;
 		background: url(/public/img/logo.png) center no-repeat;
 	}
@@ -146,7 +147,7 @@ only screen and (min-resolution: 144dpi) {
     }
 }
 
-.logo.sidebar {
+.logo.side-bar {
 	width: 123px;
 	height: 85px;
 	.nor {
@@ -179,6 +180,8 @@ only screen and (min-resolution: 144dpi) {
 }
 
 .logo.inner {
+	width: 61px;
+	height: 43px;
 	.nor {
 		background: url(/public/img/logo-inner.gif) center no-repeat;
 	}
@@ -272,12 +275,45 @@ only screen and (min-resolution: 144dpi) {
 }
 
 .masthead-title {
-	height: 85px;
 	overflow: hidden;
-	text-align: center;
-	a, a:hover {
+	text-align: left;
+	.logo-link {
 		text-decoration: none;
 		display: inline-block;
+		&:hover{
+			.nor {
+				opacity: 0;
+			}
+			.hov {
+				opacity: 1;
+			}
+		}
+	}
+	.logo.inner {
+		float: left;
+	}
+	.sperate {
+		float: left;
+		border-right: 1px solid #ccc;
+		height: 43px;
+		padding-left: 18px;
+	}
+	.title,
+	.tagline {
+		display: block;
+		margin-left: 101px;
+	}
+	.title {
+		font-family: 'Lato';
+		text-transform: uppercase;
+		line-height: 1;
+		letter-spacing: 0.15rem;
+		font-size: 1.3rem;
+	}
+	.tagline {
+		font-size: 0.8rem;
+		color: #c0c0c0;
+		letter-spacing: 0;
 	}
 }
 
