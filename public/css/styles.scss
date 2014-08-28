@@ -281,9 +281,6 @@ only screen and (min-resolution: 144dpi) {
 		text-decoration: none;
 		display: inline-block;
 		&:hover {
-			.sperate {
-				border-right: 1px solid #1768f5;
-			}
 			.nor {
 				opacity: 0;
 			}
@@ -312,6 +309,7 @@ only screen and (min-resolution: 144dpi) {
 		line-height: 1;
 		letter-spacing: 0.15rem;
 		font-size: 1.3rem;
+		color: #303030;
 	}
 	.tagline {
 		font-size: 0.8rem;
