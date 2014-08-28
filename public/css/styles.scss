@@ -110,10 +110,11 @@ a {
 		right: 0;
 		top: 0;
 		bottom: 0;
+		border-radius: 0;
 		transition: opacity 0.3s ease-in-out;
+		transform: rotate( .0001deg );
 	}
 	.nor {
-		border-radius: 0;
 		opacity: 1;
 		background: url(/public/img/logo.png) center no-repeat;
 	}
@@ -302,6 +303,7 @@ only screen and (min-resolution: 144dpi) {
 	.tagline {
 		display: block;
 		margin-left: 101px;
+		white-space: nowrap;
 	}
 	.title {
 		font-family: 'Lato';
