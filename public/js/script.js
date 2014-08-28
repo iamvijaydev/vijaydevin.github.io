@@ -64,6 +64,32 @@
 		// };
 
 		// setInterval(exec, 2500);
+
+		// setting 2x image when required
+		var logoMain, logoSideBar, logoInner, sd, hd;
+		if ( window.devicePixelRatio > 1 ) {
+			logoMain = document.getElementById( 'logo-main' ),
+			logoSideBar = document.getElementById( 'logo-side-bar' ),
+			logoInner = document.getElementById( 'logo-inner' );
+
+			if ( !!logoMain ) {
+				sd = logoMain.getAttribute( 'src' );
+				hd = sd.replace( '.', '-2x.' );
+				logoMain.setAttribute( 'src', hd );
+			};
+
+			if ( !!logoSideBar ) {
+				sd = logoSideBar.getAttribute( 'src' );
+				hd = sd.replace( '.', '-2x.' );
+				logoSideBar.setAttribute( 'src', hd );
+			};
+
+			if ( !!logoInner ) {
+				sd = logoInner.getAttribute( 'src' );
+				hd = sd.replace( '.', '-2x.' );
+				logoInner.setAttribute( 'src', hd );
+			};
+		}
 	};
 
 	document.addEventListener( 'DOMContentLoaded', loaded, false );
