@@ -280,7 +280,10 @@ only screen and (min-resolution: 144dpi) {
 	.logo-link {
 		text-decoration: none;
 		display: inline-block;
-		&:hover{
+		&:hover {
+			.sperate {
+				border-right: 1px solid #1768f5;
+			}
 			.nor {
 				opacity: 0;
 			}
@@ -314,6 +317,20 @@ only screen and (min-resolution: 144dpi) {
 		font-size: 0.8rem;
 		color: #c0c0c0;
 		letter-spacing: 0;
+	}
+}
+@media (max-width: 48em) {
+	.masthead-title {
+		.sperate {
+			padding-left: 10px;
+		}
+		.title,
+		.tagline {
+			margin-left: 84px;
+		}
+		.title {
+			padding-top: 0.2rem;
+		}
 	}
 }
 
