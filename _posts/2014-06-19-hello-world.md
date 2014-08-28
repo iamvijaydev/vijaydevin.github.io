@@ -16,6 +16,8 @@ This site is my efforts to start writing a blog to share and interact my experie
 
 Now then, since its "Hello world", here is a very simple hello world program in JavaScript:
 
+<!-- more -->
+
 {% highlight js %}
 // Create a variable to hold the message
 var msg = 'Hello World!';

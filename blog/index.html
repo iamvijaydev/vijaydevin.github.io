@@ -22,7 +22,7 @@ title: Blog
     <p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; (<a href="{{ post.url }}">Read More</a>)</p>
 
     <footer>
-      <small class="icon-category">{% for tag in post.tags %}<label>{{ tag }}</label>{% endfor %}</small>
+      <small class="icon-category">{% for tag in post.tags %}<label>{{ tag }}</label> {% endfor %}</small>
     </footer>
   </article>
   {% endfor %}
