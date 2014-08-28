@@ -2,31 +2,22 @@
 layout: default
 ---
 
+{% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
 <article class="post">
   <header>
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
       <time class="icon-calendar" datetime="{{ post.date }}">{{ page.date | date_to_string }}</time>
-      <span class="icon-folder post-cat">
-        {% for cat in page.categories %}
-          <label>{{ cat }}</label>
-        {% endfor %}
-      </span>
-      <span class="icon-clock read-time">
-        {% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
-        {% if readtime == '0' %}&lt; 1{% else %}{{ readtime }}{% endif %}m read
-      </span>
+      <span class="icon-folder post-cat">{% for cat in page.categories %}<label>{{ cat }}</label>{% endfor %}</span>
+      <span class="icon-clock read-time">{% if readtime == '0' %}&lt; 1{% else %}{{ readtime }}{% endif %}m read</span>
+      <a class="icon-comment" href="">2 comments</a>
     </p>
   </header>
 
   {{ content }}
 
   <footer>
-    <small class="icon-category">
-      {% for tag in page.tags %}
-        <label>{{ tag }}</label>
-      {% endfor %}
-    </small>
+    <small class="icon-category">{% for tag in page.tags %}<label>{{ tag }}</label>{% endfor %}</small>
   </footer>
 </article>
 

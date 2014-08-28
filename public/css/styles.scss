@@ -152,8 +152,10 @@ only screen and (min-resolution: 144dpi) {
 	.nor {
 		background: url(/public/img/logo-sml.png) center no-repeat;
 	}
-	.hov {
-		background: url(/public/img/logo-wm-sml.png) center no-repeat;
+	&:hover{
+		.nor {
+			opacity: 1;
+		}
 	}
 }
 @media only screen and (-moz-min-device-pixel-ratio: 1.5),
@@ -166,10 +168,6 @@ only screen and (min-resolution: 144dpi) {
 			background: url(/public/img/logo.png) center no-repeat;
 	    	background-size: 123px 85px;
 		}
-    	.hov {
-    		background: url(/public/img/logo-wm.png) center no-repeat;
-    		background-size: 123px 85px;
-    	}
     }
 }
 
@@ -267,13 +265,6 @@ only screen and (min-resolution: 144dpi) {
 
 .masthead {
 	padding: 0.5rem 0;
-	margin: 0;
-	border: 0;
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	z-index: 10;
 }
 
 .masthead-title {
