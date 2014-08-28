@@ -118,7 +118,7 @@ a {
 	}
 	.hov {
 		opacity: 0;
-		background: url(/public/img/logo-wm.png) center no-repeat;
+		background: url(/public/img/logo-invr.png) center no-repeat;
 	}
 	&:hover{
 		.nor {
@@ -137,46 +137,25 @@ only screen and (min-resolution: 144dpi) {
     .logo {
     	.nor {
     		background: url(/public/img/logo-2x.png) center no-repeat;
-	    	background-size: 246px 170px;
+	    	background-size: contain;
     	}
     	.hov {
-    		background: url(/public/img/logo-wm-2x.png) center no-repeat;
-    		background-size: 246px 170px;
+    		background: url(/public/img/logo-invr-2x.png) center no-repeat;
+    		background-size: contain;
     	}
     }
 }
 
-.logo.small {
+.logo.sidebar {
 	width: 123px;
 	height: 85px;
 	.nor {
-		background: url(/public/img/logo-sml.png) center no-repeat;
-	}
-	&:hover{
-		.nor {
-			opacity: 1;
-		}
-	}
-}
-@media only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5),
-only screen and (min-resolution: 144dpi) {
-    .logo.small {
-    	.nor {
-			background: url(/public/img/logo.png) center no-repeat;
-	    	background-size: 123px 85px;
-		}
-    }
-}
-
-.logo.small.invr {
-	.nor {
-		background: url(/public/img/logo-wm-sml.png) center no-repeat;
+		background: url(/public/img/logo-sidebar.png) center no-repeat;
+		background-size: contain;
 	}
 	.hov {
-		background: url(/public/img/logo-sml.png) center no-repeat;
+		background: url(/public/img/logo-sidebar-invr.png) center no-repeat;
+		background-size: contain;
 	}
 	&:hover{
 		background-color: transparent;
@@ -187,15 +166,40 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 144dpi) {
-    .logo.small.invr {
+    .logo.sidebar {
     	.nor {
-    		background: url(/public/img/logo-wm.png) center no-repeat;
-	    	background-size: 123px 85px;
-    	}
-    	.hov {
-    		background: url(/public/img/logo.png) center no-repeat;
-    		background-size: 123px 85px;
-    	}
+			background: url(/public/img/logo.png) center no-repeat;
+			background-size: contain;
+		}
+		.hov {
+			background: url(/public/img/logo-invr.png) center no-repeat;
+			background-size: contain;
+		}
+    }
+}
+
+.logo.inner {
+	.nor {
+		background: url(/public/img/logo-inner.gif) center no-repeat;
+	}
+	.hov {
+		background: url(/public/img/logo-inner-invr.gif) center no-repeat;
+	}
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+    .logo.inner {
+    	.nor {
+			background: url(/public/img/logo-inner-2x.gif) center no-repeat;
+			background-size: contain;
+		}
+		.hov {
+			background: url(/public/img/logo-inner-invr-2x.gif) center no-repeat;
+			background-size: contain;
+		}
     }
 }
 
