@@ -4,8 +4,11 @@
 @import "_variables";
 @import "_mixins";
 
+@size: "12px";
+
 .link {
 	color: $link;
+	font-size: @size;
 	&:hover {
 		color: $hover;
 	}
