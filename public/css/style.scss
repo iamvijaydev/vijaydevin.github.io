@@ -6,6 +6,8 @@
 @import "variables";
 @import "mixins";
 
+@size: "12px";
+
 .link {
 	color: $link;
 	font-size: @size;
