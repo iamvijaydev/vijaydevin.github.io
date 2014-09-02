@@ -12,7 +12,7 @@ How's it going!
 
 I am Vijay Dev from India. I am UI & Front-end developer with 5 years of solid experience in web and mobile applications.
 
-My experience range from a varity of technologies and frameworks, and yes of-course I can nerd and a movie junkie and an avid gamer. But I do love swimming and roller scating too ;)
+My experience range from a varity of technologies and frameworks, and yes of-course I'm a nerd and a movie junkie and an avid gamer. But I do love swimming and roller scating too. :smile:
 
 This site is my efforts to start writing a blog to share and interact my experiences and knowledge with the internet.
 
