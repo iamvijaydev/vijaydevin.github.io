@@ -1,11 +1,14 @@
 ---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
 ---
 
-@import "_variables";
-@import "_mixins";
+@import "variables";
+@import "mixins";
 
 .link {
 	color: $link;
+	font-size: @size;
 	&:hover {
 		color: $hover;
 	}
