@@ -13,7 +13,8 @@
   
   {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if location == 'about' %} active{% endif %}" href="/about/">
+    <a class="sidebar-nav-item{% if location == '/' %} active{% endif %}" href="/about/">Home</a>
+    <!-- <a class="sidebar-nav-item{% if location == 'about' %} active{% endif %}" href="/about/">
      <span class="icon-user"></span>
      About
     </a>
@@ -24,31 +25,26 @@
     <a class="sidebar-nav-item{% if location == 'contact' %} active{% endif %}" href="/contact/">
       <span class="icon-contact"></span>
       Contact
-    </a>
-    <a class="sidebar-nav-item{% if location == 'blog' %} active{% endif %}" href="/blog/">
-      <span class="icon-blog"></span>
-      Blog
-    </a>
+    </a> -->
+    <a class="sidebar-nav-item{% if location == 'blog' %} active{% endif %}" href="/blog/">Blog</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
 
-    {% assign pages_list = site.pages %}
+    <!-- {% assign pages_list = site.pages %}
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "page" %}
           <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
         {% endif %}
       {% endif %}
-    {% endfor %}
+    {% endfor %} -->
   </nav>
 
   <div class="sidebar-item">
-    <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-    </p>
+    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
 

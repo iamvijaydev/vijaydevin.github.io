@@ -111,95 +111,40 @@ a {
 		top: 0;
 		bottom: 0;
 		border-radius: 0;
-		transition: opacity 0.3s ease-in-out;
-		transform: rotate( .0001deg );
-	}
-	.nor {
-		opacity: 1;
-	}
-	.hov {
-		opacity: 0;
-		background: url(/public/img/logo-invr.png) center no-repeat;
-	}
-	&:hover{
-		.nor {
-			opacity: 0;
-		}
-		.hov {
-			opacity: 1;
-		}
 	}
 }
-/*@media only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5),
-only screen and (min-resolution: 144dpi) {
-    .logo {
-    	.hov {
-    		background: url(/public/img/logo-invr-2x.png) center no-repeat;
-    		background-size: contain;
-    	}
-    }
-}*/
 
 .logo.side-bar {
 	width: 123px;
 	height: 85px;
+	.nor,
+	.hov {
+		transition: opacity 0.3s ease-in-out;
+	}
 	.nor {
 		background: url(/public/img/logo.svg) center no-repeat;
-		background-size: contain;
+		opacity: 0;
 	}
 	.hov {
 		background: url(/public/img/logo-sidebar.png) center no-repeat;
 		background-size: contain;
+		opacity: 1;
 	}
 	&:hover{
 		background-color: transparent;
-	}
-}
-/*@media only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5),
-only screen and (min-resolution: 144dpi) {
-    .logo.sidebar {
-    	.nor {
-			background: url(/public/img/logo-invr.png) center no-repeat;
-			background-size: contain;
+		.nor {
+			opacity: 1;
 		}
 		.hov {
-			background: url(/public/img/logo.png) center no-repeat;
-			background-size: contain;
+			opacity: 0;
 		}
-    }
-}*/
+	}
+}
 
 .logo.inner {
-	width: 3rem;
-	height: 2.1rem;
-	.hov {
-		background: url(/public/img/logo-inner-invr.gif) center no-repeat;
-	}
+	width: 60px;
+	height: 42px;
 }
-/*@media only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5),
-only screen and (min-resolution: 144dpi) {
-    .logo.inner {
-    	.nor {
-			background: url(/public/img/logo-inner-2x.gif) center no-repeat;
-			background-size: contain;
-		}
-		.hov {
-			background: url(/public/img/logo-inner-invr-2x.gif) center no-repeat;
-			background-size: contain;
-		}
-    }
-}*/
-
-
 
 
 @mixin transDelay($delay) {
