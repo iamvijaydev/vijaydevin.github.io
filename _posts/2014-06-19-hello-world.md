@@ -33,3 +33,5 @@ console.log( msg );
 
 // > Hello World!
 {% endhighlight %}
+
+So there you have it guys. See you around. :smile:
