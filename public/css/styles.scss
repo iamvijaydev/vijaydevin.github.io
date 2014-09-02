@@ -142,8 +142,8 @@ a {
 }
 
 .logo.inner {
-	width: 60px;
-	height: 42px;
+	width: 61px;
+	height: 43px;
 }
 
 
@@ -208,7 +208,25 @@ a {
 }
 
 .highlight {
-	border: 1px solid rgba(0, 0, 0, 0.15);
+	border: 1px solid #eee;
+}
+
+.page,
+.post {
+	margin-bottom: 3em;
+}
+
+.related {
+	border-top: 1px solid #e0e0e0;
+}
+
+.related-posts {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	li {
+		display: table-cell;
+	}
 }
 
 
@@ -222,21 +240,13 @@ a {
 	.logo-link {
 		text-decoration: none;
 		display: inline-block;
-		&:hover {
-			.nor {
-				opacity: 0;
-			}
-			.hov {
-				opacity: 1;
-			}
-		}
 	}
 	.logo.inner {
 		float: left;
 	}
 	.sperate {
 		float: left;
-		border-right: 1px solid #ccc;
+		border-right: 1px solid #e0e0e0;
 		height: 43px;
 		padding-left: 18px;
 	}

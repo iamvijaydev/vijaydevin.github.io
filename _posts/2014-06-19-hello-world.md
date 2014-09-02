@@ -21,8 +21,12 @@ Now then, since its "Hello world", here is a very simple hello world program in 
 <!-- more -->
 
 {% highlight js %}
-// Create a variable to hold the message
-var msg = 'Hello World!';
+// variable to hold message and cache DOM node
+var msg  = 'Hello World!',
+	$msg = document.getElementById( 'msg' );
+
+// inject the message into page
+$msg.innerHTML( msg );
 
 // log the message in console
 console.log( msg );
