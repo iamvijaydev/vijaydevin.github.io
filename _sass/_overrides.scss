@@ -48,6 +48,9 @@
 	table-layout: fixed;
 	li {
 		display: table-cell;
+		a:hover {
+			color: $hover;
+		}
 	}
 	small {
 		display: block;
