@@ -5,19 +5,18 @@
 	 width="246.525px" height="172.582px" viewBox="0 0 246.525 172.582" style="enable-background:new 0 0 246.525 172.582;"
 	 xml:space="preserve">
 <polygon style="fill:#F51B47;" points="0,0 122.453,172.582 246.525,0 "/>
-<polygon style="fill:#1768F5;" points="33,17 122.674,143.101 213,17 "/>
-<polygon style="fill:#178FF5;" points="123,84 77.721,50.325 33,17 213,17 167.793,50.325 "/>
-<polygon id="shadow" style="opacity:0.05;" points="123,0 123,172.582 246.525,0 "/>
-<polygon id="star" style="fill:#FFFFFF;" points="123,17 112,50 77,50 105,71 95,104 123,84 151,104 140,71 168,50 133,50 "/>
+<polygon style="fill:#1768F5;" points="28,14 93.199,104.862 122.641,146.601 152.594,104.862 218,14 "/>
+<polygon style="fill:#178FF5;" points="123,85 75,49 28,14 218,14 170,49 "/>
+<polygon id="star" style="fill:#FFFFFF;" points="123,14 112,49 75,49 104,71 93,105 123,85 153,105 141,71 170,49 134,49 "/>
 <g id="shade2">
-	<polygon style="opacity:0.15;" points="123,17 123,65 133.804,50.264 	"/>
-	<polygon style="opacity:0.15;" points="140.326,70.939 151,104 123,65 	"/>
-	<polygon style="opacity:0.15;" points="95,104 123,65 123,84 	"/>
-	<polygon style="opacity:0.15;" points="77,50 123,65 105,71 	"/>
+	<polygon style="opacity:0.15;" points="123,14 123,64 134,49 	"/>
+	<polygon style="opacity:0.15;" points="141,71 153,105 123,64 	"/>
+	<polygon style="opacity:0.15;" points="93,105 123,64 123,85 	"/>
+	<polygon style="opacity:0.15;" points="75,49 123,64 104,71 	"/>
 </g>
 <g id="shade1">
-	<polygon style="opacity:0.1;" points="167.793,50.325 123,65 140,71 	"/>
-	<polygon style="opacity:0.1;" points="123,84 151,104 123,65 	"/>
-	<polygon style="opacity:0.1;" points="112,50 123,65 77,50 	"/>
+	<polygon style="opacity:0.1;" points="170,49 123,64 141,71 	"/>
+	<polygon style="opacity:0.1;" points="123,85 153,105 123,64 	"/>
+	<polygon style="opacity:0.1;" points="111.68,48.661 123,64 75,49 	"/>
 </g>
 </svg>
