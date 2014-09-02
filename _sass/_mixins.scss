@@ -5,6 +5,13 @@
 	transition: $trans;
 }
 
+@mixin transition-transform($duration, $timefunction) {
+	-webkit-transition: -webkit-transform $duration $timefunction;
+	-moz-transition: -moz-transform $duration $timefunction;
+	-ms-transition: -ms-transform $duration $timefunction;
+	transition: transform $duration $timefunction;
+}
+
 @mixin animation($anim) {
 	-webkit-animation: $anim;
 	-moz-animation: $anim;
