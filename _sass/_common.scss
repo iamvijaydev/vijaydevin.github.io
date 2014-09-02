@@ -67,11 +67,11 @@ a {
 		@include transition(opacity 0.3s ease-in-out);
 	}
 	.nor {
+		background: url($logo) center no-repeat;
+		background-size: 123px 85px;
 		opacity: 0;
 	}
 	.hov {
-		background: url($logo) center no-repeat;
-		background-size: 123px 85px;
 		opacity: 1;
 	}
 	&:hover{
