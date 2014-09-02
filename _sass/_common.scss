@@ -110,3 +110,9 @@ a {
 	background: linear-gradient(135deg,  rgba(46,204,113,0.5) 0%,rgba(230,126,34,0.5) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332ecc71', endColorstr='#33e67e22',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+.emoji {
+	display: inline;
+	margin: 0;
+	border-radius: 0;
+}
