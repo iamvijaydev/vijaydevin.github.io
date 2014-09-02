@@ -1,3 +1,6 @@
+---
+---
+
 @mixin transition($trans) {
 	-webkit-transition: $trans;
 	-moz-transition: $trans;
@@ -17,11 +20,4 @@
 	-moz-user-select: $select;
 	-ms-user-select: $select;
 	user-select: $select;
-}
-
-@mixin userSelect($filter) {
-	-webkit-filter: $filter;
-	-moz-filter: $filter;
-	-ms-filter: $filter;
-	filter: $filter;
 }
