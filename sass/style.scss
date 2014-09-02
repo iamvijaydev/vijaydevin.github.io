@@ -5,9 +5,9 @@
 @import 'mixins';
 
 .link {
-	color: @link;
+	color: $link;
 	&:hover {
-		color: @hover;
+		color: $hover;
 	}
 }
 
