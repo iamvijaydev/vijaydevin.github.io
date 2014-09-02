@@ -4,20 +4,19 @@
 $link: #1768f5;
 $hover: #f51b47;
 
-// increasing order
 $gray1: #efefef;
 $gray2: #e0e0e0;
 $gray3: #bbb;
 $gray2: #aaa;
 
-$logo: '/public/img/logo.svg';
-$logoInvr: '/public/img/logo-sidebar-invr.png';
-$pat: '/public/img/pat.png';
-$banner: '/public/img/banner.png';
-$cloud1: '/public/img/cloud-above.png';
-$could2: '/public/img/cloud-below.png';
+$logo: "/public/img/logo.svg";
+$logoInvr: "/public/img/logo-sidebar-invr.png";
+$pat: "/public/img/pat.png";
+$banner: "/public/img/banner.png";
+$cloud1: "/public/img/cloud-above.png";
+$could2: "/public/img/cloud-below.png";
 
-@mixin userSelect($select) {
+@mixin user-select($select) {
 	-webkit-user-select: $select;
 	-moz-user-select: $select;
 	-ms-user-select: $select;
@@ -32,5 +31,5 @@ $could2: '/public/img/cloud-below.png';
 }
 
 .anim {
-	@include userSelect('none');
+	@include user-select("none");
 }
