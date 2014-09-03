@@ -4,14 +4,14 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="246.525px" height="172.582px" viewBox="0 0 246.525 172.582" style="enable-background:new 0 0 246.525 172.582;"
 	 xml:space="preserve">
-<polygon style="fill:#F51B47;" points="0,0 122.453,172.582 246.525,0 "/>
-<polygon style="fill:#1768F5;" points="34,16 95.081,100.898 122.664,140 150.725,100.898 212,16 "/>
-<polygon style="fill:#178FF5;" points="123,82 78,49 34,16 212,16 167,49 "/>
-<polygon id="shade" style="opacity:0.05;" points="123.078,0 122.962,172.582 246.525,0 "/>
-<polygon id="star" style="fill:#FFFFFF;" points="123,16 113,49 78,49 105,69 94.895,101.027 123,82 151.105,101.027 140,69 167,49 
+<polygon style="fill:#F51B47;" points="0.516,0 122.969,172.582 247.041,0 "/>
+<polygon style="fill:#1768F5;" points="35,17 95.081,100.898 123,140 151.105,101.027 212,17 "/>
+<polygon style="fill:#178FF5;" points="123,82 78,49 35,17 212,17 167,49 "/>
+<polygon id="shade" style="opacity:0.05;" points="123.078,0 122.969,172.582 246.525,0 "/>
+<polygon id="star" style="fill:#FFFFFF;" points="123,17 113,49 78,49 105,69 94.895,101.027 123,82 151.105,101.027 140,69 167,49 
 	133,49 "/>
 <g id="shade2">
-	<polygon style="opacity:0.15;" points="123,16 123,62.616 133,49 	"/>
+	<polygon style="opacity:0.15;" points="123,17 123,62.616 133,49 	"/>
 	<polygon style="opacity:0.15;" points="140,69 151.105,101.027 123,62.616 	"/>
 	<polygon style="opacity:0.15;" points="94.895,101.027 123,62.616 123,82 	"/>
 	<polygon style="opacity:0.15;" points="78,49 123,62.616 105,69 	"/>
