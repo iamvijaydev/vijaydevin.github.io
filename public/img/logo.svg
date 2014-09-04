@@ -4,49 +4,59 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="246.525px" height="172.582px" viewBox="0 0 246.525 172.582" style="enable-background:new 0 0 246.525 172.582;"
 	 xml:space="preserve">
-<polygon style="fill:#F51B47;" points="0.516,0 122.969,172.582 247.041,0 "/>
-<g>
+<radialGradient id="redTriangle_1_" cx="123.1113" cy="63.9575" r="83.9115" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.0907" style="stop-color:#FDD6DE"/>
+	<stop  offset="0.213" style="stop-color:#FBA5B6"/>
+	<stop  offset="0.3387" style="stop-color:#F97A94"/>
+	<stop  offset="0.4654" style="stop-color:#F85878"/>
+	<stop  offset="0.5936" style="stop-color:#F63D63"/>
+	<stop  offset="0.7239" style="stop-color:#F62A53"/>
+	<stop  offset="0.8577" style="stop-color:#F51F4A"/>
+	<stop  offset="1" style="stop-color:#F51B47"/>
+</radialGradient>
+<filter id="glow">
+    <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+    <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+</filter>
+<polygon id="redTriangle" style="fill:url(#redTriangle_1_);" points="0.516,0 122.969,172.582 247.041,0 "/>
+<g id="rt-Reflection">
 	
-		<image style="overflow:visible;opacity:0.13;" width="212" height="157" xlink:href="EC77CF2D.png"  transform="matrix(1 0 0 1 18 0)">
+		<image style="overflow:visible;opacity:0.13;" width="214" height="159" xlink:href="EC77CF23.png"  transform="matrix(1 0 0 1 17 -1)">
 	</image>
 	<g>
-		<path style="fill:#1768F5;" d="M122.998,141c-0.322-0.001-0.624-0.156-0.812-0.419l-27.919-39.102l-60.08-83.897
-			c-0.218-0.305-0.248-0.706-0.077-1.039C34.282,16.209,34.625,16,35,16h177c0.376,0,0.72,0.211,0.891,0.545
-			c0.171,0.335,0.14,0.737-0.081,1.042l-60.895,84.027l-28.104,38.971c-0.188,0.261-0.49,0.415-0.811,0.415
-			C122.999,141,122.999,141,122.998,141z"/>
-		<path style="fill:#BF1537;" d="M212,17h0.005 M212,17l-60.895,84.027L123,140l-27.919-39.102L35,17H212 M212.005,15H212H35
-			c-0.75,0-1.437,0.419-1.779,1.086c-0.343,0.667-0.284,1.469,0.153,2.079l60.081,83.898l27.917,39.1
-			c0.375,0.524,0.979,0.836,1.623,0.838c0.002,0,0.003,0,0.005,0c0.643,0,1.246-0.309,1.622-0.83l28.105-38.973l60.85-83.965
-			c0.267-0.339,0.426-0.767,0.426-1.232C214.003,15.896,213.109,15,212.005,15L212.005,15z"/>
+		<path style="fill:#F63D62;" d="M212,17h0.005 M212,17l-60.895,84.027L123,140l-27.919-39.102L35,17H212 M212.005,14H212H35
+			c-1.125,0-2.154,0.629-2.668,1.629c-0.514,1-0.425,2.204,0.229,3.118l60.081,83.898l27.917,39.099
+			c0.562,0.787,1.468,1.255,2.434,1.257c0.002,0,0.005,0,0.007,0c0.964,0,1.869-0.463,2.434-1.245l28.105-38.973l60.837-83.948
+			c0.393-0.507,0.627-1.144,0.627-1.834C215.003,15.343,213.662,14,212.005,14L212.005,14z"/>
 	</g>
 </g>
-<g id="shadow" style="display:none;opacity:0.3;">
-	<path style="display:inline;" d="M208.952,18.333l-42.468,30.2l-43.408,32.555L78.681,48.531L38.102,18.333H208.952
-		 M212.084,17.333h-177l43,32l45,33l44-33L212.084,17.333L212.084,17.333z"/>
+<g id="bigTriangle">
+	<path style="fill:#1768F5;" d="M122.998,141c-0.322-0.001-0.624-0.156-0.812-0.419l-27.919-39.102l-60.08-83.897
+		c-0.218-0.305-0.248-0.706-0.077-1.039C34.282,16.209,34.625,16,35,16h177c0.376,0,0.72,0.211,0.891,0.545
+		c0.171,0.335,0.14,0.737-0.081,1.042l-60.895,84.027l-28.104,38.971c-0.188,0.261-0.49,0.415-0.811,0.415
+		C122.999,141,122.999,141,122.998,141z"/>
+	<path style="fill:#BF1537;" d="M212,17h0.005 M212,17l-60.895,84.027L123,140l-27.919-39.102L35,17H212 M212.005,15H212H35
+		c-0.75,0-1.437,0.419-1.779,1.086c-0.343,0.667-0.284,1.469,0.153,2.079l60.081,83.898l27.917,39.1
+		c0.375,0.524,0.979,0.836,1.623,0.838c0.002,0,0.003,0,0.005,0c0.643,0,1.246-0.309,1.622-0.83l28.105-38.973l60.85-83.965
+		c0.267-0.339,0.426-0.767,0.426-1.232C214.003,15.896,213.109,15,212.005,15L212.005,15z"/>
 </g>
-<g>
-	
-		<image style="overflow:visible;opacity:0.13;" width="183" height="71" xlink:href="EC77CF24.png"  transform="matrix(1 0 0 1 32 15)">
-	</image>
-	<g>
-		<polygon style="fill:#178FF5;" points="123,82 78,49 35,17 212,17 167,49 		"/>
-	</g>
+<g id="bt-Reflection">
+	<path style="fill:#3179F6;" d="M209.534,18.75l-59.037,81.838l-27.494,38.126l-27.311-38.251L37.456,18.75H209.534 M211,18h0.005
+		H211z M211,18H36l59.081,82.897L123,140l28.105-38.974L211,18L211,18z"/>
 </g>
-<g id="reflection" style="opacity:0.2;">
-	<path style="fill:#FFFFFF;" d="M210.571,17.708l-60.033,82.838l-27.494,38.126L95.732,100.42L36.501,17.708H210.571
-		 M212.041,16.958h0.005H212.041z M212.041,16.958h-177l60.081,83.898l27.919,39.103l28.105-38.974L212.041,16.958L212.041,16.958z"
-		/>
+<g id="st-Shadow">
+	<path style="fill:#1254C0;" d="M208,19l-41,30l-44,33L78,49L39,19H208 M208,18H39c-0.428,0-0.809,0.272-0.947,0.678
+		c-0.138,0.405-0.002,0.854,0.337,1.114l39,30l45.019,33.014C122.584,82.936,122.792,83,123,83c0.211,0,0.422-0.067,0.6-0.2l44-33
+		l40.991-29.993c0.349-0.255,0.494-0.707,0.359-1.118C208.816,18.278,208.433,18,208,18L208,18z"/>
 </g>
-<polygon id="shade" style="opacity:0.05;" points="123.078,0 122.969,172.582 246.525,0 "/>
-<g id="star">
-	
-		<image style="overflow:visible;opacity:0.75;" width="149" height="145" xlink:href="EC77CF27.png"  transform="matrix(1 0 0 1 48 -13)">
-	</image>
-	<g>
-		<polygon style="fill:#FFFFFF;" points="123,17 113,49 78,49 105,69 94.895,101.027 123,82 151.105,101.027 140,69 167,49 133,49 
-					"/>
-	</g>
-</g>
+<polygon id="smallTriangle" style="fill:#178FF5;" points="123,82 78,49 35,17 212,17 167,49 "/>
+<polygon id="half_shade" style="opacity:0.05;" points="123.078,0 122.969,172.582 246.525,0 "/>
+<polygon id="star" filter="url(#glow)" style="fill:#FFFFFF;" points="123,17 113,49 78,49 105,69 94.895,101.027 123,82 151.105,101.027 140,69 167,49 
+	133,49 "/>
 <g id="shade2">
 	<polygon style="opacity:0.15;" points="123,17 123,62.616 133,49 	"/>
 	<polygon style="opacity:0.15;" points="140,69 151.105,101.027 123,62.616 	"/>
