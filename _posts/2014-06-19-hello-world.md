@@ -10,7 +10,7 @@ tags: ['coding', 'javascript', 'hello', 'world']
 
 How's it going!
 
-I am Vijay Dev from India. I am UI & Front-end developer with 5 years of solid experience in web and mobile applications.
+I'm Vijay Dev from India. I'm a UI & Front-end developer with 5 years of solid experience in web and mobile applications.
 
 My experience range from a varity of technologies and frameworks, and yes of-course I'm a nerd and a movie junkie and an avid gamer. But I do love swimming and roller scating too.
 
