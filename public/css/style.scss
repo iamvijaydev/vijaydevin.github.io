@@ -276,6 +276,35 @@
 	}
 }
 
+.blog {
+	.part {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		&.next {
+			padding: 0 0 3rem;
+		}
+	}
+	.cell {
+		display: table-cell;
+		padding: 0 1rem;
+	}
+	.title {
+		font-size: 1rem;
+		display: block;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.icon-category {
+		font-size: 0.85rem;
+		color: #aaa;
+	}
+	p {
+		font-size: 0.8rem;
+	}
+}
+
 
 .home-footer {
 	position: relative;
