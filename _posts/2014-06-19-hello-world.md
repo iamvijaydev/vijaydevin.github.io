@@ -6,7 +6,7 @@ permalink: /blog/hello-world/
 categories: [JavaScript]
 tags: ['coding', 'javascript', 'hello', 'world']
 comments: true
-banner: 'https://lh3.googleusercontent.com/NHkzIYrA7nQuXvQqn5v3Kcq_1LSqQlz7cMqKcmPTx2q08fMtg-ZUuiH-dX8RsURwJSCvJW_Fe6M=w1896-h899'
+banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip.jpg'
 banner_link: 'http://google.com/'
 ---
 
