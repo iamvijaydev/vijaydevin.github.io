@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Hello World!
-redirect_from: "/2014/06/19/hello-world/"
+redirect_from: '/2014/06/19/hello-world/'
 permalink: /blog/hello-world/
 categories: [JavaScript]
 tags: ['coding', 'javascript', 'hello', 'world']
 comments: true
+banner: 'https://lh3.googleusercontent.com/FH7uLNV2yIbGzDM3TCGxaFJlnZMMQ7_uX7SJRxP7JgDRYSQpMu6xT6Dr8OWsMcP8Gg20=w1886-h889'
+banner_link: 'http://google.com/'
 ---
 
 How's it going!

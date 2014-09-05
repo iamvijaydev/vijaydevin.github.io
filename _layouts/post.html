@@ -14,6 +14,10 @@ layout: default
     </p>
   </header>
 
+  {% if page.banner %}
+    <a href="{{ page.banner_link }}"><img src="{{ page.banner }}" alt="{{ page.title }}" /></a>
+  {% endif %}
+
   {{ content }}
 
   <footer>

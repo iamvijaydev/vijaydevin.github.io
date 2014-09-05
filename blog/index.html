@@ -18,6 +18,10 @@ title: Blog
         <a class="icon-comment" href="">2 comments</a>
       </p>
     </header>
+
+    {% if page.banner %}
+      <a href="{{ page.banner_link }}"><img src="{{ page.banner }}" alt="{{ page.title }}" /></a>
+    {% endif %}
     
     <p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; (<a href="{{ post.url }}">Read More</a>)</p>
 
