@@ -6,7 +6,7 @@ permalink: /blog/hello-world/
 categories: [JavaScript]
 tags: ['coding', 'javascript', 'hello', 'world']
 comments: true
-banner: 'https://lh3.googleusercontent.com/FH7uLNV2yIbGzDM3TCGxaFJlnZMMQ7_uX7SJRxP7JgDRYSQpMu6xT6Dr8OWsMcP8Gg20=w1886-h889'
+banner: 'https://lh3.googleusercontent.com/NHkzIYrA7nQuXvQqn5v3Kcq_1LSqQlz7cMqKcmPTx2q08fMtg-ZUuiH-dX8RsURwJSCvJW_Fe6M=w1896-h899'
 banner_link: 'http://google.com/'
 ---
 
