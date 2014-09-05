@@ -19,8 +19,8 @@ title: Blog
       </p>
     </header>
 
-    {% if page.banner %}
-      <a href="{{ page.banner_link }}"><img src="{{ page.banner }}" alt="{{ page.title }}" /></a>
+    {% if post.banner %}
+      <a href="{{ post.banner_link }}"><img src="{{ post.banner }}" alt="{{ post.title }}"></a>
     {% endif %}
     
     <p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; (<a href="{{ post.url }}">Read More</a>)</p>
