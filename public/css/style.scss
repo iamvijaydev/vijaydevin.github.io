@@ -276,7 +276,7 @@
 	}
 }
 
-.blog {
+.home-content.blog {
 	.part {
 		display: table;
 		width: 100%;
@@ -287,7 +287,13 @@
 	}
 	.cell {
 		display: table-cell;
-		padding: 0 1rem;
+		vertical-align: middle;
+		&:first-child {
+			padding-right: 1rem;
+		}
+		&:last-child {
+			padding-left: 1rem;
+		}
 	}
 	.btitle {
 		font-size: 1rem;
@@ -296,12 +302,13 @@
 		text-overflow: ellipsis;
 		overflow: hidden;
 	}
-	.icon-category {
-		font-size: 0.85rem;
-		color: #aaa;
+	.icon-folder {
+		font-size: 0.7rem;
+		color: $gray3;
 	}
 	p {
 		font-size: 0.8rem;
+		margin-bottom: 0.5rem;
 	}
 }
 
