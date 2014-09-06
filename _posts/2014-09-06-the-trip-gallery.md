@@ -10,15 +10,17 @@ banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip.jpg'
 banner_link: 'http://vijaydevin.github.io/demo_the-trip-gallery/'
 ---
 
-I have always loved to watch those pictures with images inside stacked skewed frames. One picture itself presents a playful mashup of images from the whole event. While browsing through an album of my office colleague's trip to [Kanyakumari|http://en.wikipedia.org/wiki/Kanyakumari], the idea just hit me to create an image gallery out of it.
+I have always loved to watch those pictures with images inside stacked skewed frames. One picture itself presents a playful mashup of images from the whole event. While browsing through an album of my office colleague's trip to [Kanyakumari](http://en.wikipedia.org/wiki/Kanyakumari), the idea just hit me to create an image gallery out of it.
 
-Fair warning: I have created it with the bleeding edge technologies in CSS3. It works great on Google Chrome browser, and that's it. I havn't test it in other browsers although I have tried to support. This is an experiment; someday I may make it a package and share. You are welcome to improve - [Github Repo|https://github.com/vijaydevin/demo_the-trip-gallery].
+*Fair warning:* I have created it with the latest in CSS3. It works great on Google Chrome browser, and that's it. I havn't test it in other browsers although I have tried to support. This is an experiment. You are welcome to improve - [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery).
 
 Now then lets begin with important part of creating images inside stacked skewed frames.
 
 <!-- more -->
 
-So basically there is a container and a image inside it. We will be using ```backgroung-image``` rather than images since it gives better screen frame rate. To further boost frame rates, we will be positioning everything. Lets take a look at the basic HTML structure:
+Basically there is a container and a image inside it. The container is skewed counter-clockwise and the image is skewed clockwise for the same amount.
+
+We will be using ```backgroung-image``` rather than images since it gives better screen frame rates. To further boost frame rates, we will be positioning everything. Lets take a look at the basic HTML structure:
 
 {% highlight html %}
 <div class="container">
@@ -26,7 +28,7 @@ So basically there is a container and a image inside it. We will be using ```bac
 </div>
 {% endhighlight %}
 
-And here is the CSS magic:
+It make more sense to added the background image as inline style rather than creating unique classes. We could also automating this with JS. Here is the CSS magic:
 
 {% highlight css %}
 .container {
