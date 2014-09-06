@@ -10,17 +10,19 @@ banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip.jpg'
 banner_link: 'http://vijaydevin.github.io/demo_the-trip-gallery/'
 ---
 
-I have always loved to watch those pictures with images inside stacked skewed frames. One picture itself presents a playful mashup of images from the whole event. While browsing through an album of my office colleague's trip to [Kanyakumari](http://en.wikipedia.org/wiki/Kanyakumari), the idea just hit me to create an image gallery out of it.
+I have always loved to watch those pictures with images inside skewed frames. One picture itself presents a playful mashup of images from the whole event.
 
-*Fair warning:* I have created it with the latest in CSS3. It works great on Google Chrome browser, and that's it. I havn't test it in other browsers although I have tried to support. This is an experiment. You are welcome to improve - [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery).
+While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal. The [demo](http://vijaydevin.github.io/demo_the-trip-gallery/) and the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery).
 
-Now then lets begin with important part of creating images inside stacked skewed frames.
+Now then lets begin with important part of creating images inside skewed frames.
 
 <!-- more -->
 
-Basically there is a container and a image inside it. The container is skewed counter-clockwise and the image is skewed clockwise for the same amount.
+Basically there is a container and a image inside it. The container is skewed counter-clockwise and the image is skewed clockwise for the same amount. In the end result the container is skewed but not the image, thusly we could see few blank areas in container. To avoid this we would give the image twice as much width and position it to the middle, cropping parts of it. Mashup is supposed to be bits of everything anyway. 
 
-We will be using ```backgroung-image``` rather than images since it gives better screen frame rates. To further boost frame rates, we will be positioning everything. Lets take a look at the basic HTML structure:
+![alt text](https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip-info-1.jpg "Problem with skew and its solution")
+
+We will be using ```backgroung-image``` rather than ```<img>``` tags since it gives better screen frame rates while translating. Also background-image will allow us to crop and resize the image without hastel. To further boost frame rates, we will be positioning everything.
 
 {% highlight html %}
 <div class="container">
@@ -28,7 +30,7 @@ We will be using ```backgroung-image``` rather than images since it gives better
 </div>
 {% endhighlight %}
 
-It make more sense to added the background image as inline style rather than creating unique classes. We could also automating this with JS. Here is the CSS magic:
+It make more sense to added the background image as inline style rather than creating unique classes. We could also automating this with JS.
 
 {% highlight css %}
 .container {
