@@ -6,8 +6,8 @@ permalink: /blog/hello-world/
 categories: [JavaScript]
 tags: ['coding', 'javascript', 'hello', 'world']
 comments: true
-banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip.jpg'
-banner_link: 'http://google.com/'
+banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/hello-world.JPG'
+banner_link: 'https://www.facebook.com/media/set/?set=a.554126251271965.123064.100000237843626&type=1&l=a6228f13d9'
 ---
 
 How's it going!
