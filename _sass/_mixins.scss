@@ -19,6 +19,21 @@
 	animation: $anim;
 }
 
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content; 
+	}
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+	@-ms-keyframes #{$name} {
+		@content;
+	}
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
 @mixin user-select($select) {
 	-wehkit-user-select: $select;
 	-moz-user-select: $select;

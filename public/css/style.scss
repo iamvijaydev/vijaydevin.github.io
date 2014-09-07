@@ -51,13 +51,13 @@
 		background: url($cloud1) 0 100% repeat-x;
 		background-size: 923px 52px;
 		z-index: 3;
-		-webkit-animation: cloudFrowardAnim 60s linear infinite;
+		@include animation(cloudFrowardAnim 60s linear infinite);
 	}
 	.cloud-below {
 		background: url($cloud2) 0 100% repeat-x;
 		background-size: 923px 52px;
 		z-index: 2;
-		-webkit-animation: cloudBackwardAnim 60s linear infinite;
+		@include animation(cloudBackwardAnim 60s linear infinite);
 	}
 }
 @media (min-width: 30.1em) {
@@ -311,6 +311,15 @@
 	p {
 		font-size: 0.8rem;
 		margin-bottom: 0.3rem;
+	}
+	.blog-link {
+		border: 1px solid;
+		padding: 0.3rem 0.5rem;
+		border-radius: 0.2rem;
+		font-size: 0.7rem;
+		font-family: 'Lato';
+		text-transform: uppercase;
+		text-decoration: none;
 	}
 }
 

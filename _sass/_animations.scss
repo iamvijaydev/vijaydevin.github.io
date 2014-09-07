@@ -1,0 +1,17 @@
+@include keyframes(cloudFrowardAnim) {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 923px 0;
+	}
+}
+
+@include keyframes(cloudBackwardAnim) {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -923px 0;
+	}
+}
