@@ -358,6 +358,7 @@
 /*blooging*/
 .post-excerpt {
 	line-height: 1.7;
+	margin-bottom: 0.7rem;
 }
 
 .post {
@@ -390,5 +391,8 @@
 	}
 	footer label:not(:last-child):after {
 		content: ",";
+	}
+	ul > ul {
+		margin-bottom: 0.5rem;
 	}
 }
