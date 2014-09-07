@@ -4,25 +4,27 @@ title: The Trip - An experimental CSS3 gallery
 redirect_from: '/2014/09/06/the-trip-gallery/'
 permalink: /blog/the-trip-gallery/
 categories: [CSS]
-tags: ['css3', 'transform', 'skew', 'gallery', 'trip']
+tags: ['css3', 'transform', 'skew', 'gallery', 'trip', 'iScroll.js']
 comments: true
 banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip.jpg'
 banner_link: 'http://vijaydevin.github.io/demo_the-trip-gallery/'
 ---
 
-I have always loved to watch those pictures with images inside skewed frames. One picture itself presents a playful mashup of images from the whole event.
+I have always loved to watch those pictures with images inside skewed frames. One picture presents a playful mashup of images from the whole event.
 
-While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal. The [demo](http://vijaydevin.github.io/demo_the-trip-gallery/) and the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery).
+While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal. Checkout the [demo](http://vijaydevin.github.io/demo_the-trip-gallery/) and the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery).
 
 Now then lets begin with important part of creating images inside skewed frames.
 
 <!-- more -->
 
-Basically there is a container and a image inside it. The container is skewed anti-clockwise. To reverse the skewed image we skew it clockwise for the same amount. In the end result the container is skewed but not the image, thusly we could see few blank areas in container. To avoid this we would give the image twice as much width and position it to the middle, cropping parts of it.
+### The basics
 
-![alt text](https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip-info-1.jpg "Problem with skew and its solution")
+There is a container and an image inside it. The container is skewed anti-clockwise which will also skew the image (#1). To reverse the skewed image we skew it clockwise for the same amount. In the end result the container is skewed but not the image, thusly we could see few blank areas in container (#2). To avoid this we would give the image twice as much width and position it to the middle, cropping parts of it (#3).
 
-We will be using ```backgroung-image``` rather than ```<img>``` tags since it gives better screen frame rates while translating. Also background-image will allow us to crop and resize the image without hassle. To further boost frame rates, we will be positioning everything.
+![alt text](https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip-info.jpg "Problem with skew and its solution")
+
+Lets use ```backgroung-image``` rather than ```<img>``` tag since it gives better screen frame rates while translating. Also background-image will allow us to crop and resize the image without hassle. To further boost frame rates, lets positioning everything.
 
 {% highlight html %}
 <div class="child" style="left:0">
@@ -30,7 +32,7 @@ We will be using ```backgroung-image``` rather than ```<img>``` tags since it gi
 </div>
 {% endhighlight %}
 
-It make sense to added the background image as inline style rather than creating unique classes. We could also automating this with JS. The containers will be position one after the other rather than floated, again automated via JS.
+It make sense to added the background image as inline style rather than creating unique classes. We could also add then as ```<img>``` tags and replace as the above structure via JS. Multiple ```.child``` containers will be position one after the other rather than floated, automated via JS.
 
 {% highlight css %}
 .child {
@@ -59,17 +61,20 @@ It make sense to added the background image as inline style rather than creating
 }
 {% endhighlight %}
 
-As you can see from the above styles are have skewed ```.child``` _anti-clockwise_ and counter skewed ```.photo``` _clockwise_. Additionally the background image is centralized and sized to cover.
+In the above styles the ```.child``` is skewed _anti-clockwise_ (-20deg) and the ```.photo``` is counter skewed  _clockwise_ (+20deg). Additionally the background image is centralized and sized to cover.
 
-Now we are gonna use the famous [iScroll.js](iscrolljs.com) for the touch/drag scroll effects and we will build the structure around our code accordingly.
+### Building the structure
+
+Lets use the famous [iScroll.js](iscrolljs.com) for the touch/drag/scroll effects and lets build the html structure around our code accordingly.
 
 {% highlight html %}
 <div id="wrapper">
 	<div id="scroller">
 		<ul id="thelist">
 			<li class="child">
-				<div class="photo" style="background-image:url('img.jpg')"></div>
-				<div class="filter"></div>
+				<div class="photo"
+					 style="background-image: url(img.jpg)">
+				</div>
 			</li>
 			...
 			...
@@ -78,4 +83,68 @@ Now we are gonna use the famous [iScroll.js](iscrolljs.com) for the touch/drag s
 </div>
 {% endhighlight %}
 
-The gallery images are now an unordered list, with a handy filter on the side that will be applied over the image.
+The gallery images are now in an unordered list. Each ```li``` is already positioned via CSS and will placed one after the another via JS.
+
+### Adding the script
+
+The script takes care of following things:
+* Assign ```left``` to each ```.child``` nodes
+* Setup the iScoll for touch/drag/scroll effect
+* Prevent bounce effets on some touch devices (iOS)
+
+There are few additional things that I haven't troubled JS to take care of, since this only an experiment. But if we were to build an plugin these are the additional thing that must be taken care by JS:
+* Based on the width and counts of ```.child``` assign a total width to ```#theList``` and ```#scroller```
+..* Width is necessary for iScroll to work properly
+* Allow the end user to add the image as simple ```<img>``` tags that can be replaced as the above HTML structure
+* Adjustments for responsive screens
+
+{% highlight js %}
+// Run along now, this is a private party
+(function(document, window) {
+
+	// DOM nodes and objects instances
+	var $thelist, $thelistChilds, $wrapper, myScroll, loaded;
+
+	// numerical variables
+	var i = 0, left = 0;
+
+	// exec after DOM ready
+	loaded = function() {
+
+		// assign 'left' to each child
+		$thelist = document.getElementById('thelist');
+		$thelistChilds = $thelist.children;
+		for (i = 0; i < $thelistChilds.length; i++) {
+			left += 500;
+			$thelistChilds[i].style.left = left + 'px';
+		};
+
+		// setup iScroll
+		$wrapper = document.getElementById('wrapper');
+		myScroll = new IScroll($wrapper, {
+			'scrollbars': 'custom',
+			'mouseWheel': true,
+			'bounce': false,
+			'interactiveScrollbars': true,
+			'eventPassthrough': true,
+			'scrollX': true,
+			'scrollY': false
+		});
+	}
+
+	// if its a touch screen
+	if ( 'ontouchstart' in window ) {
+
+		// avoid and browser screen bounce
+		document.addEventListener('touchmove', function (e) {
+			e.preventDefault();
+		}, false);
+	};
+	
+	// setup DOM ready listener
+	document.addEventListener('DOMContentLoaded', loaded, false);
+})(document, window);
+{% endhighlight %}
+
+You can checkout the end result in this [demo](http://vijaydevin.github.io/demo_the-trip-gallery/). You can checkout the code in the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery) and suggest any improvements.
+
