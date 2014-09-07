@@ -18,7 +18,7 @@ Now then lets begin with important part of creating images inside skewed frames.
 
 <!-- more -->
 
-### The basics
+## The basics
 
 There is a container and an image inside it. The container is skewed anti-clockwise which will also skew the image (#1). To reverse the skewed image we skew it clockwise for the same amount. In the end result the container is skewed but not the image, thusly we could see few blank areas in container (#2). To avoid this we would give the image twice as much width and position it to the middle, cropping parts of it (#3).
 
@@ -63,7 +63,7 @@ It make sense to added the background image as inline style rather than creating
 
 In the above styles the ```.child``` is skewed _anti-clockwise_ (-20deg) and the ```.photo``` is counter skewed  _clockwise_ (+20deg). Additionally the background image is centralized and sized to cover with ```.photo``` having twice width and positioned to middle.
 
-### Building the structure
+## Building the structure
 
 Lets use the famous [iScroll.js](iscrolljs.com) for the touch/drag/scroll effects and lets build the html structure around our code accordingly.
 
@@ -85,7 +85,7 @@ Lets use the famous [iScroll.js](iscrolljs.com) for the touch/drag/scroll effect
 
 The gallery images are now in an unordered list. Each ```li.photo``` is already positioned via CSS and will placed one after the another via JS.
 
-### Adding the script
+## Adding the script
 
 The script takes care of following things:
 
@@ -96,7 +96,7 @@ The script takes care of following things:
 There are few additional things that I haven't troubled JS to take care of, since this only an experiment. But if we were to build an plugin these are the additional thing that must be taken care by JS:
 
 * Based on the width and counts of ```.child``` assign a total width to ```#theList``` and ```#scroller```
-..* Width is necessary for iScroll to work properly
+⋅⋅* Width is necessary for iScroll to work properly
 * Allow the end user to add the image as simple ```<img>``` tags that can be replaced as the above HTML structure
 * Adjustments for responsive screens
 
