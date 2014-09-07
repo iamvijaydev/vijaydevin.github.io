@@ -4,7 +4,7 @@ title: The Trip - An experimental CSS3 gallery
 redirect_from: '/2014/09/06/the-trip-gallery/'
 permalink: /blog/the-trip-gallery/
 categories: [CSS]
-tags: ['css3', 'transform', 'skew', 'gallery', 'trip', 'iScroll.js']
+tags: ['css3', 'transform', 'skew', 'gallery', 'trip', 'iScroll']
 comments: true
 banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip.jpg'
 banner_link: 'http://vijaydevin.github.io/demo_the-trip-gallery/'
@@ -24,7 +24,7 @@ There is a container and an image inside it. The container is skewed anti-clockw
 
 ![alt text](https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip-info.jpg "Problem with skew and its solution")
 
-Lets use ```backgroung-image``` rather than ```<img>``` tag since it gives better screen frame rates while translating. Also background-image will allow us to crop and resize the image without hassle. To further boost frame rates, lets positioning everything.
+Lets use ```background-image``` rather than ```<img>``` tag since it gives better screen frame rates while translating. Also background-image will allow us to crop and resize the image without hassle. To further boost frame rates, lets positioning everything.
 
 {% highlight html %}
 <div class="child" style="left:0">
@@ -61,7 +61,7 @@ It make sense to added the background image as inline style rather than creating
 }
 {% endhighlight %}
 
-In the above styles the ```.child``` is skewed _anti-clockwise_ (-20deg) and the ```.photo``` is counter skewed  _clockwise_ (+20deg). Additionally the background image is centralized and sized to cover.
+In the above styles the ```.child``` is skewed _anti-clockwise_ (-20deg) and the ```.photo``` is counter skewed  _clockwise_ (+20deg). Additionally the background image is centralized and sized to cover with ```.photo``` having twice width and positioned to middle.
 
 ### Building the structure
 
@@ -83,16 +83,18 @@ Lets use the famous [iScroll.js](iscrolljs.com) for the touch/drag/scroll effect
 </div>
 {% endhighlight %}
 
-The gallery images are now in an unordered list. Each ```li``` is already positioned via CSS and will placed one after the another via JS.
+The gallery images are now in an unordered list. Each ```li.photo``` is already positioned via CSS and will placed one after the another via JS.
 
 ### Adding the script
 
 The script takes care of following things:
+
 * Assign ```left``` to each ```.child``` nodes
 * Setup the iScoll for touch/drag/scroll effect
 * Prevent bounce effets on some touch devices (iOS)
 
 There are few additional things that I haven't troubled JS to take care of, since this only an experiment. But if we were to build an plugin these are the additional thing that must be taken care by JS:
+
 * Based on the width and counts of ```.child``` assign a total width to ```#theList``` and ```#scroller```
 ..* Width is necessary for iScroll to work properly
 * Allow the end user to add the image as simple ```<img>``` tags that can be replaced as the above HTML structure
@@ -112,7 +114,7 @@ There are few additional things that I haven't troubled JS to take care of, sinc
 	loaded = function() {
 
 		// assign 'left' to each child
-		$thelist = document.getElementById('thelist');
+		$thelist = document.getElementById( 'thelist' );
 		$thelistChilds = $thelist.children;
 		for (i = 0; i < $thelistChilds.length; i++) {
 			left += 500;
@@ -120,7 +122,7 @@ There are few additional things that I haven't troubled JS to take care of, sinc
 		};
 
 		// setup iScroll
-		$wrapper = document.getElementById('wrapper');
+		$wrapper = document.getElementById( 'wrapper' );
 		myScroll = new IScroll($wrapper, {
 			'scrollbars': 'custom',
 			'mouseWheel': true,
@@ -136,14 +138,14 @@ There are few additional things that I haven't troubled JS to take care of, sinc
 	if ( 'ontouchstart' in window ) {
 
 		// avoid and browser screen bounce
-		document.addEventListener('touchmove', function (e) {
+		document.addEventListener( 'touchmove', function (e) {
 			e.preventDefault();
-		}, false);
+		}, false );
 	};
 	
 	// setup DOM ready listener
-	document.addEventListener('DOMContentLoaded', loaded, false);
-})(document, window);
+	document.addEventListener( 'DOMContentLoaded', loaded, false );
+})( document, window );
 {% endhighlight %}
 
 You can checkout the end result in this [demo](http://vijaydevin.github.io/demo_the-trip-gallery/). You can checkout the code in the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery) and suggest any improvements.
