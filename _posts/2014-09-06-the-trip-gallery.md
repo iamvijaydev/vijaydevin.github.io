@@ -96,7 +96,7 @@ The script takes care of following things:
 There are few additional things that I haven't troubled JS to take care of, since this only an experiment. But if we were to build an plugin these are the additional thing that must be taken care by JS:
 
 * Based on the width and counts of ```.child``` assign a total width to ```#theList``` and ```#scroller```
-⋅⋅* Width is necessary for iScroll to work properly
+  * Width is necessary for iScroll to work properly
 * Allow the end user to add the image as simple ```<img>``` tags that can be replaced as the above HTML structure
 * Adjustments for responsive screens
 
