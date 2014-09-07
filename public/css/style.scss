@@ -314,11 +314,12 @@
 		margin-bottom: 0.3rem;
 	}
 	.blog-link {
+		display: inline-block;
 		border: 1px solid;
-		padding: 0.3rem 0.5rem;
+		padding: 0 0.5rem;
 		border-radius: 0.2rem;
 		font-size: 0.7rem;
-		font-family: 'Lato';
+		line-height: 1.5rem;
 		text-transform: uppercase;
 		text-decoration: none;
 	}
@@ -393,7 +394,7 @@
 	footer label:not(:last-child):after {
 		content: ",";
 	}
-	ul > ul {
+	ul ul {
 		margin-bottom: 0.5rem;
 	}
 }
