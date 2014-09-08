@@ -18,9 +18,9 @@ My experience range from a varity of technologies and frameworks, and yes of-cou
 
 This site is my efforts to start writing a blog to share and interact my experiences and knowledge with the internet.
 
-Now then, since its "Hello world", here is a very simple hello world program in JavaScript:
-
 <!-- more -->
+
+Now then, since its "Hello world", here is a very simple hello world program in JavaScript:
 
 {% highlight js %}
 // variable to hold message and cache DOM node

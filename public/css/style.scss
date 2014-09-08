@@ -288,7 +288,7 @@
 	}
 	.cell {
 		display: table-cell;
-		vertical-align: middle;
+		vertical-align: top;
 		&:first-child {
 			padding-right: 1rem;
 		}
@@ -318,6 +318,7 @@
 		border-radius: 0.2rem;
 		font-size: 0.7rem;
 		line-height: 1.5rem;
+		height: 1.55rem;
 		text-transform: uppercase;
 		text-decoration: none;
 	}
