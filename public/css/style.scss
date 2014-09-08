@@ -341,7 +341,7 @@
 			}
 			p {
 				margin: 0;
-				font-size: 0.75rem;
+				font-size: 0.8rem;
 			}
 			a {
 				color: $flink;
@@ -356,15 +356,19 @@
 		display: table;
 		width: 100%;
 		table-layout: fixed;
+		margin-top: 1rem;
 		a {
 			display: table-cell;
 			text-align: center;
-			font-size: 0.75rem;
+			font-size: 0.8rem;
 		}
 	}
+	.copy {
+		margin-bottom: 0.2rem;
+		text-align: center;
+	}
 	.build {
-		display: none;
-		text-align: right;
+		text-align: center;
 	}
 }
 @media (min-width: 56em) {
@@ -391,9 +395,11 @@
 		}
 		.copy {
 			float: left;
+			margin-bottom: 0;
 		}
 		.build {
 			display: block;
+			text-align: right;
 		}
 	}
 }
