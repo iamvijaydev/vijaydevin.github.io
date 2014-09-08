@@ -12,7 +12,7 @@ banner_link: 'http://vijaydev.com/demo_the-trip-gallery/'
 
 I have always loved to watch those pictures with images inside skewed frames. One picture presents a playful mashup of images from the whole event.
 
-While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal. Checkout the [demo](http://vijaydevin.github.io/demo_the-trip-gallery/) and the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery).
+While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal. Checkout the [demo](http://vijaydev.com/demo_the-trip-gallery/) and the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery).
 
 Now then lets begin with important part of creating images inside skewed frames.
 
@@ -148,5 +148,4 @@ There are few additional things that I haven't troubled JS to take care of, sinc
 })( document, window );
 {% endhighlight %}
 
-You can checkout the end result in this [demo](http://vijaydevin.github.io/demo_the-trip-gallery/). You can checkout the code in the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery) and suggest any improvements.
-
+You can checkout the end result in this [demo](http://vijaydev.com/demo_the-trip-gallery/). You can checkout the code in the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery) and suggest any improvements.
