@@ -325,17 +325,14 @@
 
 
 .home-footer {
-	background: url($pat);
-	.grad {
-		background: rgba(32, 32, 32, 0.88);
-	}
+	background: #202020;
 	.content {
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 		.foot-block {
 			overflow: hidden;
 			&:first-child {
-				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+				border-bottom: 1px solid #353535;
 				margin-bottom: 0.5rem;
 				padding-bottom: 0.5rem;
 			}
