@@ -14,19 +14,10 @@
   {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if location == '/' %} active{% endif %}" href="/about/">Home</a>
-    <!-- <a class="sidebar-nav-item{% if location == 'about' %} active{% endif %}" href="/about/">
-     <span class="icon-user"></span>
-     About
-    </a>
-    <a class="sidebar-nav-item{% if location == 'works' %} active{% endif %}" href="/works/">
-      <span class="icon-works"></span>
-      Works
-    </a>
-    <a class="sidebar-nav-item{% if location == 'contact' %} active{% endif %}" href="/contact/">
-      <span class="icon-contact"></span>
-      Contact
-    </a> -->
-    <a class="sidebar-nav-item{% if location == 'blog' %} active{% endif %}" href="/blog/">Blog</a>
+    <a href="{{ page.baseurl }}/#about" class="sidebar-nav-item icon-user"> About</a>
+    <a href="{{ page.baseurl }}/#works" class="sidebar-nav-item icon-works"> Works</a>
+    <a href="{{ page.baseurl }}/#contact" class="sidebar-nav-item icon-contact"> Contact</a>
+    <a class="sidebar-nav-item icon-blog{% if location == 'blog' %} active{% endif %}" href="/blog/"> Blog</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
