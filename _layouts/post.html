@@ -10,7 +10,7 @@ layout: default
       <time class="icon-calendar" datetime="{{ post.date }}">{{ page.date | date_to_string }}</time>
       <span class="icon-folder post-cat">{% for cat in page.categories %}<label>{{ cat }}</label>{% endfor %}</span>
       <span class="icon-clock read-time">{% if readtime == '0' %}&lt; 1{% else %}{{ readtime }}{% endif %}m read</span>
-      <a class="icon-comment" href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">View Comments</a>
+      <a class="icon-comment" href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.path | split:'/' | last | cgi_escape }}">View comments</a>
     </p>
   </header>
 
@@ -41,4 +41,4 @@ layout: default
   </ul>
 </div>
 
-{% include disqus.html %}
+<div id="disqus_thread"></div>
