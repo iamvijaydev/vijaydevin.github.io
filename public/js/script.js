@@ -11,7 +11,7 @@
 			checkbox = document.querySelector( '#sidebar-checkbox' ),
 			handler  = function(e) {
 				var target = e.target;
-				if( !checkbox.checked || sidebar.contains(target) || (target === checkbox || target === toggle) ) {
+				if( !checkbox.checked || (target === sidebar || target === checkbox || target === toggle) ) {
 					return;
 				}
 				checkbox.checked = false;
