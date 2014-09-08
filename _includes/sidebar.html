@@ -13,7 +13,6 @@
   
   {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if location == '/' %} active{% endif %}" href="/about/">Home</a>
     <a href="{{ page.baseurl }}/#about" class="sidebar-nav-item icon-user"> About</a>
     <a href="{{ page.baseurl }}/#works" class="sidebar-nav-item icon-works"> Works</a>
     <a href="{{ page.baseurl }}/#contact" class="sidebar-nav-item icon-contact"> Contact</a>

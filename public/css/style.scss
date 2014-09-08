@@ -327,8 +327,8 @@
 .home-footer {
 	background: #202020;
 	.content {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 		.foot-block {
 			overflow: hidden;
 			&:first-child {
@@ -371,10 +371,6 @@
 }
 @media (min-width: 56em) {
 	.home-footer {
-		.content {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-		}
 		.logo {
 			float: left;
 		}
