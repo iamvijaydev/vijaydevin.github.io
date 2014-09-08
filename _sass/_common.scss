@@ -47,6 +47,7 @@ a {
 	width: 12.3rem;
 	height: 8.5rem;
 	position: relative;
+	text-decoration: none;
 	.nor,
 	.hov {
 		display: block;
@@ -59,23 +60,18 @@ a {
 	}
 }
 
-.logo.side-bar {
-	width: 123px;
-	height: 85px;
+.logo.with-hover {
 	.nor,
 	.hov {
 		@include transition(opacity 0.3s ease-in-out);
 	}
 	.nor {
-		background: url($logo) center no-repeat;
-		background-size: 123px 85px;
 		opacity: 0;
 	}
 	.hov {
 		opacity: 1;
 	}
 	&:hover{
-		background-color: transparent;
 		.nor {
 			opacity: 1;
 		}
@@ -85,9 +81,25 @@ a {
 	}
 }
 
+.logo.side-bar {
+	width: 123px;
+	height: 85px;
+	.nor {
+		background: url($logo) center no-repeat;
+		background-size: 123px 85px;
+	}
+	&:hover{
+		background-color: transparent;
+	}
+}
+
 .logo.inner {
-	width: 61px;
-	height: 43px;
+	width: 60px;
+	height: 42px;
+	.nor {
+		background: url($logo) center no-repeat;
+		background-size: 60px 42px;
+	}
 }
 
 .twilight-grad {
