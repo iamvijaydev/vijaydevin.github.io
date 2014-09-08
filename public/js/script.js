@@ -1,6 +1,6 @@
 (function(document, window) {
 	var hastouch = 'ontouchstart' in window;
-	var TAP = hastouch ? 'touchstart' : 'click';
+	var TAP = hastouch ? 'touchend' : 'click';
 
 
 	var loaded = function() {
@@ -14,7 +14,7 @@
 				if( !checkbox.checked || (target === sidebar || target === checkbox || target === toggle) ) {
 					return;
 				}
-				checkbox.checked = false;
+				setTimeout(function() { checkbox.checked = false; }, 150);
 			};
 
 		document.addEventListener( TAP, handler, false );
