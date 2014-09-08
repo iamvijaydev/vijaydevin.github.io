@@ -7,7 +7,7 @@ categories: [CSS]
 tags: ['css3', 'transform', 'skew', 'gallery', 'trip', 'iScroll']
 comments: true
 banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip.jpg'
-banner_link: 'http://vijaydevin.github.io/demo_the-trip-gallery/'
+banner_link: 'http://vijaydev.com/demo_the-trip-gallery/'
 ---
 
 I have always loved to watch those pictures with images inside skewed frames. One picture presents a playful mashup of images from the whole event.
