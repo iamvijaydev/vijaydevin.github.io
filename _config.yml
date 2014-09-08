@@ -10,8 +10,8 @@ paginate_path:    '/blog/page:num/'
 title:            'Vijay Dev'
 tagline:          'UI & front-end developer'
 description:      'UI Designer . Front-end Developer . Mobile Ninja'
-url:              http://vijaydevin.github.io/
-baseurl:          '/'
+url:              'http://vijaydevin.github.io/'
+baseurl:          'http://vijaydevin.github.io'
 paginate:         5
 excerpt_separator: "<!-- more -->"
 
