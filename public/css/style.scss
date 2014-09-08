@@ -347,7 +347,7 @@
 				color: $flink;
 				text-decoration: none;
 				&:hover {
-					color: $hover;
+					color: $fhover;
 				}
 			}
 		}
@@ -380,7 +380,7 @@
 			float: right;
 			display: block;
 			width: auto;
-			margin-top: 1rem;
+			margin-top: 0.6rem;
 			a {
 				display: inline-block;
 				margin: 0 0.5rem;
