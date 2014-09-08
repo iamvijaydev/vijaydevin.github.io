@@ -1,16 +1,1 @@
-<script type="text/javascript">
-	var has_disqus_thread = document.getElementById( 'disqus_thread' ),
-		disqus_shortname  = 'vijaydevin',
-	    disqus_identifier = !!has_disqus_thread ? '{{ page.path | split:'/' | last | cgi_escape }}' : '{{ post.path | split:'/' | last | cgi_escape }}',
-	    disqus_url        = !!has_disqus_thread ? '{{ site.url }}{{ page.url | uri_escape }}' : '{{ site.url }}{{ post.url | uri_escape }}';
-	(function() {
-		var load = function(src) {
-			var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = src;
-			var e = document.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e);
-		};
-		load( '//' + disqus_shortname + '.disqus.com/count.js' );
-		if ( !!has_disqus_thread ) {
-			load('//' + disqus_shortname + '.disqus.com/embed.js');
-		}
-	})();
-</script>
+
