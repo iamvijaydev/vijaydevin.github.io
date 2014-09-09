@@ -100,13 +100,15 @@ a {
 .logo.inner {
 	width: 60px;
 	height: 42px;
+	.nor, .hov {
+		width: 60px;
+		height: 42px;
+	}
 	.nor {
 		background: url($logo) center no-repeat;
 		background-size: 60px 42px;
 	}
 	.hov {
-		width: 60px;
-		height: 42px;
 		margin: 0;
 	}
 }
