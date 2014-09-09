@@ -83,12 +83,16 @@ a {
 
 .logo.side-bar {
 	width: 123px;
-	height: 85px;
+	height: 86px;
 	.nor {
 		background: url($logo) center no-repeat;
-		background-size: 123px 85px;
+		background-size: 123px 86px;
 	}
-	&:hover{
+	.hov {
+		width: 123px;
+		height: 86px;
+	}
+	&:hover {
 		background-color: transparent;
 	}
 }
@@ -101,6 +105,8 @@ a {
 		background-size: 60px 42px;
 	}
 	.hov {
+		width: 60px;
+		height: 42px;
 		margin: 0;
 	}
 }
