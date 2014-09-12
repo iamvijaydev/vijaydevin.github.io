@@ -12,15 +12,17 @@ banner_link: 'http://vijaydev.com/demo_the-trip-gallery/'
 
 I have always loved to watch those pictures with images inside skewed frames. One picture presents a playful mashup of images from the whole event.
 
-While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal. Checkout the [demo](http://vijaydev.com/demo_the-trip-gallery/) and the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery).
+While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal.
 
-Now then lets begin with important part of creating images inside skewed frames.
+Checkout the [demo](http://vijaydev.com/demo_the-trip-gallery/) and the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery).
+
+Now then lets begin with understanding the basics of creating images inside skewed frames.
 
 <!-- more -->
 
 ## The basics
 
-There is a container and an image inside it. The container is skewed anti-clockwise which will also skew the image (#1). To reverse the skewed image we skew it clockwise for the same amount. In the end result the container is skewed but not the image, thusly we could see few blank areas in container (#2). To avoid this we would give the image twice as much width and position it to the middle, cropping parts of it (#3).
+Let there be a container and an image inside it. The container is skewed anti-clockwise which will also skew the image (#1). To reverse the skewed image we skew it clockwise for the same amount. In the end result the container is skewed but not the image, thusly we could see few blank areas in container (#2). To avoid this we would give the image twice as much width and position it to the middle, cropping parts of it (#3).
 
 ![alt text](https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip-info.jpg "Problem with skew and its solution")
 
@@ -83,17 +85,17 @@ Lets use the famous [iScroll.js](iscrolljs.com) for the touch/drag/scroll effect
 </div>
 {% endhighlight %}
 
-The gallery images are now in an unordered list. Each ```li.photo``` is already positioned via CSS and will placed one after the another via JS.
+The gallery images are now in an unordered list. Each ```li.photo``` is already positioned via CSS and will placed one after the other by setting a ```left``` value via JS.
 
 ## Adding the script
 
 The script takes care of following things:
 
-* Assign ```left``` to each ```.child``` nodes
+* Calculate and assign ```left``` to each ```.child``` nodes
 * Setup the iScoll for touch/drag/scroll effect
 * Prevent bounce effets on some touch devices (iOS)
 
-There are few additional things that I haven't troubled JS to take care of, since this only an experiment. But if we were to build an plugin these are the additional thing that must be taken care by JS:
+There are few additional things that I haven't troubled JS to take care of, since this only an experiment. But if we were to build an plugin these are the additional things that must be taken care by JS:
 
 * Based on the width and counts of ```.child``` assign a total width to ```#theList``` and ```#scroller```
   * Width is necessary for iScroll to work properly
@@ -110,7 +112,7 @@ There are few additional things that I haven't troubled JS to take care of, sinc
 	// numerical variables
 	var i = 0, left = 0;
 
-	// exec after DOM ready
+	// exec. after DOM ready
 	loaded = function() {
 
 		// assign 'left' to each child
@@ -148,4 +150,6 @@ There are few additional things that I haven't troubled JS to take care of, sinc
 })( document, window );
 {% endhighlight %}
 
-You can checkout the end result in this [demo](http://vijaydev.com/demo_the-trip-gallery/). You can checkout the code in the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery) and suggest any improvements.
+You can checkout the end result in this [demo](http://vijaydev.com/demo_the-trip-gallery/). You can also checkout the code in the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery) and suggest any improvements.
+
+Hack at it. :v:
