@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Trip - An experimental CSS3 gallery
+title: The Trip - A skewed CSS3 gallery
 redirect_from: '/2014/09/06/the-trip-gallery/'
 permalink: /blog/the-trip-gallery/
 categories: [CSS]
