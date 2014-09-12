@@ -1,7 +1,7 @@
 a {
 	color: $link;
 	text-decoration: none;
-	@include transition(color 0.3s ease-in-out);
+	@include transition(all 0.25s ease-in-out);
 	&:hover {
 		color: $hover;
 	}
