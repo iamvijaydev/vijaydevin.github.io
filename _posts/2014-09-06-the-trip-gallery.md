@@ -6,6 +6,7 @@ permalink: /blog/the-trip-gallery/
 categories: [CSS]
 tags: ['css3', 'transform', 'skew', 'gallery', 'trip', 'iScroll']
 comments: true
+description: "I have always loved to watch those pictures with images inside skewed frames. One picture presents a playful mashup of images from the whole event. While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal."
 banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip.jpg'
 banner_link: 'http://vijaydev.com/demo_the-trip-gallery/'
 ---
