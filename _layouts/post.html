@@ -18,19 +18,11 @@ layout: default
     <a href="{{ page.banner_link }}" target="_blank"><img src="{{ page.banner }}" alt="{{ page.title }}"></a>
   {% endif %}
 
-  <div style="display:none">
-  	<ul class="ss-share">
-  		<li class="ss-share-item">
-  			<a class="ss-share-link ico-facebook" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fvijaydev.com{{ page.url | cgi_escape }}&t={{ page.title | cgi_escape }}" rel="nofollow" target="_blank">Share on Facebook</a>
-  		</li>
-  		<li class="ss-share-item">
-  			<a class="ss-share-link ico-twitter" href="http://twitter.com/share?text={{ page.title | cgi_escape }}&url=http%3A%2F%2Fvijaydev.com{{ page.url | cgi_escape }}&via=vijaydevin" rel="nofollow" target="_blank">Share on Twitter</a>
-  		</li>
-  		<li class="ss-share-item">
-  			<a class="ss-share-link ico-google" href="http://plus.google.com/share?url=http%3A%2F%2Fvijaydev.com{{ page.url | cgi_escape }}" rel="nofollow" target="_blank">Share on Google+</a>
-  		</li>
-  	</ul>
-  </div>
+  <ul class="share-blog">
+    <li><a class="icon-facebook" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fvijaydev.com{{ page.url | cgi_escape }}&t={{ page.title | cgi_escape }}" rel="nofollow" target="_blank">Share on Facebook</a></li>
+    <li><a class="icon-twitter" href="http://twitter.com/share?text={{ page.title | cgi_escape }}&url=http%3A%2F%2Fvijaydev.com{{ page.url | cgi_escape }}&via=vijaydevin" rel="nofollow" target="_blank">Share on Twitter</a></li>
+    <li><a class="icon-googlep" href="http://plus.google.com/share?url=http%3A%2F%2Fvijaydev.com{{ page.url | cgi_escape }}" rel="nofollow" target="_blank">Share on Google+</a></li>
+  </ul>
 
   {{ content }}
 

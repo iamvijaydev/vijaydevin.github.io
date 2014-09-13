@@ -445,3 +445,16 @@
 #disqus_thread {
 	padding-bottom: 2rem;
 }
+
+.share-blog {
+	padding: 0;
+	display: table;
+	width: 100%;
+	li {
+		display: table-cell;
+		padding: 0 0.5rem;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
