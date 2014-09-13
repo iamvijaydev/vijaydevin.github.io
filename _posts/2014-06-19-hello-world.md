@@ -3,7 +3,7 @@ layout: post
 title: Hello World!
 redirect_from: '/2014/06/19/hello-world/'
 permalink: /blog/hello-world/
-categories: [JavaScript]
+categories: ['JavaScript']
 tags: ['coding', 'javascript', 'hello', 'world']
 comments: true
 description: "I'm Vijay Dev from India. I'm a UI & Front-end developer with 5 years of solid experience in web and mobile applications. My experience range from a varity of technologies and frameworks, and yes of-course I'm a nerd, a movie junkie and a avid gamer. But I do love swimming and roller scating too."

@@ -3,7 +3,7 @@ layout: post
 title: The Trip - A skewed CSS3 gallery
 redirect_from: '/2014/09/06/the-trip-gallery/'
 permalink: /blog/the-trip-gallery/
-categories: [CSS]
+categories: ['CSS']
 tags: ['css3', 'transform', 'skew', 'gallery', 'trip', 'iScroll']
 comments: true
 description: "I have always loved to watch those pictures with images inside skewed frames. One picture presents a playful mashup of images from the whole event. While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal."
