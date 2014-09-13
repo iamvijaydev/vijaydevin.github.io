@@ -5,9 +5,18 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  
+  {% capture loc %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
+  {% if if location == 'blog' %}
+    <meta property="og:image" content="{{ page.banner }}"/>
+    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:url" content="http://vijaydev.com{{ page.url }}"/>
+    <meta property="og:site_name" content="Vijay Dev Blog"/>
+    <meta property="og:type" content="blog"/>
+  {% endif %}
 
   <title>
-    {% if page.title == "Home" %}
+    {% if page.title == 'Home' %}
       {{ site.title }} &middot; {{ site.tagline }}
     {% else %}
       {{ page.title }} &middot; {{ site.title }}
