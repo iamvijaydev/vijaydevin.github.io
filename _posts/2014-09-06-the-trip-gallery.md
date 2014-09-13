@@ -9,6 +9,7 @@ comments: true
 description: "I have always loved to watch those pictures with images inside skewed frames. One picture presents a playful mashup of images from the whole event. While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal."
 banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip.jpg'
 banner_link: 'http://vijaydev.com/demo_the-trip-gallery/'
+ogBanner: 'https://lh6.googleusercontent.com/DTWPAz-2IZabmEiLzmKct5vtryxlnO-LIRpiTuB4rRoFcMo48djI_BDC-ICzdDTknWyngBNISKo=w1896-h899'
 ---
 
 I have always loved to watch those pictures with images inside skewed frames. One picture presents a playful mashup of images from the whole event.
