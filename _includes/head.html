@@ -8,7 +8,10 @@
 
   {% if page.banner %}<meta property="og:image" content="{{ page.banner }}"/>{% endif %}
   {% if page.title %}<meta property="og:title" content="{{ page.title }}"/>{% endif %}
-  {% if page.description %}<meta property="og:description" content="{{ page.description }}"/>{% endif %}
+  {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}"/>
+    <meta name="description" content="{{ page.description }}" />
+  {% endif %}
   {% if page.url %}<meta property="og:url" content="http://www.vijaydev.com{{ page.url }}"/>{% endif %}
   {% if page.banner %}<meta property="og:site_name" content="Vijay Dev Blog"/>{% endif %}
   {% if page.banner %}<meta property="og:type" content="blog"/>{% endif %}
