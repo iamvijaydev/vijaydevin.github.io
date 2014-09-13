@@ -18,7 +18,7 @@ layout: default
     <a href="{{ page.banner_link }}" target="_blank"><img src="{{ page.banner }}" alt="{{ page.title }}"></a>
   {% endif %}
 
-  <ul class="share-blog">{{ site.url | cgi_escape }}
+  <ul class="share-blog">
     <li><a class="icon-facebook" href="http://www.facebook.com/sharer.php?u={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&t={{ page.title | cgi_escape }}" rel="nofollow" target="_blank">Share<span class="only-lg"> on Facebook</span></a></li>
     <li><a class="icon-twitter" href="http://twitter.com/share?text={{ page.title | cgi_escape }}&url={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}&via=vijaydevin" rel="nofollow" target="_blank">Share<span class="only-lg"> on Twitter</span></a></li>
     <li><a class="icon-gplus" href="http://plus.google.com/share?url={{ site.url | cgi_escape }}{{ page.url | cgi_escape }}" rel="nofollow" target="_blank">Share<span class="only-lg"> on Google+</span></a></li>
