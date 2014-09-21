@@ -6,13 +6,35 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+  {% if page.title == "Home" %}
+    <title>{{ site.title }} &middot; {{ site.tagline }}</title>
+    <meta property="og:title" content="{{ site.title }} &middot; {{ site.tagline }}">
+  	<meta name="twitter:title" content="{{ site.title }} &middot; {{ site.tagline }}">
+  	<meta itemprop="name" content="{{ site.title }} &middot; {{ site.tagline }}">
+  {% else %}
+    <title>{{ page.title }} &middot; {{ site.title }}</title>
+    <meta property="og:title" content="{{ page.title }} &middot; {{ site.title }}">
+  	<meta name="twitter:title" content="{{ page.title }} &middot; {{ site.title }}">
+  	<meta itemprop="name" content="{{ page.title }} &middot; {{ site.title }}">
+  {% endif %}
+
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta itemprop="description" content="{{ page.description }}">
+  {% endif %}
+
   {% if page.banner %}
     <link rel="image_src" href="{{ page.banner }}">
-
-    <meta property="fb:admins" content="100000237843626">
-    <meta property="article:author" content="https://www.facebook.com/vijaydev.in">
     <meta property="og:image" content="{{ page.banner }}">
-    <meta property="og:title" content="{{ page.title }}">
+    <meta name="twitter:image:src" content="{{ page.banner }}">
+    <meta itemprop="image" content="{{ page.banner }}">
+  {% endif %}
+
+  {% if page.title != "Home" %}
+    <meta property="fb:admins" content="100000237843626">
+    <meta property="article:author" content="https://www.facebook.com/vijaydev.in">    
     <meta property="og:url" content="http://www.vijaydev.com{{ page.url }}">
     <meta property="og:site_name" content="Vijay Dev Blog">
     <meta property="og:type" content="blog">
@@ -20,24 +42,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@vijaydevin">
     <meta name="twitter:url" content="http://www.vijaydev.com{{ page.url }}">
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:image:src" content="{{ page.banner }}">
-  {% endif %}
-  {% if page.description %}
-    <meta name="description" content="{{ page.description }}">
-    <meta property="og:description" content="{{ page.description }}">
-
-    <meta name="twitter:description" content="{{ page.description }}">
   {% endif %}
   
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
-
   <!-- prefetch DNS -->
   <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
   <link rel="dns-prefetch" href="https://googledrive.com/">
