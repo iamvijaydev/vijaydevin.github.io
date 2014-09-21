@@ -32,17 +32,18 @@
     <meta itemprop="image" content="{{ page.banner }}">
   {% endif %}
 
-  {% if page.title != "Home" %}
-    <meta property="fb:admins" content="100000237843626">
-    <meta property="article:author" content="https://www.facebook.com/vijaydev.in">    
-    <meta property="og:url" content="http://www.vijaydev.com{{ page.url }}">
-    <meta property="og:site_name" content="Vijay Dev Blog">
-    <meta property="og:type" content="blog">
+  <!-- common og meta tags -->
+  <meta property="fb:admins" content="100000237843626">
+  <meta property="article:author" content="https://www.facebook.com/vijaydev.in">    
+  <meta property="og:url" content="http://www.vijaydev.com{{ page.url }}">
+  <meta property="og:site_name" content="Vijay Dev Blog">
+  <meta property="og:type" content="blog">
+  
+  <!-- common twitter meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@vijaydevin">
+  <meta name="twitter:url" content="http://www.vijaydev.com{{ page.url }}">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@vijaydevin">
-    <meta name="twitter:url" content="http://www.vijaydev.com{{ page.url }}">
-  {% endif %}
   
   <!-- prefetch DNS -->
   <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
