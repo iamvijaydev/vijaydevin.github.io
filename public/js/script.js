@@ -31,8 +31,7 @@
 				interactiveScrollbars: true,
 				eventPassthrough: true,
 				scrollX: true,
-				scrollY: false,
-				snap: 'li'
+				scrollY: false
 			});
 			prev.addEventListener( TAP, function() { myScroll.prev(); }, false );
 			next.addEventListener( TAP, function() { myScroll.next(); }, false );

@@ -250,7 +250,11 @@
 	height: 4px;
 	border-radius: 2px;
 }
-
+@media (max-width: 30.1em) {
+	.container {
+		padding: 0;
+	}
+}
 
 
 .home-content.contact {
