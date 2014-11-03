@@ -19,18 +19,18 @@
 	.tagline {
 		font-family: 'Lato'; 
 		font-weight: 300;
-		color: rgba(32, 32, 32, 0.6)
+		color: rgba(32, 32, 32, 0.6);
+		width: 247px;
 	}
 	.name {
-		letter-spacing: 0.6rem; 
+		letter-spacing: 0.0366rem; 
 		font-size: 2.5rem; 
 		text-transform: uppercase;
-		margin: 35px 0 0px;
-		text-indent: 0.8rem;
+		margin: 35px auto 0px;
 	}
 	.tagline {
-		font-size: 1.3rem;
-		margin: 0 0 10px 0;
+		font-size: 1.174rem;
+		margin: 0 auto 8px auto;
 	}
 	.jump-down {
 		padding: 35px 0 10px;
