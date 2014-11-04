@@ -54,7 +54,7 @@
 	}
 	.cloud-above {
 		z-index: 3;
-		@include animation(cloudUp 1000ms linear both 200ms);
+		@include animation(cloudUp 1000ms linear both 2200ms);
 		.item {
 			background: url($cloud1) 0 100% repeat-x;
 			background-size: 1864px 106px;
@@ -63,7 +63,7 @@
 	}
 	.cloud-below {
 		z-index: 2;
-		@include animation(cloudUp 1000ms linear both);
+		@include animation(cloudUp 1000ms linear both 2000ms);
 		.item {
 			background: url($cloud2) 0 100% repeat-x;
 			background-size: 1864px 106px;
