@@ -46,30 +46,36 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		height: 52px;
+		height: 106px;
 	}
 	.cloud-above {
-		background: url($cloud1) 0 100% repeat-x;
-		background-size: 923px 52px;
 		z-index: 3;
-		@include animation(cloudFrowardAnim 60s linear infinite);
+		@include animation(cloudUp 1000ms linear both);
+		.item {
+			background: url($cloud1) 0 100% repeat-x;
+			background-size: 1864px 106px;
+			@include animation(cloudFrowardAnim 60s linear infinite);
+		}
 	}
 	.cloud-below {
-		background: url($cloud2) 0 100% repeat-x;
-		background-size: 923px 52px;
 		z-index: 2;
-		@include animation(cloudBackwardAnim 60s linear infinite);
-	}
-}
-@media (min-width: 30.1em) {
-	#main-content {
-		.cloud-above,
-		.cloud-below {
-			height: 106px;
+		@include animation(cloudUp 1000ms linear both 100ms);
+		.item {
+			background: url($cloud2) 0 100% repeat-x;
 			background-size: 1864px 106px;
+			@include animation(cloudBackwardAnim 60s linear infinite);
 		}
 	}
 }
+// @media (min-width: 30.1em) {
+// 	#main-content {
+// 		.cloud-above,
+// 		.cloud-below {
+// 			height: 106px;
+// 			background-size: 1864px 106px;
+// 		}
+// 	}
+// }
 
 .home-content {
 	text-align: center;
