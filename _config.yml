@@ -8,8 +8,8 @@ paginate_path:    '/blog/page:num/'
 
 # Setup
 title:            'Vijay Dev'
-tagline:          'UI & front-end developer'
-description:      'UI Designer . Front-end Developer . Mobile Ninja'
+tagline:          'UI & Front-end Engineer'
+description:      'UI Designer . Front-end Engineer . Mobile Ninja'
 url:              http://vijaydev.com
 baseurl:          '/'
 paginate:         5
