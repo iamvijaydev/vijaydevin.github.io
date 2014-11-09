@@ -136,7 +136,7 @@ There are few additional things that I haven't troubled JS to take care of, sinc
 			'scrollX': true,
 			'scrollY': false
 		});
-	}
+	};
 
 	// if its a touch screen
 	if ( 'ontouchstart' in window ) {
