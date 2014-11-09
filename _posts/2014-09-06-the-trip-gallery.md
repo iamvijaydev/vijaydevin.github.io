@@ -69,7 +69,7 @@ In the above styles the ```.child``` is skewed _anti-clockwise_ (-20deg) and the
 
 ## Building the structure
 
-Lets use the famous [iScroll.js](iscrolljs.com) for the touch/drag/scroll effects and lets build the html structure around our code accordingly.
+Lets use the famous [iScroll.js](http://iscrolljs.com/) for the touch/drag/scroll effects and lets build the html structure around our code accordingly.
 
 {% highlight html %}
 <div id="wrapper">
