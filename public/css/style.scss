@@ -284,7 +284,7 @@
 .home-content.contact {
 	border-bottom: 1px solid $gray2;
 	.title span {
-		padding: 5px 5px 5px 3px;
+		padding: 12px 11px 11px 9px;
 	}
 	.part h4 {
 		font-size: 1.2rem;
@@ -307,23 +307,12 @@
 .home-content.blog {
 	padding: 4rem 0 2rem;
 	.part {
-		display: table;
 		width: 100%;
-		table-layout: fixed;
 		&.next {
 			padding: 0 0 3rem;
 		}
 	}
-	.cell {
-		display: table-cell;
-		vertical-align: top;
-		&:first-child {
-			padding-right: 1rem;
-		}
-		&:last-child {
-			padding-left: 1rem;
-		}
-	}
+	.cell { }
 	.btitle {
 		font-size: 1rem;
 		display: block;
@@ -351,7 +340,24 @@
 		text-decoration: none;
 	}
 }
-
+@media (min-width: 38em) {
+	.home-content.blog {
+		.part {
+			display: table;
+			table-layout: fixed;
+		}
+		.cell {
+			display: table-cell;
+			vertical-align: top;
+			&:first-child {
+				padding-right: 1rem;
+			}
+			&:last-child {
+				padding-left: 1rem;
+			}
+		}
+	}
+}
 
 .home-footer {
 	background: #202020;
