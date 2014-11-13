@@ -32,7 +32,7 @@
 	.tagline {
 		font-family: 'Lato'; 
 		font-weight: 300;
-		color: rgba(32, 32, 32, 0.6);
+		color: rgba(0, 0, 0, 0.6);
 		width: 247px;
 	}
 	.name {
@@ -72,7 +72,7 @@
 		.item {
 			background: url($cloud1) 0 100% repeat-x;
 			background-size: 1864px 106px;
-			@include animation(cloudFrowardAnim 60s linear infinite);
+			@include animation(cloudFrowardAnim 150s linear infinite);
 		}
 	}
 	.cloud-below {
@@ -81,7 +81,7 @@
 		.item {
 			background: url($cloud2) 0 100% repeat-x;
 			background-size: 1864px 106px;
-			@include animation(cloudBackwardAnim 60s linear infinite);
+			@include animation(cloudBackwardAnim 160s linear infinite);
 		}
 	}
 }
