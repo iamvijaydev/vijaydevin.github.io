@@ -282,7 +282,7 @@
 
 
 .home-content.contact {
-	border-bottom: 1px solid $gray2;
+	padding: 4rem 0 2rem;
 	.title span {
 		padding: 12px 11px 11px 9px;
 	}
@@ -305,7 +305,7 @@
 }
 
 .home-content.blog {
-	padding: 4rem 0 2rem;
+	border-bottom: 1px solid $gray2;
 	.part {
 		width: 100%;
 		&.next {
