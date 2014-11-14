@@ -160,7 +160,7 @@
 	overflow: hidden;
 	background: url($pat);
 	.grad {
-		@extend .summer-grad;
+		@extend .hotcold-grad;
 		position: relative;
 		z-index: 3;
 	}
