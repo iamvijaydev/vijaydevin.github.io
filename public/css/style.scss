@@ -225,10 +225,11 @@
 			float: left;
 			width: 220px;
 			margin: 0 5px;
-			padding: 5px 5px 10px;
-			background: #fff;
+			padding: 0 0 0.5rem;
+			background: #CACACA;
 			border-radius: 3px;
-			box-shadow: 0 0 5px rgba(0,0,0,0.1);
+			overflow: hidden;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 			&:first-child {
 				margin-left: 0;
 			}
@@ -246,16 +247,19 @@
 			display: block;
 			line-height: 1;
 			text-align: left;
+			color: #fff;
+			text-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
 		}
 		span {
 			font-size: 1rem;
-			padding: 1rem 0 0.4rem 0;
+			padding: 0.5rem 0.5rem 0.3rem;
 			white-space: nowrap;
 			text-overflow: ellipsis;
 			overflow: hidden;
 		}
 		small {
 			font-size: 0.7rem;
+			padding: 0 0.5rem;
 		}
 	}
 }
