@@ -76,6 +76,7 @@
 .masthead-title {
 	overflow: hidden;
 	text-align: left;
+	height: 42px;
 	.logo-link {
 		text-decoration: none;
 		display: inline-block;
@@ -87,12 +88,12 @@
 		float: left;
 		border-right: 1px solid $gray2;
 		height: 43px;
-		padding-left: 18px;
+		padding-left: 10px;
 	}
 	.title,
 	.tagline {
 		display: block;
-		margin-left: 101px;
+		margin-left: 84px;
 		white-space: nowrap;
 	}
 	.title {
@@ -100,26 +101,30 @@
 		text-transform: uppercase;
 		line-height: 1;
 		letter-spacing: 0.15rem;
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 		color: $gray5;
+		margin-top: -2px;
 	}
 	.tagline {
-		font-size: 0.8rem;
+		font-size: 1rem;
 		color: $gray6;
 		letter-spacing: 0;
 	}
 }
-@media (max-width: 48em) {
+@media (min-width: 48em) {
 	.masthead-title {
 		.sperate {
-			padding-left: 10px;
+			padding-left: 18px;
 		}
 		.title,
 		.tagline {
-			margin-left: 84px;
+			margin-left: 101px;
 		}
 		.title {
-			padding-top: 0.2rem;
+			font-size: 1.3rem;
+		}
+		.tagline {
+			font-size: 0.8rem;
 		}
 	}
 }
