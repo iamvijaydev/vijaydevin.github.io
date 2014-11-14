@@ -15,8 +15,9 @@
   <nav class="sidebar-nav">
     <a href="{{ page.baseurl }}/#about" class="sidebar-nav-item icon-user"> About</a>
     <a href="{{ page.baseurl }}/#works" class="sidebar-nav-item icon-works"> Works</a>
-    <a href="{{ page.baseurl }}/#contact" class="sidebar-nav-item icon-contact"> Contact</a>
     <a class="sidebar-nav-item icon-blog{% if location == 'blog' %} active{% endif %}" href="/blog/"> Blog</a>
+    <a href="{{ page.baseurl }}/#contact" class="sidebar-nav-item icon-contact"> Contact</a>
+    
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
