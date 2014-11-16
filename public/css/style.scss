@@ -17,16 +17,16 @@
 	padding: 7rem 0;
 	
 	.logo {
-		@include animation(logoUp 1000ms linear both 1300ms);
+		@include animation(logoUp 1000ms linear forwards 1300ms);
 	}
 	.name {
-		@include animation(logoUp 1000ms linear both 1400ms);
+		@include animation(logoUp 1000ms linear forwards 1400ms);
 	}
 	.tagline {
-		@include animation(logoUp 1000ms linear both 1500ms);
+		@include animation(logoUp 1000ms linear forwards 1500ms);
 	}
 	.elsewhere {
-		@include animation(logoUp 1000ms linear both 1600ms);
+		@include animation(logoUp 1000ms linear forwards 1600ms);
 	}
 	.name,
 	.tagline {
