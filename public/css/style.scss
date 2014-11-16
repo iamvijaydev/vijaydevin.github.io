@@ -514,3 +514,52 @@
 		}
 	}
 }
+
+
+#page-header {
+	position: relative;
+	margin-top: -3rem;
+	.page-header-bg {
+		background: url($pat) repeat;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			@extend .hotcold-grad;
+		}
+	}
+	.page-header-content {
+		position: relative;
+		z-index: 3;
+	}
+	.page-title {
+		text-align: center;
+		padding: 2rem;
+		margin: 0;
+		color: #fff;
+		.icon {
+			display: inline-block;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			padding: 0.4rem 0.3rem;
+			margin-bottom: 0.3rem;
+			font-size: 1rem;
+		}
+		.title {
+			display: block;
+			font-family: 'Lato';
+			font-size: 2rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.3rem;
+		}
+	}
+}
