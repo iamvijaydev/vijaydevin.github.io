@@ -159,6 +159,7 @@
 	position: relative;
 	overflow: hidden;
 	background: url($pat);
+	@include user-select(none);
 	.grad {
 		@extend .hotcold-grad;
 		position: relative;
