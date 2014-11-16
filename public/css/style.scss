@@ -520,7 +520,7 @@
 	position: relative;
 	margin-top: -3rem;
 	background: url($pat) repeat;
-	.page-header-bg {
+	.bg {
 		background: url($banner) center;
 		background-size: cover;
 		position: absolute;
@@ -528,15 +528,15 @@
 		right: 0;
 		bottom: 0;
 		top: 0;
-		&:after {
-			content: '';
-			position: absolute;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			top: 0;
-			@extend .hotcold-grad;
-		}
+	}
+	.grad {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		z-index: 2;
+		@extend .hotcold-grad;
 	}
 	.page-header-content {
 		position: relative;
