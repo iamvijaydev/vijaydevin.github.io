@@ -41,7 +41,7 @@
 		
 		// min height polyfill
 		var minHeight = 0,
-			$style = document.createElement( 'style' ).setAttribute( 'type', 'text/css' ),
+			$style = document.createElement( 'style' ),
 			wait = false,
 			throttle = function() {
 				if ( wait ) {
