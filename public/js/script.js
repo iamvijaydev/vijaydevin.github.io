@@ -59,10 +59,11 @@
 				$style.innerHTML += '.full-height { min-height: ' + minHeight + 'px; }';
 			},
 			firstRun = function() {
+				$style.setAttribute( 'type', 'text/css' );
+				document.querySelector( 'head' )
+					.appendChild( $style );
 				reAdjust();
-				document.querySelector( 'head' ).appendChild( $style );
 			};
-		
 		
 		firstRun();
 		$window.on( 'resize', throttle );
