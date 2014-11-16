@@ -37,6 +37,35 @@
 			prev.addEventListener( TAP, function() { myScroll.prev(); }, false );
 			next.addEventListener( TAP, function() { myScroll.next(); }, false );
 		};
+		
+		
+		// min height polyfill
+		var minHeight = 0,
+			$style = document.createElement( 'style' ).setAttribute( 'type', 'text/css' ),
+			wait = false,
+			throttle = function() {
+				if ( wait ) {
+					return;
+				} else {
+					reAdjust();
+					wait = true;
+					setTimeout(function() {
+						wait = false;
+					}, 300);
+				};
+			},
+			reAdjust = function() {
+				minHeight = window.innerHeight;
+				$style.innerHTML += '.full-height { min-height: ' + minHeight + 'px; }';
+			},
+			firstRun = function() {
+				reAdjust();
+				document.querySelector( 'head' ).appendChild( $style );
+			};
+		
+		
+		firstRun();
+		$window.on( 'resize', throttle );
 	};
 
 	document.addEventListener( 'DOMContentLoaded', loaded, false );
