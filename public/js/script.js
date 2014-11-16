@@ -56,7 +56,7 @@
 			},
 			reAdjust = function() {
 				minHeight = window.innerHeight;
-				$style.innerHTML += '.full-height { min-height: ' + minHeight + 'px; }';
+				$style.innerHTML = '.full-height { height: ' + minHeight + 'px; }';
 			},
 			firstRun = function() {
 				$style.setAttribute( 'type', 'text/css' );
