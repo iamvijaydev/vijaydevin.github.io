@@ -519,8 +519,10 @@
 #page-header {
 	position: relative;
 	margin-top: -3rem;
+	background: url($pat) repeat;
 	.page-header-bg {
-		background: url($pat) repeat;
+		background: url($banner) center;
+		background-size: cover;
 		position: absolute;
 		left: 0;
 		right: 0;
