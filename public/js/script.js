@@ -66,7 +66,7 @@
 			};
 		
 		firstRun();
-		$window.on( 'resize', throttle );
+		window.addEventListener( 'resize', throttle, false );
 	};
 
 	document.addEventListener( 'DOMContentLoaded', loaded, false );
