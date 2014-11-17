@@ -79,7 +79,7 @@
 					$mainContent.children[i].classList.remove( 'anim' );
 				};
 			};
-		!!$mainContent && setTimeout( removeAnimClass, 3000 );
+		!!$mainContent && setTimeout( removeAnimClass, 2605 );
 	};
 
 	document.addEventListener( 'DOMContentLoaded', loaded, false );
