@@ -3,6 +3,7 @@
 	var TAP = hastouch ? 'touchend' : 'click';
 
 
+
 	var loaded = function() {
 
 		// sidebar toggle logic
@@ -18,6 +19,7 @@
 			};
 
 		document.addEventListener( TAP, handler, false );
+
 
 
 		// work IScroll
@@ -37,6 +39,7 @@
 			prev.addEventListener( TAP, function() { myScroll.prev(); }, false );
 			next.addEventListener( TAP, function() { myScroll.next(); }, false );
 		};
+		
 		
 		
 		// min height polyfill
@@ -67,6 +70,18 @@
 		
 		firstRun();
 		window.addEventListener( 'resize', throttle, false );
+		
+		
+		// banner item animation fix (for FF)
+		var $mainContent = document.querySelector( '#main-content' ),
+			removeAnimClass = function() {
+				for(var i = 0; i < 5; i++) {
+					$mainContent.children[i]
+						.classList
+						.remove( 'anim' );
+				}
+			};
+		!!$main-content && setTimeout( removeAnimClass, 3000 );
 	};
 
 	document.addEventListener( 'DOMContentLoaded', loaded, false );
