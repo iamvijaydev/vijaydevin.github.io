@@ -75,12 +75,9 @@
 		// banner item animation fix (for FF)
 		var $mainContent = document.querySelector( '#main-content' ),
 			removeAnimClass = function() {
-				var i = 0;
-				for(i < 5; i++) {
-					$mainContent.children[i]
-						.classList
-						.remove( 'anim' );
-				}
+				for (var i = 0; i < 5; i++) {
+					$mainContent.children[i].classList.remove( 'anim' );
+				};
 			};
 		!!$mainContent && setTimeout( removeAnimClass, 3000 );
 	};
