@@ -491,27 +491,26 @@
 	display: table;
 	width: 100%;
 	border-bottom: 1px solid $gray1;
-	padding: 0 0 0.7rem;
-	margin: 0 0 0.7rem;
+	padding: 0 0 1rem;
+	margin: 0 0 1rem;
 	li {
 		display: table-cell;
 		text-align: center;
-		font-size: 0.9rem;
+		vertical-align: middle;
+		font-size: 1.5rem;
+		line-height: 1;
+		&.on-social {
+			font-size: 1rem;
+		}
 	}
 	a:hover {
 		text-decoration: none;
-	}
-	.only-lg {
-		display: none;
 	}
 }
 @media (min-width: 56em) {
 	.share-blog {
 		li {
-			font-size: 0.85rem;
-		}
-		.only-lg {
-			display: inline;
+			font-size: 1.7rem;
 		}
 	}
 }
