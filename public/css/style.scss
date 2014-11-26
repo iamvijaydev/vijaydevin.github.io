@@ -13,7 +13,7 @@
 @import "overrides";
 
 #main-content {
-	@extend .twilight-grad;
+	@extend .twilight-grad-2;
 	padding: 7rem 0;
 	overflow: hidden;
 	@include animation(fadeIn 1000ms ease both 300ms);
