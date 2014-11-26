@@ -124,13 +124,13 @@ a {
 }
 
 .twilight-grad-2 {
-	background: -moz-linear-gradient(-45deg,  rgba(30,87,255,1) 0%, rgba(155,89,182,0.2) 75%, rgba(155,89,182,0.25) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(30,87,255,1)), color-stop(75%,rgba(155,89,182,0.2)), color-stop(100%,rgba(155,89,182,0.25))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-45deg,  rgba(30,87,255,1) 0%,rgba(155,89,182,0.2) 75%,rgba(155,89,182,0.25) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-45deg,  rgba(30,87,255,1) 0%,rgba(155,89,182,0.2) 75%,rgba(155,89,182,0.25) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(-45deg,  rgba(30,87,255,1) 0%,rgba(155,89,182,0.2) 75%,rgba(155,89,182,0.25) 100%); /* IE10+ */
-	background: linear-gradient(135deg,  rgba(30,87,255,1) 0%,rgba(155,89,182,0.2) 75%,rgba(155,89,182,0.25) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e57ff', endColorstr='#409b59b6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: -moz-linear-gradient(top,  rgba(30,87,255,1) 0%, rgba(155,89,182,0.2) 75%, rgba(155,89,182,0.25) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,255,1)), color-stop(75%,rgba(155,89,182,0.2)), color-stop(100%,rgba(155,89,182,0.25))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(30,87,255,1) 0%,rgba(155,89,182,0.2) 75%,rgba(155,89,182,0.25) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(30,87,255,1) 0%,rgba(155,89,182,0.2) 75%,rgba(155,89,182,0.25) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(30,87,255,1) 0%,rgba(155,89,182,0.2) 75%,rgba(155,89,182,0.25) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(30,87,255,1) 0%,rgba(155,89,182,0.2) 75%,rgba(155,89,182,0.25) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e57ff', endColorstr='#409b59b6',GradientType=0 ); /* IE6-9 */
 }
 
 .summer-grad {
