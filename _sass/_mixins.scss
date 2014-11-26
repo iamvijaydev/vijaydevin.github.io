@@ -40,3 +40,10 @@
 	-ms-user-select: $select;
 	user-select: $select;
 }
+
+@mixin blur($val) {
+	-webkit-filter: blur($val);
+	-moz-filter: blur($val);
+	-ms-filter: blur($val);
+	filter: blur($val);
+}
