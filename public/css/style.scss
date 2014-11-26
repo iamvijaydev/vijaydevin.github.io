@@ -66,6 +66,7 @@
 		.item {
 			width: 100%;
 			height: 106px;
+			@include blur(0.8px);
 		}
 	}
 	.cloud-above {
