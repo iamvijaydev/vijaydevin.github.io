@@ -452,6 +452,7 @@
 }
 
 .post {
+	margin-bottom: 0;
 	header {
 		text-align: center;
 	}
@@ -495,17 +496,27 @@
 		margin: 0 auto 3rem;
 	}
 	footer {
-		overflow: hidden;
+		text-align: center;
+		padding: 2rem 0 2.5rem;
+		position: relative;
 	}
 	footer small {
 		color: $gray3;
-		float: left;
+		display: block;
+		margin-bottom: 0.7rem;
 	}
 	footer label:not(:last-child):after {
 		content: ",";
 	}
 	ul ul {
 		margin-bottom: 0.5rem;
+	}
+	.post-logo {
+		width: 50px;
+		position: absolute;
+		left: 50%;
+		bottom: -45px;
+		margin-left: -25px;
 	}
 }
 
@@ -515,25 +526,18 @@
 
 .share-blog {
 	display: table;
-	float: left;
+	margin: auto;
+	padding: 0;
 	li {
 		display: table-cell;
 		text-align: center;
 		vertical-align: middle;
 		font-size: 1rem;
 		line-height: 1;
-		&.on-social {
-			font-size: 0.8rem;
-			padding-right: 0.3rem;
-		}
+		padding: 0 0.3rem;
 	}
 	a:hover {
 		text-decoration: none;
-	}
-}
-@media (min-width: 56em) {
-	.share-blog {
-		float: none;
 	}
 }
 
