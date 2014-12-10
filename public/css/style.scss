@@ -452,12 +452,23 @@
 }
 
 .post {
+	header {
+		text-align: center;
+	}
+	.post-tagline {
+		margin-bottom: 0;
+		margin-top: 2rem;
+		text-transform: uppercase;
+		font-size: 0.7rem;
+	}
 	.post-title {
-		margin: 0 0 0.1rem;
+		margin: 0 0 1.3rem;
+		font-weight: 700;
 	}
 	.post-meta {
 		font-size: 0.85rem;
 		color: $gray4;
+		margin-bottom: 0.5rem;
 		time, span, a{
 			padding-right: 0.5rem;
 		}
@@ -476,8 +487,19 @@
 			width: auto;
 		}
 	}
+	.header-close {
+		width: 5rem;
+		display: block;
+		height: 0.15rem;
+		background: #aaa;
+		margin: 0 auto 3rem;
+	}
+	footer {
+		overflow: hidden;
+	}
 	footer small {
 		color: $gray3;
+		float: left;
 	}
 	footer label:not(:last-child):after {
 		content: ",";
@@ -493,18 +515,16 @@
 
 .share-blog {
 	display: table;
-	width: 100%;
-	border-bottom: 1px solid $gray1;
-	padding: 0 0 1rem;
-	margin: 0 0 1rem;
+	float: left;
 	li {
 		display: table-cell;
 		text-align: center;
 		vertical-align: middle;
-		font-size: 1.5rem;
+		font-size: 1rem;
 		line-height: 1;
 		&.on-social {
-			font-size: 1rem;
+			font-size: 0.8rem;
+			padding-right: 0.3rem;
 		}
 	}
 	a:hover {
@@ -513,9 +533,7 @@
 }
 @media (min-width: 56em) {
 	.share-blog {
-		li {
-			font-size: 1.7rem;
-		}
+		float: none;
 	}
 }
 
