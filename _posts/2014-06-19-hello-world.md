@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello World!
+tagline: All about me
 redirect_from: '/2014/06/19/hello-world/'
 permalink: /blog/hello-world/
 categories: ['JavaScript']
