@@ -8,7 +8,7 @@ description: "I'm a UI & Front-end Developer from India with 5+ years of solid e
 
 <section class="posts">
   {% for post in paginator.posts %}
-  <article class="post each-item">
+  <article class="post each-post">
     <header>
       {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
       {% if post.banner %}
