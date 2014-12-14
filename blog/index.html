@@ -8,7 +8,7 @@ description: "I'm a UI & Front-end Developer from India with 5+ years of solid e
 
 <section class="posts">
   {% for post in paginator.posts %}
-  <article class="post">
+  <article class="post each-item">
     <header>
       {% capture readtime %}{{ post.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
       {% if post.banner %}
@@ -31,6 +31,7 @@ description: "I'm a UI & Front-end Developer from India with 5+ years of solid e
 
     <footer>
       <small class="icon-category">{% for tag in post.tags %}<label>{{ tag }}</label> {% endfor %}</small>
+      <img class="post-logo" src="/public/img/logo-wm.svg" title="logo">
     </footer>
   </article>
   {% endfor %}
