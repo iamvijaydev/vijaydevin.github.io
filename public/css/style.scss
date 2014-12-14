@@ -89,15 +89,6 @@
 		}
 	}
 }
-// @media (min-width: 30.1em) {
-// 	#main-content {
-// 		.cloud-above,
-// 		.cloud-below {
-// 			height: 106px;
-// 			background-size: 1864px 106px;
-// 		}
-// 	}
-// }
 
 .home-content {
 	text-align: center;
@@ -517,6 +508,16 @@
 		left: 50%;
 		bottom: -41px;
 		margin-left: -25px;
+	}
+	&.each-post {
+		.header-close {
+			margin: 0 auto 1.7rem;
+		}
+		.footer {
+			padding: 0 0 0.5rem;
+			margin: 0 0 5rem;
+			border-bottom: 1px solid #efefef;
+		}	
 	}
 }
 @media (min-width: 38em) {
