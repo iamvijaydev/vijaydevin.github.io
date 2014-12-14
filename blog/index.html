@@ -26,6 +26,7 @@ description: "I'm a UI & Front-end Developer from India with 5+ years of solid e
         <span class="icon-clock read-time">{% if readtime == '0' %}&lt; 1{% else %}{{ readtime }}{% endif %}m read</span>
         <a class="icon-comment" href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">0</a>
       </p>
+      <span class="header-close"></span>
     </header>
     
     <p class="post-excerpt">{{ post.excerpt | strip_html }}&hellip; (<a href="{{ post.url }}">Read More</a>)</p>
