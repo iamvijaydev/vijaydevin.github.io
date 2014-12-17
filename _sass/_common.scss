@@ -29,8 +29,11 @@ a {
 	a, span {
 		display: inline-block;
 		font-size: 1.3rem;
-		color: rgba(0, 0, 0, 0.3);
+		color: rgba(255, 255, 255, 0.7);
 		margin: 0 0.76rem;
+		&::before {
+			text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		}
 	}
 	a {
 		text-decoration: none;
