@@ -33,15 +33,18 @@
 	.name,
 	.tagline {
 		font-family: 'Lato'; 
-		font-weight: 300;
-		color: rgba(0, 0, 0, 0.6);
+		font-weight: 700;
+		color: #fff;
 		width: 247px;
+		white-space: nowrap;
+		text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 	}
 	.name {
-		letter-spacing: 0.0366rem; 
-		font-size: 2.5rem; 
+		font-size: 2.5rem;
 		text-transform: uppercase;
 		margin: 35px auto 0px;
+		word-spacing: 0.1rem;
+		text-indent: -0.1rem;
 	}
 	.tagline {
 		font-size: 0.93rem;
