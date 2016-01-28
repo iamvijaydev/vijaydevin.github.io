@@ -16,9 +16,9 @@ ogBanner: 'https://lh6.googleusercontent.com/DTWPAz-2IZabmEiLzmKct5vtryxlnO-LIRp
 <div class="message">
   <strong>Updates on Jan 28 2016:</strong>
   <ul>
-    <li>Add mobile first responsiveness</li>
+    <li>Added mobile first responsiveness</li>
     <li>Swithed all values to rem</li>
-    <li>Alternating filters for imagee</li>
+    <li>Alternating filters for images</li>
   </ul>
 </div>
 
