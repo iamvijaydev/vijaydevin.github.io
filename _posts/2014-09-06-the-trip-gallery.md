@@ -14,10 +14,12 @@ ogBanner: 'https://lh6.googleusercontent.com/DTWPAz-2IZabmEiLzmKct5vtryxlnO-LIRp
 ---
 
 <div class="message">
-  **Updates on Jan 28 2016:**
-  * Add mobile first responsiveness
-  * Swithed all values to rem
-  * Alternating filters for images
+  <strong>Updates on Jan 28 2016:<strong>
+  <ul>
+    <li>Add mobile first responsiveness</li>
+    <li>Swithed all values to rem</li>
+    <li>Alternating filters for imagee</li>
+  </ul>
 </div>
 
 I have always loved to watch those pictures with images inside skewed frames. One picture presents a playful mashup of images from the whole event.
