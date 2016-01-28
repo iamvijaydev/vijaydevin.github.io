@@ -14,7 +14,7 @@ ogBanner: 'https://lh6.googleusercontent.com/DTWPAz-2IZabmEiLzmKct5vtryxlnO-LIRp
 ---
 
 <div class="message">
-  <strong>Updates on Jan 28 2016:</strong>
+  <strong>Updates on Jan 28, 2016:</strong>
   <ul>
     <li>Added mobile first responsiveness</li>
     <li>Swithed all values to rem</li>
