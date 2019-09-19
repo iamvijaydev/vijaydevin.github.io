@@ -16,6 +16,15 @@
 	}
 }
 
+@include keyframes(roll) {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -383px;
+  }
+}
+
 
 
 /* Generated with Bounce.js. Edit at http://goo.gl/Fv2Ejq */
