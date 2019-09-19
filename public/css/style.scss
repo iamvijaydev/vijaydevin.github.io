@@ -170,6 +170,7 @@
     left: 0;
     right: 0;
     top: 0;
+    bottom: 0;
     opacity: 1;
     @include animation(roll 5s linear infinite);
 	}
