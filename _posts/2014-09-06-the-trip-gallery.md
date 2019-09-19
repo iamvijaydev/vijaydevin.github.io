@@ -8,9 +8,9 @@ categories: ['CSS']
 tags: ['css3', 'transform', 'skew', 'gallery', 'trip', 'iScroll']
 comments: true
 description: "I have always loved to watch those pictures with images inside skewed frames. One picture presents a playful mashup of images from the whole event. While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal."
-banner: 'https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip.jpg'
-banner_link: 'http://vijaydev.com/demo_the-trip-gallery/'
-ogBanner: 'https://lh6.googleusercontent.com/DTWPAz-2IZabmEiLzmKct5vtryxlnO-LIRpiTuB4rRoFcMo48djI_BDC-ICzdDTknWyngBNISKo=w1896-h899'
+banner: 'https://drive.google.com/file/d/0By7ZVCPEFOB9YThQTWZRZHhuZXM/view?usp=sharing'
+banner_link: 'http://iamvijaydev.github.io/demo_the-trip-gallery/'
+ogBanner: 'https://drive.google.com/file/d/0By7ZVCPEFOB9Tnhtc3BIMy01ajA/view?usp=sharing'
 ---
 
 <div class="message">
@@ -36,7 +36,7 @@ Now then lets begin with understanding the basics of creating images inside skew
 
 Let there be a container and an image inside it. The container is skewed anti-clockwise which will also skew the image (#1). To reverse the skewed image we skew it clockwise for the same amount. In the end result the container is skewed but not the image, thusly we could see few blank areas in container (#2). To avoid this we would give the image twice as much width and position it to the middle, cropping parts of it (#3).
 
-![alt text](https://googledrive.com/host/0By7ZVCPEFOB9NDBzN0NpdVFnSkk/the-trip-info.jpg "Problem with skew and its solution")
+![alt text](https://drive.google.com/file/d/0By7ZVCPEFOB9ajljTnQ0U0phcjQ/view?usp=sharing "Problem with skew and its solution")
 
 Lets use ```background-image``` rather than ```<img>``` tag since it gives better screen frame rates while translating. Also background-image will allow us to crop and resize the image without hassle. To further boost frame rates, lets positioning everything.
 
