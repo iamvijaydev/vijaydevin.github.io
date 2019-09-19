@@ -164,14 +164,14 @@
 		z-index: 3;
 	}
 	.bg-img {
-		background: url($banner) center;
-		background-size: cover;
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		opacity: 0.2;
+    background-image: url($banner);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    animation: roll 5s linear infinite;
 	}
 	.title span {
 		border: 1px solid #fff;
@@ -179,7 +179,10 @@
 	}
 	.home-content {
 		position: relative;
-		padding: 5rem 0;
+		height: 383px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 		.next, .prev {
 			font-size: 1.3rem;
 			position: absolute;
