@@ -26,7 +26,7 @@ I have always loved to watch those pictures with images inside skewed frames. On
 
 While browsing through an album of my colleagues trip to Kanyakumari, the idea just hit me to create an image gallery out of it. Just as an experiment to create a working modal.
 
-Checkout the [demo](http://vijaydev.com/demo_the-trip-gallery/) and the [Github Repo](https://github.com/vijaydevin/demo_the-trip-gallery).
+Checkout the [demo](http://iamvijaydev.github.io/demo_the-trip-gallery/) and the [Github Repo](https://github.com/iamvijaydev/demo_the-trip-gallery).
 
 Now then lets begin with understanding the basics of creating images inside skewed frames.
 
