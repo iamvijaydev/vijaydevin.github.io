@@ -171,7 +171,7 @@
     right: 0;
     top: 0;
     opacity: 1;
-    animation: roll 5s linear infinite;
+    @include animation(roll 5s linear infinite);
 	}
 	.title span {
 		border: 1px solid #fff;
